@@ -1744,8 +1744,9 @@ button,
 
 @media (max-width: 932px) {
   .header__menu.header__menu-active {
-    display: inline-block;
-    height: 100vh;
+    display: block;
+    min-height: calc(100 * var(--vh, 1vh));
+    height: calc(100 * var(--vh, 1vh));
     width: 100%;
     overflow-y: auto; } }
 
