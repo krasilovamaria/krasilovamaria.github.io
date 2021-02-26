@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Оглавление</title>
+    <title>просто студия — 404</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -589,64 +589,31 @@
         </div>
       </div>
     </div>
-    <style>
-      body {
-        background: linear-gradient(180deg, #da0052 0%, #5f00bd 100%);
-      }
-      
-      .container {
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
-      
-      h1 {
-        font-size: 32px;
-        line-height: 40px;
-        color: #ffffff;
-      }
-      
-      a {
-        color: #ffffff;
-      }
-      
-      li {
-        font-size: 20px;
-        line-height: 24px;
-        margin-bottom: 7px;
-        color: #ffffff;
-      }
-      
-      img {
-        width: 100%;
-        max-width: 205px;
-        height: auto;
-        display: block;
-        margin-bottom: 40px;
-      }
-      
-      @media (max-width: 768px) {
-        ol {
-          padding-left: 20px;
-        }
-      
-        ol li {
-          margin-bottom: 15px;
-        }
-      
-        .container {
-          padding-top: 20px;
-          padding-bottom: 20px;
-        }
-      }
-      
-    </style>
-    <main class="container main-index"><img src="img/content/logo-white.png" width="205" alt="Логотип просто студия">
-      <h1>Список страниц и компонентов</h1>
-      <ol>
-        <li><a href="ui-kit.html">Компоненты для переиспользования - ui-kit.html</a></li>
-        <li><a href="main.html">Главная - main.html</a></li>
-        <li><a href="404.html">404 страница - 404.html</a></li>
-      </ol>
+    <header class="header"><a class="header__logo" href="main.html">
+        <picture>
+          <source type="image/webp" srcset="img/content/logo-white.webp 1x , img/content/logo-white@2x.webp 2x"/><img class="img-white" src="img/content/logo-white.png" srcset="img/content/logo-white@2x.png 2x" width="205" height="48" alt="Логотип"/>
+        </picture>
+        <picture>
+          <source type="image/webp" srcset="img/content/logo-gradient.webp 1x , img/content/logo-gradient@2x.webp 2x"/><img class="img-gradient" src="img/content/logo-gradient.png" srcset="img/content/logo-gradient@2x.png 2x" width="205" height="48" alt="Логотип"/>
+        </picture></a>
+    </header>
+    <main>
+      <section class="error">
+        <div class="container">
+          <header class="header">
+          </header>
+          <div class="error__content">
+            <h1 class="error__title">ой!</h1>
+            <p class="error__text">
+              похоже что, что-то пошло не так
+              и мы не можем открыть сейчас запрашиваемую вами страницу
+            </p>
+            <picture>
+              <source type="image/webp" srcset="img/bg/404-img.webp 1x , img/bg/404-img@2x.webp 2x"/><img class="error__img" src="img/bg/404-img.png" srcset="img/bg/404-img@2x.png 2x" width="857" height="446" alt="Декоративное изображение"/>
+            </picture>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>

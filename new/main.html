@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Оглавление</title>
+    <title>просто студия — главная</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -589,68 +589,416 @@
         </div>
       </div>
     </div>
-    <style>
-      body {
-        background: linear-gradient(180deg, #da0052 0%, #5f00bd 100%);
-      }
-      
-      .container {
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
-      
-      h1 {
-        font-size: 32px;
-        line-height: 40px;
-        color: #ffffff;
-      }
-      
-      a {
-        color: #ffffff;
-      }
-      
-      li {
-        font-size: 20px;
-        line-height: 24px;
-        margin-bottom: 7px;
-        color: #ffffff;
-      }
-      
-      img {
-        width: 100%;
-        max-width: 205px;
-        height: auto;
-        display: block;
-        margin-bottom: 40px;
-      }
-      
-      @media (max-width: 768px) {
-        ol {
-          padding-left: 20px;
-        }
-      
-        ol li {
-          margin-bottom: 15px;
-        }
-      
-        .container {
-          padding-top: 20px;
-          padding-bottom: 20px;
-        }
-      }
-      
-    </style>
-    <main class="container main-index"><img src="img/content/logo-white.png" width="205" alt="Логотип просто студия">
-      <h1>Список страниц и компонентов</h1>
-      <ol>
-        <li><a href="ui-kit.html">Компоненты для переиспользования - ui-kit.html</a></li>
-        <li><a href="main.html">Главная - main.html</a></li>
-        <li><a href="404.html">404 страница - 404.html</a></li>
-      </ol>
+    <header class="header"><a class="header__logo" href="main.html">
+        <picture>
+          <source type="image/webp" srcset="img/content/logo-white.webp 1x , img/content/logo-white@2x.webp 2x"/><img class="img-white" src="img/content/logo-white.png" srcset="img/content/logo-white@2x.png 2x" width="205" height="48" alt="Логотип"/>
+        </picture>
+        <picture>
+          <source type="image/webp" srcset="img/content/logo-gradient.webp 1x , img/content/logo-gradient@2x.webp 2x"/><img class="img-gradient" src="img/content/logo-gradient.png" srcset="img/content/logo-gradient@2x.png 2x" width="205" height="48" alt="Логотип"/>
+        </picture></a>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Создаем сайты, приложения и брендинг</h1>
+      <div class="fullpage-wrapper fp-notransition" id="fullpage">
+        <section class="services section fp-section js-change-bg" id="section-1" data-fp-styles="null" data-anchor="services">
+          <div class="container">
+            <div class="container__content"><a class="animation-logo-short">
+                <svg width="48" height="48" aria-hidden="true">
+                  <use xlink:href="#icon-short-logo"></use>
+                </svg></a>
+              <div class="services__content">
+                <h2 class="visually-hidden">Сайты, приложения и брендинг</h2>
+                <ul class="services__list">
+                  <li class="services__item">
+                    <button class="services__item-btn" type="button"><span class="services__item-span services__item-span--reg">сайты.</span><span class="services__item-span services__item-span--hover">сайты.</span></button>
+                  </li>
+                  <li class="services__item">
+                    <button class="services__item-btn services__item-btn--active" type="button"><span class="services__item-span services__item-span--reg">приложения.</span><span class="services__item-span services__item-span--hover">приложения.</span></button>
+                  </li>
+                  <li class="services__item">
+                    <button class="services__item-btn" type="button"><span class="services__item-span services__item-span--reg">брендинг.</span><span class="services__item-span services__item-span--hover">брендинг.</span></button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sites page container__content container__content--shift">
+              <div class="sites__content">
+                <div class="sites__info">
+                  <p class="sites__text page__text">
+                    создадаем сайты решающие задачи вашего бизнеса,
+                    ориентированные на&nbsp;вашу аудиторию
+                  </p>
+                  <p class="sites__title page__title">сайты.</p>
+                </div>
+                <div class="blocks-btn blocks-btn-disabled">
+                  <div class="btn btn--ellipse">
+                    <button class="js-modal js-change-color-btn" data-id="modal-project" type="button" aria-label="Начать проект" tabindex="0">Начать проект</button><span>начать проект</span>
+                  </div>
+                </div>
+                            <picture>
+                              <source type="image/webp" srcset="img/bg/sites-img.webp 1x , img/bg/sites-img@2x.webp 2x"><img class="sites__img" src="img/bg/sites-img.png" srcset="img/bg/sites-img@2x.png 2x" width="460" height="460" alt="Декоративное изображение">
+                            </picture>
+              </div>
+            </div>
+            <div class="apps page container__content container__content--shift">
+              <div class="apps__content">
+                <div class="apps__info">
+                  <p class="apps__title page__title">приложения.</p>
+                  <p class="apps__text page__text">
+                    проектируем приложения для&nbsp;расширения вашего&nbsp;бизнеса
+                    и&nbsp;охвата большей аудитории
+                  </p>
+                </div>
+                <div class="blocks-btn blocks-btn-disabled">
+                  <div class="btn btn--ellipse">
+                    <button class="js-modal js-change-color-btn" data-id="modal-project" type="button" aria-label="Начать проект" tabindex="0">Начать проект</button><span>начать проект</span>
+                  </div>
+                </div>
+                            <picture>
+                              <source type="image/webp" srcset="img/bg/apps-img.webp 1x , img/bg/apps-img@2x.webp 2x"><img class="apps__img" src="img/bg/apps-img.png" srcset="img/bg/apps-img@2x.png 2x" width="505" height="505" alt="Декоративное изображение">
+                            </picture>
+              </div>
+            </div>
+            <div class="branding page container__content container__content--shift">
+              <div class="branding__content">
+                <div class="branding__info">
+                  <p class="branding__text page__text">
+                    создаем визуальные стратегии для вашего<br> бренда,
+                    с целью увеличения понимания клиентами вашей идеи и&nbsp;философии
+                  </p>
+                  <p class="branding__title page__title">брендинг.</p>
+                </div>
+                <div class="blocks-btn blocks-btn-disabled">
+                  <div class="btn btn--ellipse">
+                    <button class="js-modal js-change-color-btn" data-id="modal-project" type="button" aria-label="Начать проект" tabindex="0">Начать проект</button><span>начать проект</span>
+                  </div>
+                </div>
+                            <picture>
+                              <source type="image/webp" srcset="img/bg/branding-img.webp 1x , img/bg/branding-img@2x.webp 2x"><img class="branding__img" src="img/bg/branding-img.png" srcset="img/bg/branding-img@2x.png 2x" width="505" height="505" alt="Декоративное изображение">
+                            </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-us section fp-section" id="section-2" data-fp-styles="null" data-anchor="about-us">
+          <div class="container">
+            <div class="container__content">
+              <div class="about-us__content">
+                <h2 class="visually-hidden">О нас</h2>
+                <p class="about-us__text"><span class="about-us__text-mobile">мы&nbsp;</span>начинающая команда из Санкт‑Петербурга, жаждущая поработать над вашим проектом
+                  и готовая приложить все усилия для поиска верного решения
+                </p>
+              </div>
+            </div>
+            <div class="about-us__marquee-wrap">
+              <div class="about-us__marquee-inner-wrap"><span class="about-us__marquee">кто мы</span><span class="about-us__marquee">кто мы</span><span class="about-us__marquee">кто мы</span><span class="about-us__marquee">кто мы</span><span class="about-us__marquee">кто мы</span><span class="about-us__marquee">кто мы</span><span class="about-us__marquee">кто мы</span><span class="about-us__marquee">кто мы</span><span class="about-us__marquee">кто мы</span></div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts section fp-section js-change-bg" id="section-3" data-fp-styles="null" data-anchor="contacts">
+          <div class="container">
+            <div class="container__content">
+              <div class="contacts__content">
+                <h2 class="visually-hidden">Контакты</h2>
+                <p class="contacts__text">поработаем?</p>
+                <div class="contacts__btn">
+                  <div class="btn btn--ellipse">
+                    <button class="js-modal js-change-color-btn" data-id="modal-project" type="button" aria-label="Начать проект" tabindex="0">Начать проект</button><span>начать проект</span>
+                  </div>
+                </div>
+                <div class="contacts__mail">
+                  <p class="contacts__mail-text">или напишите нам, мы&nbsp;всегда на связи</p><a class="contacts__link" href="mailto:prostostudiya@gmail.com">prostostudiya@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
+    <footer class="footer" id="myMenu">
+      <div class="footer__box">
+        <div class="btn btn--ellipse">
+          <button class="js-modal js-change-color-btn" id="getActiveSlide" data-id="modal-project" type="button" aria-label="Начать проект" tabindex="0">Начать проект</button><span>начать проект</span>
+        </div>
+        <nav class="main-nav main-nav__menu-desktop">
+          <ul class="main-nav__list">
+            <li><a class="btn" href="#services" aria-label="переход к другому блоку" tabindex="0"><span class="white">услуги</span><span class="gradient">услуги</span></a></li>
+            <li><a class="btn" href="#about-us" aria-label="переход к другому блоку" tabindex="0"><span class="white">о нас</span><span class="gradient">о нас</span></a></li>
+            <li><a class="btn" href="#contacts" aria-label="переход к другому блоку" tabindex="0"><span class="white">контакты</span><span class="gradient">контакты</span></a></li>
+          </ul>
+        </nav>
+        <button class="btn btn--burger js-modal" data-id="mobile-menu" type="button" aria-label="Показать меню"></button><a class="btn btn--arrow"><img class="arrow-white" src="img/svg/arrow-white.svg" alt="Переход к другому блоку" width="48" height="66"><img class="arrow-gradient" src="img/svg/arrow-gradient.svg" alt="Переход к другому блоку" width="48" height="66"><img class="arrow-white-up" src="img/svg/arrow-white-up.svg" alt="Переход к другому блоку" width="48" height="66"></a>
+      </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
     <script src="js/vendor.min.js"></script>
+    <script type="text/javascript">
+      // добавляет fullpage
+      $('#fullpage').fullpage({
+        navigation: true,
+        scrollingSpeed: 900,
+        anchors: ['services', 'about-us', 'contacts'],
+      
+        afterLoad: function(index, nextIndex, direction) {
+          // меняет цвет секции при наведении на кнопку
+          $('.js-change-color-btn').mouseover(function() {
+            $('#section-1').css('background', 'linear-gradient(180deg, #0bc6df 0%, #02d882 100%)');
+            $('#section-3').css('background', 'linear-gradient(180deg, #0bc6df 0%, #02d882 100%)');
+          });
+      
+          $('.js-change-color-btn').mouseout(function() {
+            $('#section-1').css('background', 'linear-gradient(180deg, #da0052 0%, #5f00bd 100%)');
+            $('#section-3').css('background', 'linear-gradient(180deg, #da0052 0%, #5f00bd 100%)');
+          });
+      
+          // index = названию anchors
+          if (index == "services")
+          {
+            // ----header------------------------------------------------
+            $('.header .img-gradient').removeClass('img-gradient-active');
+            $('.header .img-white').addClass('img-white-active');
+            // делает лого не кликабельным на главной
+            $('.header__logo').addClass('disabled');
+      
+            // ----кружочки------------------------------------------------
+            $('#fp-nav ul li a').removeClass('gradient-fp-nav-active');
+            $('#fp-nav ul li a').addClass('white-fp-nav-active');
+      
+            // ----main-nav------------------------------------------------
+            $('.main-nav__list .gradient').removeClass('gradient-bg-active');
+            $('.main-nav__list .white').addClass('white-bg-active');
+            // выделяет активный блок
+            $('.main-nav__list .white:eq(2)').removeClass('white-active-link');
+            $('.main-nav__list .gradient:eq(1)').removeClass('gradient-active-link');
+            $('.main-nav__list .white:eq(0)').addClass('white-active-link');
+      
+            // ----добавляет кнопку в footer-------------------------------
+            $('.footer .btn--ellipse').removeClass('btn--ellipse-hidden');
+            $('.footer .btn--ellipse').addClass('disabled');
+      
+            // ----arrow------------------------------------------------
+            $('.footer .arrow-white-up').removeClass('arrow-white-active');
+            $('.footer .arrow-gradient').removeClass('arrow-gradient-active');
+            $('.footer .arrow-white').addClass('arrow-white-active');
+            // задает адрес для стрелки
+            $('.footer .btn--arrow').attr('href', '#about-us');
+            // добавляет arrow - моб версия
+            $('.footer .btn--arrow').removeClass('disabled');
+      
+            // ----burger------------------------------------------------
+            $('.btn--burger').removeClass('btn--burger-gradient');
+          }
+      
+          if (index == "about-us")
+          {
+            // ----header------------------------------------------------
+            $('.header .img-white').removeClass('img-white-active');
+            $('.header .img-gradient').addClass('img-gradient-active');
+            // добавляет лого кликабельность
+            $('.header__logo').removeClass('disabled');
+      
+            // ----кружочки------------------------------------------------
+            $('#fp-nav ul li a').removeClass('white-fp-nav-active');
+            $('#fp-nav ul li a').addClass('gradient-fp-nav-active');
+      
+            // ----main-nav------------------------------------------------
+            $('.main-nav__list .white').removeClass('white-bg-active');
+            $('.main-nav__list .gradient').addClass('gradient-bg-active');
+            // выделяет активный блок
+            $('.main-nav__list .white:eq(0)').removeClass('white-active-link');
+            $('.main-nav__list .white:eq(2)').removeClass('white-active-link');
+            $('.main-nav__list .gradient:eq(1)').addClass('gradient-active-link');
+      
+            // ----удаляет кнопку в footer-------------------------------
+            $('.footer .btn--ellipse').addClass('btn--ellipse-hidden');
+            $('.footer .btn--ellipse').addClass('disabled');
+      
+            // ----arrow------------------------------------------------
+            $('.footer .arrow-white').removeClass('arrow-white-active');
+            $('.footer .arrow-white-up').removeClass('arrow-white-active');
+            $('.footer .arrow-gradient').addClass('arrow-gradient-active');
+            // задает адрес для стрелки
+            $('.footer .btn--arrow').attr('href', '#contacts');
+            // добавляет arrow - моб версия
+            $('.footer .btn--arrow').addClass('disabled');
+      
+            // ----burger------------------------------------------------
+            $('.btn--burger').addClass('btn--burger-gradient');
+      
+            // анимация КТО МЫ
+            $('.about-us__marquee-inner-wrap').addClass('is-active');
+          }
+      
+          if (index == "contacts")
+          {
+            // ----header------------------------------------------------
+            $('.header .img-gradient').removeClass('img-gradient-active');
+            $('.header .img-white').addClass('img-white-active');
+            // добавляет лого кликабельность
+            $('.header__logo').removeClass('disabled');
+      
+            // ----кружочки------------------------------------------------
+            $('#fp-nav ul li a').removeClass('gradient-fp-nav-active');
+            $('#fp-nav ul li a').addClass('white-fp-nav-active');
+      
+            // ----main-nav------------------------------------------------
+            $('.main-nav__list .gradient').removeClass('gradient-bg-active');
+            $('.main-nav__list .white').addClass('white-bg-active');
+            // выделяет активный блок
+            $('.main-nav__list .white:eq(0)').removeClass('white-active-link');
+            $('.main-nav__list .gradient:eq(1)').removeClass('gradient-active-link');
+            $('.main-nav__list .white:eq(2)').addClass('white-active-link');
+      
+             // ----удаляет кнопку в footer-------------------------------
+            $('.footer .btn--ellipse').addClass('btn--ellipse-hidden');
+            $('.footer .btn--ellipse').addClass('disabled');
+      
+            // ----arrow------------------------------------------------
+            $('.footer .arrow-white').removeClass('arrow-white-active');
+            $('.footer .arrow-gradient').removeClass('arrow-gradient-active');
+            $('.footer .arrow-white-up').addClass('arrow-white-active');
+            // задает адрес для стрелки
+            $('.footer .btn--arrow').attr('href', '#services');
+            // добавляет arrow - моб версия
+            $('.footer .btn--arrow').addClass('disabled');
+      
+            // ----burger------------------------------------------------
+            $('.btn--burger').removeClass('btn--burger-gradient');
+          }
+        },
+      
+        onLeave: function(index, nextIndex, direction) {
+          // index = 0,1,2,3
+          console.log(index);
+          // -------кружочки------------------------------------------------------------
+          if (index == 2)
+          {
+            $('#fp-nav ul li a').removeClass('gradient-fp-nav-active');
+            $('#fp-nav ul li a').addClass('white-fp-nav-active');
+          }
+      
+          if (index == 1 || index == 3 || index == 2 && nextIndex == 3 && direction == 'up')
+          {
+            $('#fp-nav ul li a').removeClass('white-fp-nav-active');
+            $('#fp-nav ul li a').addClass('gradient-fp-nav-active');
+          }
+      
+          // ------- header, nav -------------------------------------------------------
+          if (index == 1 && direction == 'down' || index == 3 && direction == 'up')
+          {
+            // header
+            $('.header .img-white').removeClass('img-white-active');
+            $('.header .img-gradient').addClass('img-gradient-active');
+            // цвет ссылок main-nav
+            $('.main-nav__list .white').removeClass('white-bg-active');
+            $('.main-nav__list .gradient').addClass('gradient-bg-active');
+          }
+      
+          if (index == 2)
+          {
+            // header
+            $('.header .img-gradient').removeClass('img-gradient-active');
+            $('.header .img-white').addClass('img-white-active');
+            // цвет ссылок main-nav
+            $('.main-nav__list .gradient').removeClass('gradient-bg-active');
+            $('.main-nav__list .white').addClass('white-bg-active');
+          }
+      
+          if (index == 1 || index == 2 && nextIndex == 3 || index == 3 && nextIndex == 2)
+          {
+            $('.header .img-white-active').addClass('disabled');
+            $('.header .img-gradient-active').addClass('disabled');
+          }
+      
+          if (index == 2 && nextIndex == 1)
+          {
+            $('.header .img-gradient-active').removeClass('disabled');
+            $('.header .img-white-active').removeClass('disabled');
+          }
+      
+          // ----- активный блок ------------------------------------------------------
+          if (index == 2 && nextIndex == 1)
+          {
+            // выделяет активный блок в services
+            $('.main-nav__list .white:eq(2)').removeClass('white-active-link');
+            $('.main-nav__list .gradient:eq(1)').removeClass('gradient-active-link');
+            $('.main-nav__list .white:eq(0)').addClass('white-active-link');
+          }
+      
+          if (index == 1 || index == 3 && nextIndex == 2)
+          {
+            // выделяет активный блок в about-us
+            $('.main-nav__list .white:eq(0)').removeClass('white-active-link');
+            $('.main-nav__list .white:eq(2)').removeClass('white-active-link');
+            $('.main-nav__list .gradient:eq(1)').addClass('gradient-active-link');
+          }
+      
+          if (index == 2 && nextIndex == 3 || index == 1 && nextIndex == 3)
+          {
+            // выделяет активный блок в contacts
+            $('.main-nav__list .white:eq(0)').removeClass('white-active-link');
+            $('.main-nav__list .gradient:eq(1)').removeClass('gradient-active-link');
+            $('.main-nav__list .white:eq(2)').addClass('white-active-link');
+          }
+      
+          // ------- стрелка ----------------------------------------------------------
+          if (index == 1 && direction == "down" || index == 3 && direction == 'up')
+          {
+            $('.footer .arrow-white').removeClass('arrow-white-active');
+            $('.footer .arrow-white-up').removeClass('arrow-white-active');
+            $('.footer .arrow-gradient').addClass('arrow-gradient-active');
+          }
+      
+          if (index == 2 && nextIndex == 1)
+          {
+            $('.footer .arrow-gradient').removeClass('arrow-gradient-active');
+            $('.footer .arrow-white-up').removeClass('arrow-white-active');
+            $('.footer .arrow-white').addClass('arrow-white-active');
+          }
+      
+          if (index == 2 && nextIndex == 3)
+          {
+            $('.footer .arrow-gradient').removeClass('arrow-gradient-active');
+            $('.footer .arrow-white').removeClass('arrow-white-active');
+            $('.footer .arrow-white-up').addClass('arrow-white-active');
+          }
+      
+          if (index == 1 || index == 2 && nextIndex == 3 || index == 3 && nextIndex == 2)
+          {
+            $('.footer .btn--arrow').addClass('disabled');
+          }
+      
+          if (index == 2 && nextIndex == 1)
+          {
+            $('.footer .btn--arrow').removeClass('disabled');
+          }
+      
+          // ----- burger -------------------------------------------------------------
+          if (index == 2 && nextIndex == 1 || index == 2 && nextIndex == 3)
+          {
+            $('.btn--burger').removeClass('btn--burger-gradient');
+          }
+      
+          if (index == 1 && direction == "down" || index == 3 && direction == 'up')
+          {
+            $('.btn--burger').addClass('btn--burger-gradient');
+          }
+      
+          // ------- кнопка -----------------------------------------------------------
+          if (index == 0 || index == 2 && direction == 'up')
+          {
+            $('.footer .btn--ellipse').removeClass('btn--ellipse-hidden');
+          }
+      
+          if (index == 1 || index == 2 && direction == 'down')
+          {
+            $('.footer .btn--ellipse').addClass('btn--ellipse-hidden');
+          }
+        }
+       });
+      
+    </script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
