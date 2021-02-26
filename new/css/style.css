@@ -1784,28 +1784,19 @@ html.fp-enabled,
     @media (max-width: 767px) {
       .about-us__text-mobile {
         display: inline; } }
-  @media (max-width: 373px) and (min-width: 351px) {
-    .about-us__text {
-      margin-top: -20px;
-      font-size: 30px;
-      line-height: 36px; } }
   @media (max-width: 350px) {
     .about-us__text {
       font-size: 22px;
       line-height: 26px; } }
 
-.about-us__marquee-wrap {
-  position: absolute;
-  min-height: 86px;
-  bottom: 213px;
-  --move-initial: -2%;
-  --move-final: -24.2%; }
-  @media (max-width: 767px) {
-    .about-us__marquee-wrap {
-      bottom: 88px; } }
-  @media (max-width: 374px) and (min-width: 351px) {
-    .about-us__marquee-wrap {
-      bottom: 130px; } }
+.about-us__box {
+  position: relative; }
+  .about-us__box .about-us__marquee-wrap {
+    position: absolute;
+    min-height: 86px;
+    bottom: -86px;
+    --move-initial: -2%;
+    --move-final: -24.2%; }
 
 .about-us__marquee-inner-wrap {
   position: absolute;
