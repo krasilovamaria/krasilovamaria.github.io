@@ -3198,7 +3198,8 @@ input:checked + .socials__check-label::before {
   @media (max-width: 1022px) {
     .modal__btn-fix {
       width: 600px;
-      min-width: 600px; } }
+      min-width: 600px;
+      height: 61px; } }
   @media (max-width: 766px) {
     .modal__btn-fix {
       width: 100%;
