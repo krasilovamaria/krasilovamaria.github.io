@@ -3198,8 +3198,7 @@ input:checked + .socials__check-label::before {
   @media (max-width: 1022px) {
     .modal__btn-fix {
       width: 600px;
-      min-width: 600px;
-      height: 61px; } }
+      min-width: 600px; } }
   @media (max-width: 766px) {
     .modal__btn-fix {
       width: 100%;
@@ -5744,6 +5743,12 @@ input:checked + .socials__check-label::before {
 
 .modal-filter {
   height: 100%; }
+  @media (max-width: 400px) {
+    .modal-filter {
+      max-height: 100%;
+      min-height: 100%;
+      height: calc(100 * var(--vh, 1vh));
+      border: 1px solid black; } }
   .modal-filter .filter-checkbox label {
     padding: 0;
     padding-left: 25px;
@@ -5751,6 +5756,12 @@ input:checked + .socials__check-label::before {
 
 .modal-filter__wrap {
   max-width: 925px; }
+  @media (max-width: 400px) {
+    .modal-filter__wrap {
+      max-height: 100%;
+      min-height: 100%;
+      height: calc(100 * var(--vh, 1vh));
+      border: 1px solid black; } }
 
 .modal-filter__row {
   display: -webkit-box;
