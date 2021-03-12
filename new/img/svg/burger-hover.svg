@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12">
+  <g id="burger-hover" transform="translate(-864.519 -132.122)">
+    <rect width="18" height="2" rx="1" transform="translate(864.519 132.122)" fill="#5f7f9d"/>
+    <rect width="18" height="2" rx="1" transform="translate(864.519 137.122)" fill="#5f7f9d"/>
+    <rect width="18" height="2" rx="1" transform="translate(864.519 142.122)" fill="#5f7f9d"/>
+  </g>
+</svg>
