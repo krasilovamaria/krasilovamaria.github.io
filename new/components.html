@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="TELE2&nbsp;&mdash; программа заботы о&nbsp;сотрудниках">
+
+<!-- favicon сгенерирован тут - https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/site.webmanifest" crossorigin="use-credentials">
+<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Шрифт с главной страницы -->
+<link rel="preload" href="fonts/Tele2DisplaySerif-Bold.woff2" as="font" crossorigin="anonymous"/>
+<link rel="preload" href="fonts/Tele2DisplaySerif-Regular.woff2" as="font" crossorigin="anonymous"/>
+
+<!-- Стили -->
+<link rel="stylesheet" href="css/style.min.css">
+
+  <title>Компоненты</title>
+
+  <style>
+    main > .container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .components-backwards {
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-left: 7px;
+    }
+
+    .components-backwards span:first-child {
+      position: relative;
+      top: -3px;
+
+      display: inline-block;
+      margin-right: 15px;
+
+      font-size: 16px;
+      line-height: 24px;
+      vertical-align: top;
+
+      transform: scale(2);
+    }
+
+    .components-backwards span:last-child {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .components-backwards + h1 {
+      margin-bottom: 70px;
+    }
+
+    .container > section {
+      padding: 20px 0;
+    }
+
+    .components-title {
+      margin: 0;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+
+    .components-conent {
+      margin-bottom: 50px;
+    }
+
+    .components-conent--column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .components-conent--column a {
+      margin-bottom: 20px;
+    }
+
+    .components-list {
+      margin: 0;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow-round" viewBox="0 0 77 77">
+<path d="M38.1875 -1.66923e-06C48.3155 -2.11194e-06 58.0286 4.02331 65.1901 11.1849C72.3517 18.3464 76.375 28.0595 76.375 38.1875C76.375 48.3155 72.3517 58.0286 65.1901 65.1901C58.0286 72.3517 48.3155 76.375 38.1875 76.375C28.0595 76.375 18.3464 72.3517 11.1849 65.1901C4.02331 58.0286 -1.22652e-06 48.3155 -1.66923e-06 38.1875C-2.11194e-06 28.0595 4.02331 18.3464 11.1849 11.1849C18.3464 4.02331 28.0595 -1.22652e-06 38.1875 -1.66923e-06V-1.66923e-06ZM21.4805 35.8008C20.8475 35.8008 20.2404 36.0522 19.7928 36.4998C19.3452 36.9474 19.0937 37.5545 19.0937 38.1875C19.0937 38.8205 19.3452 39.4276 19.7928 39.8752C20.2404 40.3228 20.8475 40.5742 21.4805 40.5742L49.133 40.5742L38.8844 50.818C38.4363 51.2662 38.1845 51.874 38.1845 52.5078C38.1845 53.1416 38.4363 53.7494 38.8844 54.1976C39.3326 54.6458 39.9404 54.8975 40.5742 54.8975C41.208 54.8975 41.8159 54.6458 42.264 54.1976L56.5843 39.8773C56.8066 39.6556 56.9829 39.3922 57.1033 39.1022C57.2236 38.8123 57.2855 38.5014 57.2855 38.1875C57.2855 37.8736 57.2236 37.5627 57.1033 37.2727C56.9829 36.9828 56.8066 36.7194 56.5843 36.4977L42.264 22.1774C41.8159 21.7292 41.208 21.4775 40.5742 21.4775C39.9404 21.4775 39.3326 21.7292 38.8844 22.1774C38.4363 22.6256 38.1845 23.2334 38.1845 23.8672C38.1845 24.501 38.4363 25.1088 38.8844 25.557L49.133 35.8008L21.4805 35.8008Z"/>
+</symbol><symbol id="icon-arrow" viewBox="0 0 33 30">
+  <path d="M0.585785 13.5858C-0.195263 14.3668 -0.195263 15.6332 0.585785 16.4142L13.3137 29.1421C14.0948 29.9232 15.3611 29.9232 16.1421 29.1421C16.9232 28.3611 16.9232 27.0948 16.1421 26.3137L4.82843 15L16.1421 3.68629C16.9232 2.90524 16.9232 1.63891 16.1421 0.857866C15.3611 0.0768171 14.0948 0.0768173 13.3137 0.857866L0.585785 13.5858ZM33 13L2 13L2 17L33 17L33 13Z" fill="currentFilter"/>
+</symbol></svg>
+  </div>
+
+  <div class="wrapper">
+
+    <main>
+      <div class="container">
+        <a class="components-backwards" href="index.html">
+          <span>&larr;</span>
+          <span>вернуться на разводящую</span>
+        </a>
+        <h1>Компоненты, используемые в вёрстке</h1>
+
+        <p class="components-title">Плашка "Новые бонусы"</p>
+        <div class="components-conent">
+          <span class="bonus" data-bonus="bonus">новые бонусы!</span>
+        </div>
+
+        <p class="components-title">Возможные варианты кнопок</p>
+        <div class="components-conent components-conent--column">
+          <a href="#" class="accordion__link accordion__link--orange">Открыть</a>
+          <a href="#" class="accordion__link">Перейти</a>
+          <a href="#" class="accordion__link">Получить</a>
+        </div>
+
+        <p class="components-title">Кнопки radio-button</p>
+        <div class="components-conent">
+          <ul class="benefit__list components-list">
+            <li class="benefit__item">
+              <input type="radio" name="benefit-button" id="benefit-button_1" value="professional" checked />
+              <label for="benefit-button_1">Профессиональное</label>
+            </li>
+
+            <li class="benefit__item">
+              <input type="radio" name="benefit-button" id="benefit-button_2" value="bodily" />
+              <label for="benefit-button_2">Физическое</label>
+            </li>
+
+            <li class="benefit__item">
+              <input type="radio" name="benefit-button" id="benefit-button_3" value="emotionally" />
+              <label for="benefit-button_3">Эмоциональное</label>
+            </li>
+
+            <li class="benefit__item">
+              <input type="radio" name="benefit-button" id="benefit-button_4" value="social" />
+              <label for="benefit-button_4">Социальное</label>
+            </li>
+          </ul>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------->
+
+        <p class="components-title">Карточка по направлению с main.html</p>
+        <div class="components-conent">
+          <ul class="directions__list components-list">
+            <li class="directions__list-item">
+              <div class="directions__flex-container">
+                <p>развитие</p>
+                <span data-bonus="bonus">новые бонусы!</span>
+              </div>
+              <h3>Профессиональное</h3>
+              <div class="directions__flex-container">
+                <p>Чтобы оставаться востребованным и расширять свою экспертизу, важно вкладываться в свои знания.</p>
+                <div>
+                  <span>20</span>
+                  <a href="benefit.html" class="directions__link" aria-label="">
+                    <svg width="77" height="77">
+                      <use xlink:href="img/sprite_auto.svg#icon-arrow-round"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------->
+
+        <p class="components-title">Карточка c аккоредеоном и QR-кодом с benefit.html</p>
+        <div class="components-conent">
+          <ul class="benefit__list components-list">
+            <!-- Карточка "Общение с коллегами" -->
+            <li class="accordion">
+              <div class="benefit__list-item benefit__flex-container-row">
+                <div class="benefit__icon">
+                  <img src="img/svg/icon-chat.svg" width="160" height="102">
+                </div>
+                <div class="benefit__text-container benefit__flex-container-column">
+                  <h3>Общение с коллегами</h3>
+                  <p>Находи близких по&nbsp;духу людей, знакомься, обменивайся опытом с&nbsp;коллегами из&nbsp;своего отделения и&nbsp;других городов</p>
+                </div>
+                <div class="benefit__flex-container-column benefit__col-last">
+                  <div class="benefit__flex-container-row">
+                    <span class="benefit__span-bonus" data-bonus="bonus">новые бонусы!</span>
+                    <span class="benefit__span-number">3</span>
+                  </div>
+                  <button class="benefit__button benefit__button--arrow-rotate" type="button" aria-label="toggle accordion">
+                    <svg width="77" height="77">
+                      <use xlink:href="img/sprite_auto.svg#icon-arrow-round"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <!-- dropdown (accordion) -->
+              <!-- Контент для "Общение с коллегами" -->
+              <div class="accordion__item accordion__item--shown accordion__flex-container">
+                <div class="accordion__type-container accordion__type-container--orange">
+                  <span>общение</span>
+                </div>
+                <div class="accordion__text-container">
+                  <h4>Скажи &laquo;Спасибо&raquo;</h4>
+                  <p>Функционал с&nbsp;возможностью собрать благодарственную открытку коллеге</p>
+                </div>
+                <a href="#" class="accordion__link accordion__link--orange" aria-label="Открыть">Открыть</a>
+              </div>
+              <!-- Контент для "Общение с коллегами" -->
+              <div class="accordion__item accordion__item--shown accordion__flex-container">
+                <div class="accordion__type-container accordion__type-container--orange">
+                  <span>общение</span>
+                </div>
+                <div class="accordion__text-container">
+                  <h4>Random Coffee</h4>
+                  <p>Рандомайзер для поиска собеседника в&nbsp;приложении &laquo;На&nbsp;связи&raquo;</p>
+                </div>
+                <a href="#" class="accordion__qr-link accordion__qr-link--orange" aria-label="Сканировать">
+                  <picture>
+                    <!-- 1х: 96px; 2x: 192px -->
+                    <source type="image/webp" srcset="img/content/accordion-qr.webp 1x, img/content/accordion-qr@2x.webp 2x">
+                    <!-- 1х: 96px; 2x: 192px -->
+                    <img src="img/content/accordion-qr.png" alt="Test QR" width="96" height="96"
+                      srcset="img/content/accordion-qr@2x.png 2x" loading="lazy">
+                  </picture>
+                </a>
+                <a href="#" class="accordion__link accordion__link--orange accordion__link--orange-qr" aria-label="Открыть">Открыть</a>
+              </div>
+              <!-- Контент для "Общение с коллегами" -->
+              <div class="accordion__item accordion__item--shown accordion__flex-container">
+                <div class="accordion__type-container accordion__type-container--orange">
+                  <span>общение</span>
+                </div>
+                <div class="accordion__text-container">
+                  <h4>Новые знакомства</h4>
+                  <p>Раздел сообществ по&nbsp;интересам для сотрудников Tele2</p>
+                </div>
+                <a href="#" class="accordion__link accordion__link--orange" aria-label="Открыть">Открыть</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------->
+
+        <p class="components-title">Карточка c аккоредеоном без QR-кода с benefit.html</p>
+        <div class="components-conent">
+          <ul class="benefit__list components-list">
+          <!-- Карточка "Дисконтные программы" -->
+            <li class="accordion">
+              <div class="benefit__list-item benefit__flex-container-row">
+                <div class="benefit__icon" >
+                  <img src="img/svg/icon-present.svg" width="160" height="160">
+                </div>
+                <div class="benefit__flex-container-column">
+                  <h3>Дисконтные программы</h3>
+                  <p>Пользуйся предложениями и&nbsp;скидками партнеров Tele2&nbsp;&mdash; обучение, страхование и&nbsp;фитнес станут еще приятнее</p>
+                </div>
+                <div class="benefit__flex-container-column benefit__col-last">
+                  <div class="benefit__flex-container-row">
+                    <span class="benefit__span-bonus" data-bonus="bonus">новые бонусы!</span>
+                    <span class="benefit__span-number">2</span>
+                  </div>
+                  <button class="benefit__button benefit__button--arrow-rotate" type="button" aria-label="toggle accordion">
+                    <svg width="77" height="77">
+                      <use xlink:href="img/sprite_auto.svg#icon-arrow-round"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <!-- dropdown (accordion) -->
+              <!-- Контент "Дисконтные программы" -->
+              <div class="accordion__item accordion__item--shown accordion__flex-container">
+                <div class="accordion__type-container accordion__type-container--orange">
+                  <span>Анонсы</span>
+                </div>
+                <div class="accordion__text-container">
+                  <h4>Корпоративная программа</h4>
+                  <p>Самые выгодные скидки и&nbsp;бонусы от&nbsp;партнеров только для сотрудников Tele2</p>
+                </div>
+                <a href="#" class="accordion__link accordion__link--orange" aria-label="Открыть">Открыть</a>
+              </div>
+              <!-- Контент "Дисконтные программы" -->
+              <div class="accordion__item accordion__item--shown accordion__flex-container">
+                <div class="accordion__type-container accordion__type-container--orange">
+                  <span>Анонсы</span>
+                </div>
+                <div class="accordion__text-container">
+                  <h4>Программа «Больше»</h4>
+                  <p>Скидки и&nbsp;бонусы для всех абонентов Tele2</p>
+                </div>
+                <a href="#" class="accordion__link accordion__link--orange" aria-label="Открыть">Открыть</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
