@@ -724,6 +724,7 @@ button,
         display: block; } }
   .text__title img {
     width: 80%;
+    height: 100%;
     margin-left: -10px;
     margin-bottom: 15px;
     -webkit-transform: rotate(4.29deg);
