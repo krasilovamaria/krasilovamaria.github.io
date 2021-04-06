@@ -531,9 +531,6 @@ button,
     border-color: transparent transparent #c3e400 transparent;
     mix-blend-mode: multiply;
     overflow: hidden; }
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-      .header .header__img-triangle {
-        opacity: 0.8; } }
     @media (max-width: 1439px) {
       .header .header__img-triangle {
         border-width: 0 1440px 320px 1440px; } }
