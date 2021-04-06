@@ -533,7 +533,7 @@ button,
     overflow: hidden; }
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       .header .header__img-triangle {
-        opacity: 0.6; } }
+        opacity: 0.8; } }
     @media (max-width: 1439px) {
       .header .header__img-triangle {
         border-width: 0 1440px 320px 1440px; } }
@@ -1657,6 +1657,7 @@ button,
 
 .accordion__link {
   width: 18.823%;
+  max-height: 42px;
   padding: 7px 15px 10px;
   font-family: "Tele2-DisplaySerif", "Times New Roman", serif;
   font-style: normal;
@@ -1666,7 +1667,16 @@ button,
   text-align: center;
   color: #000000;
   background: #c3e400;
-  border-radius: 40px; }
+  border-radius: 40px;
+  -webkit-transition: background 0.3s ease, opacity 0.3s ease;
+  transition: background 0.3s ease, opacity 0.3s ease; }
+  .accordion__link:hover, .accordion__link:focus {
+    padding-top: 6px;
+    background: transparent;
+    border: 1px solid #c3e400;
+    outline: none; }
+  .accordion__link:active {
+    opacity: 0.5; }
   @media (max-width: 1023px) {
     .accordion__link {
       padding: 7px 10px 10px;
@@ -1686,31 +1696,23 @@ button,
     @media (max-width: 767px) {
       .accordion__link--orange-qr {
         display: block; } }
-  .accordion__link:hover, .accordion__link:focus {
-    background: transparent;
-    border: 1px solid #c3e400;
-    -webkit-transition: background 0.3s ease;
-    transition: background 0.3s ease;
-    outline: none; }
-  .accordion__link:active {
-    opacity: 0.5;
-    -webkit-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease; }
+
+.accordion__item--bonus .accordion__link--orange {
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease; }
 
 .accordion__item--bonus .accordion__link--orange:hover,
 .accordion__item--bonus .accordion__link--orange:focus {
   background: transparent;
-  border: 1px solid #ffaf0f;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease; }
+  border: 1px solid #ffaf0f; }
 
 .accordion__qr-link {
-  margin-right: 26px; }
+  margin-right: 26px;
+  -webkit-transition: outline-offset 0.3s ease;
+  transition: outline-offset 0.3s ease; }
   .accordion__qr-link:hover, .accordion__qr-link:focus {
     outline: 2px solid #c3e400;
-    outline-offset: 3px;
-    -webkit-transition: outline-offset 0.3s ease;
-    transition: outline-offset 0.3s ease; }
+    outline-offset: 3px; }
   .accordion__qr-link--orange:hover, .accordion__qr-link--orange:focus {
     outline-color: #ffaf0f; }
   @media (max-width: 767px) {
