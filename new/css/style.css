@@ -1091,8 +1091,7 @@ table {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  min-height: calc(100 * var(--vh, 1vh));
-  overflow-x: hidden; }
+  min-height: calc(100 * var(--vh, 1vh)); }
   @media (max-width: 1023px) {
     .wrapper {
       min-width: 0; } }
@@ -1120,7 +1119,8 @@ table {
   padding: 0;
   background: rgba(255, 255, 255, 0);
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
 
 .btn {
   display: -webkit-box;
@@ -1138,7 +1138,8 @@ table {
   width: max-content;
   padding: 19px 40px;
   font-weight: 600;
-  border-radius: 10px; }
+  border-radius: 10px;
+  outline: none; }
 
 .btn-white {
   border: 1px solid #e72430;
