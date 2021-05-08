@@ -154,6 +154,9 @@ table {
   margin: -1px;
   clip: rect(0 0 0 0); }
 
+.hidden {
+  display: none; }
+
 .wrapper {
   position: relative;
   display: -webkit-box;
