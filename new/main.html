@@ -205,7 +205,7 @@
                     </svg>
                   </div>
                   <div class="problems-solved__description"><span>Решение</span>
-                    <p>Раз в год проверяем исправность крыши, чтобы избежать аварийных случаев.</p>
+                    <p>Предоставляем необходимые материалы в гарантийных случаях</p>
                   </div>
                 </div>
               </li>
@@ -225,7 +225,7 @@
                     </svg>
                   </div>
                   <div class="problems-solved__description"><span>Решение</span>
-                    <p>Раз в год проверяем исправность крыши, чтобы избежать аварийных случаев.</p>
+                    <p>Расширяем период замены и ремонтных работ системы до 10-15 лет</p>
                   </div>
                 </div>
               </li>
@@ -245,7 +245,7 @@
                     </svg>
                   </div>
                   <div class="problems-solved__description"><span>Решение</span>
-                    <p>Раз в год проверяем исправность крыши, чтобы избежать аварийных случаев.</p>
+                    <p>Раз в год проверяем исправность крыши, чтобы избежать аварийных случаев</p>
                   </div>
                 </div>
               </li>
@@ -265,39 +265,50 @@
               <h2>Подберите гарантию за 5 минут!</h2>
               <p>Ответьте на 4 простых вопроса и забудьте о проблемах на 15&nbsp;лет, мы подберём вам оптимальную гарантию!</p>
               <div class="choose-garantee__btns">
-                <button class="btn btn-reset btn-accented js-guarantee-types-btn" type="button">Выбрать гарантию</button>
-                <button class="btn btn-reset btn-white" type="button">Скрыть список гарантий</button>
+                <button class="btn btn-reset btn-accented" type="button">Выбрать гарантию</button>
+                <button class="btn btn-reset btn-white js-guarantee-btn" type="button">Показать список гарантий</button>
               </div>
             </div>
           </div>
-          <div class="choose-garantee__types" id="garantee">
-            <div class="visually-hidden guarantee js-guarantee-types-content">
-              <h2 class="guarantee__title">Типы гарантий</h2>
+          <!-- блок "Тип гарантий"-->
+          <div class="visually-hidden guarantee js-guarantee">
+            <h2 class="guarantee__title">Типы гарантий
               <ul class="guarantee__list">
                 <!---->
                 <li class="guarantee__item js-card">
                   <!-- content-->
                   <div class="guarantee__content">
                     <div class="guarantee__item-col guarantee__item-col--base">
-                      <p class="guarantee__item-title">Базовая</p>
-                      <p class="guarantee__item-title-desc">Гарантия на материалы</p><a class="btn-reset btn btn-white guarantee__btn-get js-change-content" href="#" data-dropdown="guarantee__btn-get--right">Получить гарантию</a>
-                    </div>
-                    <div class="guarantee__item-col guarantee__item-col--table">
-                      <p class="guarantee__item-desc">Гарантирует водонепроницаемость материала</p>
-                      <table class="guarantee__table js-change-content" data-dropdown="visually-hidden">
-                        <tr>
-                          <td class="guarantee__table-title">Стоимость</td>
-                          <td>бесплатно</td>
-                        </tr>
-                        <tr>
-                          <td class="guarantee__table-title">Срок гарантии</td>
-                          <td>от 7 до 10 лет</td>
-                        </tr>
-                      </table>
-                      <button class="btn-reset btn-red guarantee__btn-more-details js-btn-dropdown" type="button"><span class="guarantee__btn-more-details-text">Полная информация о гарантии</span><span class="js-change-content" data-dropdown="guarantee__icon-up">
-                          <svg width="12" height="7" aria-hidden="true">
-                            <use xlink:href="#icon-arrow-dropdown"></use>
-                          </svg></span></button>
+                      <!---->
+                      <div class="row guarantee__desc">
+                        <div class="guarantee__desc-info">
+                          <p class="guarantee__item-title">Базовая</p>
+                          <p class="guarantee__item-subtitle">Гарантия на материалы</p>
+                        </div>
+                        <div class="guarantee__desc-data">
+                          <p class="guarantee__item-desc">Гарантирует водонепроницаемость материала</p>
+                        </div>
+                      </div>
+                      <!---->
+                      <div class="row guarantee__desc-table">
+                        <div class="guarantee__desc-info guarantee__desc-info--btn"><a class="btn-reset btn btn-white guarantee__btn-get js-change-content" href="#" data-dropdown="guarantee__btn-get--right">Получить гарантию</a></div>
+                        <div class="guarantee__desc-data guarantee__desc-data--table">
+                          <table class="guarantee__table js-change-content" data-dropdown="visually-hidden">
+                            <tr>
+                              <td class="guarantee__table-title">Стоимость</td>
+                              <td>бесплатно</td>
+                            </tr>
+                            <tr>
+                              <td class="guarantee__table-title">Срок гарантии</td>
+                              <td>от 7 до 10 лет</td>
+                            </tr>
+                          </table>
+                          <button class="btn-reset btn-red guarantee__dropdown-btn js-btn-dropdown js-change-content" type="button" data-dropdown="guarantee__dropdown-btn--bottom"><span class="guarantee__dropdown-btn-text">Полная информация о гарантии</span><span class="js-change-content" data-dropdown="guarantee__icon-up">
+                              <svg width="12" height="7" aria-hidden="true">
+                                <use xlink:href="#icon-arrow-dropdown"></use>
+                              </svg></span></button>
+                        </div>
+                      </div>
                     </div>
                     <div class="guarantee__item-col guarantee__item-col--icons js-change-content" data-dropdown="visually-hidden">
                       <div class="tooltip guarantee__tooltip">
@@ -306,39 +317,40 @@
                         </svg><span class="tooltiptext">Поставка материала при гарантийном случае</span>
                       </div>
                     </div>
-                    <div class="guarantee__item-col guarantee__item-col--indent"></div>
-                    <div class="guarantee__item-col guarantee__item-col--pdf js-change-content" data-dropdown="guarantee__item-col--pdf-bottom"><a class="guarantee__more-pdf-link" href="#"><span class="guarantee__more-pdf">Подробнее</span>
+                    <div class="guarantee__item-col guarantee__pdf js-change-content" data-dropdown="visually-hidden"><a class="btn-link guarantee__pdf-link"><span class="guarantee__pdf-text">Подробнее</span>
                         <picture>
-                          <!-- 1х: 183x246px; 2x: 364x490px-->
+                          <!-- 1х: 132x162px; 2x: 364x490px-->
                           <source type="image/webp" srcset="img/content/pdf-base.webp 1x, img/content/pdf-base@2x.webp 2x">
-                          <!-- 1х: 183x246px; 2x: 364x490px--><img src="img/content/pdf-base.jpg" alt="Гарантия" width="183" height="246" srcset="img/content/pdf-base@2x.jpg 2x">
+                          <!-- 1х: 132x162px; 2x: 364x490px--><img src="img/content/pdf-base.jpg" alt="Гарантия" width="132" height="162" srcset="img/content/pdf-base@2x.jpg 2x">
                         </picture></a></div>
                   </div>
-                  <!-- dropdown-->
-                  <div class="visually-hidden dropdown js-change-content" data-dropdown="visually-hidden">
-                    <div class="dropdown__icons">
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-material-supply"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Поставка материала при гарантийном случае</p>
+                </li>
+                <!-- dropdown-->
+                <div class="visually-hidden dropdown js-change-content" data-dropdown="visually-hidden">
+                  <div class="dropdown__icons">
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-material-supply"></use>
+                        </svg>
                       </div>
+                      <p class="dropdown__icon-text">Поставка материала при гарантийном случае</p>
                     </div>
+                  </div>
+                  <div class="dropdown__inner">
                     <table class="dropdown__table">
                       <tr class="dropdown__table-tr">
-                        <td class="dropdown__table-td-title">Стоимость</td>
+                        <td class="dropdown__table-td-title">Стоимость от стоимости материалов системы</td>
                         <td class="dropdown__table-td-data">бесплатно</td>
                       </tr>
                       <tr class="dropdown__table-tr dropdown__table-tr--margin">
                         <th class="dropdown__table-td-title">Срок гарантии на систему <br> в зависимости от гидроизоляции</th>
                       </tr>
-                      <tr class="dropdown__table-tr dropdown__table-tr--no-border dropdown__table-tr--margin">
+                      <tr class="dropdown__table-tr dropdown__table-tr--no-border dropdown__table-tr--margin dropdown__table-tr--row">
                         <td class="dropdown__table-td-title dropdown__table-td-title--light">Ecoplast и Logicroof 1,2 мм, Унифлекс, Техноэласт Стандарт. Сочетания Унифлекс + Техноэласт, Унифлекс + Техноэласт Стандарт. Система ТН-КРОВЛЯ Классик</td>
                         <td class="dropdown__table-td-data">10 лет</td>
                       </tr>
-                      <tr class="dropdown__table-tr">
+                      <tr class="dropdown__table-tr dropdown__table-tr--row">
                         <td class="dropdown__table-td-title dropdown__table-td-title--light">Ecoplast, Logicroof и Logicbase 1,5 мм и более, Техноэласт</td>
                         <td class="dropdown__table-td-data">15 лет</td>
                       </tr>
@@ -352,7 +364,7 @@
                       </tr>
                       <tr class="dropdown__table-tr">
                         <td class="dropdown__table-td-title">Максимальная ответственность</td>
-                        <td class="dropdown__table-td-data"><span>Ежегодно снижается на сумму амортизации</span>
+                        <td class="dropdown__table-td-data dropdown__table-td-data--svg"><span>Ежегодно снижается на сумму амортизации</span>
                           <svg width="15" height="15" aria-hidden="true">
                             <use xlink:href="#icon-info"></use>
                           </svg>
@@ -363,32 +375,49 @@
                         <td class="dropdown__table-td-data">Нет специальных требований к подрядчику</td>
                       </tr>
                     </table>
+                    <div class="dropdown__pfd"><a class="btn-link dropdown__pfd-link"><span class="dropdown__pfd-text">Подробнее</span>
+                        <picture>
+                          <!-- 1х: 182x245px; 2x: 364x490px-->
+                          <source type="image/webp" srcset="img/content/pdf-base.webp 1x, img/content/pdf-base@2x.webp 2x">
+                          <!-- 1х: 182x245px; 2x: 364x490px--><img src="img/content/pdf-base.jpg" alt="Гарантия" width="182" height="245" srcset="img/content/pdf-base@2x.jpg 2x">
+                        </picture></a></div>
                   </div>
-                </li>
+                </div>
                 <!---->
                 <li class="guarantee__item js-card">
                   <!-- content-->
                   <div class="guarantee__content">
                     <div class="guarantee__item-col guarantee__item-col--base">
-                      <p class="guarantee__item-title">Стандарт для кровли</p>
-                      <p class="guarantee__item-title-desc">Гарантия на системы</p><a class="btn-reset btn btn-white guarantee__btn-get js-change-content" href="#" data-dropdown="guarantee__btn-get--right">Получить гарантию</a>
-                    </div>
-                    <div class="guarantee__item-col guarantee__item-col--table">
-                      <p class="guarantee__item-desc">Гарантирует водонепроницаемость всей системы, а также работы по её ремонту в случае дефекта материала</p>
-                      <table class="guarantee__table js-change-content" data-dropdown="visually-hidden">
-                        <tr>
-                          <td class="guarantee__table-title">Стоимость</td>
-                          <td>0 - 2%</td>
-                        </tr>
-                        <tr>
-                          <td class="guarantee__table-title">Срок гарантии</td>
-                          <td>от 10 до 15 лет</td>
-                        </tr>
-                      </table>
-                      <button class="btn-reset btn-red guarantee__btn-more-details js-btn-dropdown" type="button"><span class="guarantee__btn-more-details-text">Полная информация о гарантии</span><span class="js-change-content" data-dropdown="guarantee__icon-up">
-                          <svg width="12" height="7" aria-hidden="true">
-                            <use xlink:href="#icon-arrow-dropdown"></use>
-                          </svg></span></button>
+                      <!---->
+                      <div class="row guarantee__desc">
+                        <div class="guarantee__desc-info">
+                          <p class="guarantee__item-title">Стандарт для кровли</p>
+                          <p class="guarantee__item-subtitle">Гарантия на системы</p>
+                        </div>
+                        <div class="guarantee__desc-data">
+                          <p class="guarantee__item-desc">Гарантирует водонепроницаемость всей системы, а также работы по её ремонту в случае дефекта материала</p>
+                        </div>
+                      </div>
+                      <!---->
+                      <div class="row guarantee__desc-table">
+                        <div class="guarantee__desc-info guarantee__desc-info--btn"><a class="btn-reset btn btn-white guarantee__btn-get js-change-content" href="#" data-dropdown="guarantee__btn-get--right">Получить гарантию</a></div>
+                        <div class="guarantee__desc-data guarantee__desc-data--table">
+                          <table class="guarantee__table js-change-content" data-dropdown="visually-hidden">
+                            <tr>
+                              <td class="guarantee__table-title">Стоимость</td>
+                              <td>0 - 2%</td>
+                            </tr>
+                            <tr>
+                              <td class="guarantee__table-title">Срок гарантии</td>
+                              <td>от 10 до 15 лет</td>
+                            </tr>
+                          </table>
+                          <button class="btn-reset btn-red guarantee__dropdown-btn js-btn-dropdown js-change-content" type="button" data-dropdown="guarantee__dropdown-btn--bottom"><span class="guarantee__dropdown-btn-text">Полная информация о гарантии</span><span class="js-change-content" data-dropdown="guarantee__icon-up">
+                              <svg width="12" height="7" aria-hidden="true">
+                                <use xlink:href="#icon-arrow-dropdown"></use>
+                              </svg></span></button>
+                        </div>
+                      </div>
                     </div>
                     <div class="guarantee__item-col guarantee__item-col--icons js-change-content" data-dropdown="visually-hidden">
                       <div class="tooltip guarantee__tooltip">
@@ -412,63 +441,64 @@
                         </svg><span class="tooltiptext">Мониторинг состояния объекта при эксплуатации</span>
                       </div>
                     </div>
-                    <div class="guarantee__item-col guarantee__item-col--indent"></div>
-                    <div class="guarantee__item-col guarantee__item-col--pdf js-change-content" data-dropdown="guarantee__item-col--pdf-bottom"><a class="guarantee__more-pdf-link" href="#"><span class="guarantee__more-pdf">Подробнее</span>
+                    <div class="guarantee__item-col guarantee__pdf js-change-content" data-dropdown="visually-hidden"><a class="btn-link guarantee__pdf-link"><span class="guarantee__pdf-text">Подробнее</span>
                         <picture>
-                          <!-- 1х: 183x246px; 2x: 364x490px-->
+                          <!-- 1х: 132x162px; 2x: 364x490px-->
                           <source type="image/webp" srcset="img/content/pdf-standart.webp 1x, img/content/pdf-standart@2x.webp 2x">
-                          <!-- 1х: 183x246px; 2x: 364x490px--><img src="img/content/pdf-standart.jpg" alt="Гарантия" width="183" height="246" srcset="img/content/pdf-standart@2x.jpg 2x">
+                          <!-- 1х: 132x162px; 2x: 364x490px--><img src="img/content/pdf-standart.jpg" alt="Гарантия" width="132" height="162" srcset="img/content/pdf-standart@2x.jpg 2x">
                         </picture></a></div>
                   </div>
-                  <!-- dropdown-->
-                  <div class="visually-hidden dropdown js-change-content" data-dropdown="visually-hidden">
-                    <div class="dropdown__icons">
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-material-supply"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Поставка материала при гарантийном случае</p>
+                </li>
+                <!-- dropdown-->
+                <div class="visually-hidden dropdown js-change-content" data-dropdown="visually-hidden">
+                  <div class="dropdown__icons">
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-material-supply"></use>
+                        </svg>
                       </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-box-tool"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Ремонтные работы при гарантийном случае</p>
-                      </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-materials"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Поставка всех слоёв системы</p>
-                      </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-graph"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Мониторинг состояния объекта при эксплуатации</p>
-                      </div>
+                      <p class="dropdown__icon-text">Поставка материала при гарантийном случае</p>
                     </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-box-tool"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Ремонтные работы при гарантийном случае</p>
+                    </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-materials"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Поставка всех слоёв системы</p>
+                    </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-graph"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Мониторинг состояния объекта при эксплуатации</p>
+                    </div>
+                  </div>
+                  <div class="dropdown__inner">
                     <table class="dropdown__table">
                       <tr class="dropdown__table-tr">
-                        <td class="dropdown__table-td-title">Стоимость</td>
+                        <td class="dropdown__table-td-title">Стоимость от стоимости материалов системы</td>
                         <td class="dropdown__table-td-data">0 - 2%</td>
                       </tr>
                       <tr class="dropdown__table-tr dropdown__table-tr--margin">
                         <th class="dropdown__table-td-title">Срок гарантии на систему <br> в зависимости от гидроизоляции</th>
                       </tr>
-                      <tr class="dropdown__table-tr dropdown__table-tr--no-border dropdown__table-tr--margin">
+                      <tr class="dropdown__table-tr dropdown__table-tr--no-border dropdown__table-tr--margin dropdown__table-tr--row">
                         <td class="dropdown__table-td-title dropdown__table-td-title--light">Ecoplast и Logicroof 1,2 мм, Унифлекс, Техноэласт Стандарт. Сочетания Унифлекс + Техноэласт, Унифлекс + Техноэласт Стандарт. Система ТН-КРОВЛЯ Классик</td>
                         <td class="dropdown__table-td-data">10 лет</td>
                       </tr>
-                      <tr class="dropdown__table-tr">
+                      <tr class="dropdown__table-tr dropdown__table-tr--row">
                         <td class="dropdown__table-td-title dropdown__table-td-title--light">Ecoplast, Logicroof и Logicbase 1,5 мм и более, Техноэласт</td>
                         <td class="dropdown__table-td-data">15 лет</td>
                       </tr>
@@ -482,7 +512,7 @@
                       </tr>
                       <tr class="dropdown__table-tr">
                         <td class="dropdown__table-td-title">Максимальная ответственность</td>
-                        <td class="dropdown__table-td-data"><span>Ежегодно снижается на сумму амортизации</span>
+                        <td class="dropdown__table-td-data dropdown__table-td-data--svg"><span>Ежегодно снижается на сумму амортизации</span>
                           <svg width="15" height="15" aria-hidden="true">
                             <use xlink:href="#icon-info"></use>
                           </svg>
@@ -493,32 +523,49 @@
                         <td class="dropdown__table-td-data">Нет специальных требований к подрядчику</td>
                       </tr>
                     </table>
+                    <div class="dropdown__pfd"><a class="btn-link dropdown__pfd-link"><span class="dropdown__pfd-text">Подробнее</span>
+                        <picture>
+                          <!-- 1х: 182x245px; 2x: 364x490px-->
+                          <source type="image/webp" srcset="img/content/pdf-standart.webp 1x, img/content/pdf-standart@2x.webp 2x">
+                          <!-- 1х: 182x245px; 2x: 364x490px--><img src="img/content/pdf-standart.jpg" alt="Гарантия" width="182" height="245" srcset="img/content/pdf-standart@2x.jpg 2x">
+                        </picture></a></div>
                   </div>
-                </li>
+                </div>
                 <!---->
                 <li class="guarantee__item js-card">
                   <!-- content-->
                   <div class="guarantee__content">
                     <div class="guarantee__item-col guarantee__item-col--base">
-                      <p class="guarantee__item-title">Стандарт для фасада</p>
-                      <p class="guarantee__item-title-desc">Гарантия на системы</p><a class="btn-reset btn btn-white guarantee__btn-get js-change-content" href="#" data-dropdown="guarantee__btn-get--right">Получить гарантию</a>
-                    </div>
-                    <div class="guarantee__item-col guarantee__item-col--table">
-                      <p class="guarantee__item-desc">Гарантирует водонепроницаемость всей системы, а также работы по её ремонту в случае дефекта материала</p>
-                      <table class="guarantee__table js-change-content" data-dropdown="visually-hidden">
-                        <tr>
-                          <td class="guarantee__table-title">Стоимость</td>
-                          <td>0 - 2%</td>
-                        </tr>
-                        <tr>
-                          <td class="guarantee__table-title">Срок гарантии</td>
-                          <td>5 лет</td>
-                        </tr>
-                      </table>
-                      <button class="btn-reset btn-red guarantee__btn-more-details js-btn-dropdown" type="button"><span class="guarantee__btn-more-details-text">Полная информация о гарантии</span><span class="js-change-content" data-dropdown="guarantee__icon-up">
-                          <svg width="12" height="7" aria-hidden="true">
-                            <use xlink:href="#icon-arrow-dropdown"></use>
-                          </svg></span></button>
+                      <!---->
+                      <div class="row guarantee__desc">
+                        <div class="guarantee__desc-info">
+                          <p class="guarantee__item-title">Стандарт для фасада</p>
+                          <p class="guarantee__item-subtitle">Гарантия на системы</p>
+                        </div>
+                        <div class="guarantee__desc-data">
+                          <p class="guarantee__item-desc">Гарантирует водонепроницаемость всей системы, а также работы по её ремонту в случае дефекта материала</p>
+                        </div>
+                      </div>
+                      <!---->
+                      <div class="row guarantee__desc-table">
+                        <div class="guarantee__desc-info guarantee__desc-info--btn"><a class="btn-reset btn btn-white guarantee__btn-get js-change-content" href="#" data-dropdown="guarantee__btn-get--right">Получить гарантию</a></div>
+                        <div class="guarantee__desc-data guarantee__desc-data--table">
+                          <table class="guarantee__table js-change-content" data-dropdown="visually-hidden">
+                            <tr>
+                              <td class="guarantee__table-title">Стоимость</td>
+                              <td>0 - 2%</td>
+                            </tr>
+                            <tr>
+                              <td class="guarantee__table-title">Срок гарантии</td>
+                              <td>5 лет</td>
+                            </tr>
+                          </table>
+                          <button class="btn-reset btn-red guarantee__dropdown-btn js-btn-dropdown js-change-content" type="button" data-dropdown="guarantee__dropdown-btn--bottom"><span class="guarantee__dropdown-btn-text">Полная информация о гарантии</span><span class="js-change-content" data-dropdown="guarantee__icon-up">
+                              <svg width="12" height="7" aria-hidden="true">
+                                <use xlink:href="#icon-arrow-dropdown"></use>
+                              </svg></span></button>
+                        </div>
+                      </div>
                     </div>
                     <div class="guarantee__item-col guarantee__item-col--icons js-change-content" data-dropdown="visually-hidden">
                       <div class="tooltip guarantee__tooltip">
@@ -542,63 +589,64 @@
                         </svg><span class="tooltiptext">Мониторинг состояния объекта при эксплуатации</span>
                       </div>
                     </div>
-                    <div class="guarantee__item-col guarantee__item-col--indent"></div>
-                    <div class="guarantee__item-col guarantee__item-col--pdf js-change-content" data-dropdown="guarantee__item-col--pdf-bottom"><a class="guarantee__more-pdf-link" href="#"><span class="guarantee__more-pdf">Подробнее</span>
+                    <div class="guarantee__item-col guarantee__pdf js-change-content" data-dropdown="visually-hidden"><a class="btn-link guarantee__pdf-link"><span class="guarantee__pdf-text">Подробнее</span>
                         <picture>
-                          <!-- 1х: 183x246px; 2x: 364x490px-->
+                          <!-- 1х: 132x162px; 2x: 364x490px-->
                           <source type="image/webp" srcset="img/content/pdf-standart.webp 1x, img/content/pdf-standart@2x.webp 2x">
-                          <!-- 1х: 183x246px; 2x: 364x490px--><img src="img/content/pdf-standart.jpg" alt="Гарантия" width="183" height="246" srcset="img/content/pdf-standart@2x.jpg 2x">
+                          <!-- 1х: 132x162px; 2x: 364x490px--><img src="img/content/pdf-standart.jpg" alt="Гарантия" width="132" height="162" srcset="img/content/pdf-standart@2x.jpg 2x">
                         </picture></a></div>
                   </div>
-                  <!-- dropdown-->
-                  <div class="visually-hidden dropdown js-change-content" data-dropdown="visually-hidden">
-                    <div class="dropdown__icons">
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-material-supply"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Поставка материала при гарантийном случае</p>
+                </li>
+                <!-- dropdown-->
+                <div class="visually-hidden dropdown js-change-content" data-dropdown="visually-hidden">
+                  <div class="dropdown__icons">
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-material-supply"></use>
+                        </svg>
                       </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-box-tool"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Ремонтные работы при гарантийном случае</p>
-                      </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-materials"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Поставка всех слоёв системы</p>
-                      </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-graph"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Мониторинг состояния объекта при эксплуатации</p>
-                      </div>
+                      <p class="dropdown__icon-text">Поставка материала при гарантийном случае</p>
                     </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-box-tool"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Ремонтные работы при гарантийном случае</p>
+                    </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-materials"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Поставка всех слоёв системы</p>
+                    </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-graph"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Мониторинг состояния объекта при эксплуатации</p>
+                    </div>
+                  </div>
+                  <div class="dropdown__inner">
                     <table class="dropdown__table">
                       <tr class="dropdown__table-tr">
-                        <td class="dropdown__table-td-title">Стоимость</td>
+                        <td class="dropdown__table-td-title">Стоимость от стоимости материалов системы</td>
                         <td class="dropdown__table-td-data">0 - 2%</td>
                       </tr>
                       <tr class="dropdown__table-tr dropdown__table-tr--margin">
                         <th class="dropdown__table-td-title">Срок гарантии на систему <br> в зависимости от гидроизоляции</th>
                       </tr>
-                      <tr class="dropdown__table-tr dropdown__table-tr--no-border dropdown__table-tr--margin">
+                      <tr class="dropdown__table-tr dropdown__table-tr--no-border dropdown__table-tr--margin dropdown__table-tr--row">
                         <td class="dropdown__table-td-title dropdown__table-td-title--light">Ecoplast и Logicroof 1,2 мм, Унифлекс, Техноэласт Стандарт. Сочетания Унифлекс + Техноэласт, Унифлекс + Техноэласт Стандарт. Система ТН-КРОВЛЯ Классик</td>
                         <td class="dropdown__table-td-data">10 лет</td>
                       </tr>
-                      <tr class="dropdown__table-tr">
+                      <tr class="dropdown__table-tr dropdown__table-tr--row">
                         <td class="dropdown__table-td-title dropdown__table-td-title--light">Ecoplast, Logicroof и Logicbase 1,5 мм и более, Техноэласт</td>
                         <td class="dropdown__table-td-data">15 лет</td>
                       </tr>
@@ -612,7 +660,7 @@
                       </tr>
                       <tr class="dropdown__table-tr">
                         <td class="dropdown__table-td-title">Максимальная ответственность</td>
-                        <td class="dropdown__table-td-data"><span>Ежегодно снижается на сумму амортизации</span>
+                        <td class="dropdown__table-td-data dropdown__table-td-data--svg"><span>Ежегодно снижается на сумму амортизации</span>
                           <svg width="15" height="15" aria-hidden="true">
                             <use xlink:href="#icon-info"></use>
                           </svg>
@@ -623,32 +671,49 @@
                         <td class="dropdown__table-td-data">Нет специальных требований к подрядчику</td>
                       </tr>
                     </table>
+                    <div class="dropdown__pfd"><a class="btn-link dropdown__pfd-link"><span class="dropdown__pfd-text">Подробнее</span>
+                        <picture>
+                          <!-- 1х: 182x245px; 2x: 364x490px-->
+                          <source type="image/webp" srcset="img/content/pdf-standart.webp 1x, img/content/pdf-standart@2x.webp 2x">
+                          <!-- 1х: 182x245px; 2x: 364x490px--><img src="img/content/pdf-standart.jpg" alt="Гарантия" width="182" height="245" srcset="img/content/pdf-standart@2x.jpg 2x">
+                        </picture></a></div>
                   </div>
-                </li>
+                </div>
                 <!---->
                 <li class="guarantee__item js-card">
                   <!-- content-->
                   <div class="guarantee__content">
                     <div class="guarantee__item-col guarantee__item-col--base">
-                      <p class="guarantee__item-title">Стандарт плюс</p>
-                      <p class="guarantee__item-title-desc">Гарантия на системы</p><a class="btn-reset btn btn-white guarantee__btn-get js-change-content" href="#" data-dropdown="guarantee__btn-get--right">Получить гарантию</a>
-                    </div>
-                    <div class="guarantee__item-col guarantee__item-col--table">
-                      <p class="guarantee__item-desc">Гарантирует водонепроницаемость всей системы, а также работы по её ремонту в случае дефекта материала</p>
-                      <table class="guarantee__table js-change-content" data-dropdown="visually-hidden">
-                        <tr>
-                          <td class="guarantee__table-title">Стоимость</td>
-                          <td>0 - 2%</td>
-                        </tr>
-                        <tr>
-                          <td class="guarantee__table-title">Срок гарантии</td>
-                          <td>от 10 до 15 лет</td>
-                        </tr>
-                      </table>
-                      <button class="btn-reset btn-red guarantee__btn-more-details js-btn-dropdown" type="button"><span class="guarantee__btn-more-details-text">Полная информация о гарантии</span><span class="js-change-content" data-dropdown="guarantee__icon-up">
-                          <svg width="12" height="7" aria-hidden="true">
-                            <use xlink:href="#icon-arrow-dropdown"></use>
-                          </svg></span></button>
+                      <!---->
+                      <div class="row guarantee__desc">
+                        <div class="guarantee__desc-info">
+                          <p class="guarantee__item-title">Стандарт плюс</p>
+                          <p class="guarantee__item-subtitle">Гарантия на системы</p>
+                        </div>
+                        <div class="guarantee__desc-data">
+                          <p class="guarantee__item-desc">Гарантирует водонепроницаемость всей системы, а также работы по её ремонту в случае дефекта материала</p>
+                        </div>
+                      </div>
+                      <!---->
+                      <div class="row guarantee__desc-table">
+                        <div class="guarantee__desc-info guarantee__desc-info--btn"><a class="btn-reset btn btn-white guarantee__btn-get js-change-content" href="#" data-dropdown="guarantee__btn-get--right">Получить гарантию</a></div>
+                        <div class="guarantee__desc-data guarantee__desc-data--table">
+                          <table class="guarantee__table js-change-content" data-dropdown="visually-hidden">
+                            <tr>
+                              <td class="guarantee__table-title">Стоимость</td>
+                              <td>0 - 2%</td>
+                            </tr>
+                            <tr>
+                              <td class="guarantee__table-title">Срок гарантии</td>
+                              <td>от 10 до 15 лет</td>
+                            </tr>
+                          </table>
+                          <button class="btn-reset btn-red guarantee__dropdown-btn js-btn-dropdown js-change-content" type="button" data-dropdown="guarantee__dropdown-btn--bottom"><span class="guarantee__dropdown-btn-text">Полная информация о гарантии</span><span class="js-change-content" data-dropdown="guarantee__icon-up">
+                              <svg width="12" height="7" aria-hidden="true">
+                                <use xlink:href="#icon-arrow-dropdown"></use>
+                              </svg></span></button>
+                        </div>
+                      </div>
                     </div>
                     <div class="guarantee__item-col guarantee__item-col--icons js-change-content" data-dropdown="visually-hidden">
                       <div class="tooltip guarantee__tooltip">
@@ -687,87 +752,88 @@
                         </svg><span class="tooltiptext">Оформление паспорта объекта с доступом через QR-код</span>
                       </div>
                     </div>
-                    <div class="guarantee__item-col guarantee__item-col--indent"></div>
-                    <div class="guarantee__item-col guarantee__item-col--pdf js-change-content" data-dropdown="guarantee__item-col--pdf-bottom"><a class="guarantee__more-pdf-link" href="#"><span class="guarantee__more-pdf">Подробнее</span>
+                    <div class="guarantee__item-col guarantee__pdf js-change-content" data-dropdown="visually-hidden"><a class="btn-link guarantee__pdf-link"><span class="guarantee__pdf-text">Подробнее</span>
                         <picture>
-                          <!-- 1х: 183x246px; 2x: 364x490px-->
+                          <!-- 1х: 132x162px; 2x: 364x490px-->
                           <source type="image/webp" srcset="img/content/pdf-standart.webp 1x, img/content/pdf-standart@2x.webp 2x">
-                          <!-- 1х: 183x246px; 2x: 364x490px--><img src="img/content/pdf-standart.jpg" alt="Гарантия" width="183" height="246" srcset="img/content/pdf-standart@2x.jpg 2x">
+                          <!-- 1х: 132x162px; 2x: 364x490px--><img src="img/content/pdf-standart.jpg" alt="Гарантия" width="132" height="162" srcset="img/content/pdf-standart@2x.jpg 2x">
                         </picture></a></div>
                   </div>
-                  <!-- dropdown-->
-                  <div class="visually-hidden dropdown js-change-content" data-dropdown="visually-hidden">
-                    <div class="dropdown__icons">
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-material-supply"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Поставка материала при гарантийном случае</p>
+                </li>
+                <!-- dropdown-->
+                <div class="visually-hidden dropdown js-change-content" data-dropdown="visually-hidden">
+                  <div class="dropdown__icons">
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-material-supply"></use>
+                        </svg>
                       </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-box-tool"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Ремонтные работы при гарантийном случае</p>
-                      </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-materials"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Поставка всех слоёв системы</p>
-                      </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-graph"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Мониторинг состояния объекта при эксплуатации</p>
-                      </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-temperature"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Поставка материала при гарантийном случае</p>
-                      </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-tool"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Устранение ошибок монтажа после окончания гарантии подрядчика</p>
-                      </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-qr"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Оформление паспорта объекта с доступом через QR-код</p>
-                      </div>
+                      <p class="dropdown__icon-text">Поставка материала при гарантийном случае</p>
                     </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-box-tool"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Ремонтные работы при гарантийном случае</p>
+                    </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-materials"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Поставка всех слоёв системы</p>
+                    </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-graph"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Мониторинг состояния объекта при эксплуатации</p>
+                    </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-temperature"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Поставка материала при гарантийном случае</p>
+                    </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-tool"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Устранение ошибок монтажа после окончания гарантии подрядчика</p>
+                    </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-qr"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Оформление паспорта объекта с доступом через QR-код</p>
+                    </div>
+                  </div>
+                  <div class="dropdown__inner">
                     <table class="dropdown__table">
                       <tr class="dropdown__table-tr">
-                        <td class="dropdown__table-td-title">Стоимость</td>
+                        <td class="dropdown__table-td-title">Стоимость от стоимости материалов системы</td>
                         <td class="dropdown__table-td-data">0 - 2%</td>
                       </tr>
                       <tr class="dropdown__table-tr dropdown__table-tr--margin">
                         <th class="dropdown__table-td-title">Срок гарантии на систему <br> в зависимости от гидроизоляции</th>
                       </tr>
-                      <tr class="dropdown__table-tr dropdown__table-tr--no-border dropdown__table-tr--margin">
+                      <tr class="dropdown__table-tr dropdown__table-tr--no-border dropdown__table-tr--margin dropdown__table-tr--row">
                         <td class="dropdown__table-td-title dropdown__table-td-title--light">Ecoplast и Logicroof 1,2 мм, Унифлекс, Техноэласт Стандарт. Сочетания Унифлекс + Техноэласт, Унифлекс + Техноэласт Стандарт. Система ТН-КРОВЛЯ Классик</td>
                         <td class="dropdown__table-td-data">10 лет</td>
                       </tr>
-                      <tr class="dropdown__table-tr">
+                      <tr class="dropdown__table-tr dropdown__table-tr--row">
                         <td class="dropdown__table-td-title dropdown__table-td-title--light">Ecoplast, Logicroof и Logicbase 1,5 мм и более, Техноэласт</td>
                         <td class="dropdown__table-td-data">15 лет</td>
                       </tr>
@@ -781,7 +847,7 @@
                       </tr>
                       <tr class="dropdown__table-tr">
                         <td class="dropdown__table-td-title">Максимальная ответственность</td>
-                        <td class="dropdown__table-td-data"><span>Ежегодно снижается на сумму амортизации</span>
+                        <td class="dropdown__table-td-data dropdown__table-td-data--svg"><span>Ежегодно снижается на сумму амортизации</span>
                           <svg width="15" height="15" aria-hidden="true">
                             <use xlink:href="#icon-info"></use>
                           </svg>
@@ -792,32 +858,49 @@
                         <td class="dropdown__table-td-data">Нет специальных требований к подрядчику</td>
                       </tr>
                     </table>
+                    <div class="dropdown__pfd"><a class="btn-link dropdown__pfd-link"><span class="dropdown__pfd-text">Подробнее</span>
+                        <picture>
+                          <!-- 1х: 182x245px; 2x: 364x490px-->
+                          <source type="image/webp" srcset="img/content/pdf-standart.webp 1x, img/content/pdf-standart@2x.webp 2x">
+                          <!-- 1х: 182x245px; 2x: 364x490px--><img src="img/content/pdf-standart.jpg" alt="Гарантия" width="182" height="245" srcset="img/content/pdf-standart@2x.jpg 2x">
+                        </picture></a></div>
                   </div>
-                </li>
+                </div>
                 <!---->
                 <li class="guarantee__item js-card">
                   <!-- content-->
                   <div class="guarantee__content">
                     <div class="guarantee__item-col guarantee__item-col--base">
-                      <p class="guarantee__item-title">Мастер</p>
-                      <p class="guarantee__item-title-desc">Гарантия на системы и работы</p><a class="btn-reset btn btn-white guarantee__btn-get js-change-content" href="#" data-dropdown="guarantee__btn-get--right">Получить гарантию</a>
-                    </div>
-                    <div class="guarantee__item-col guarantee__item-col--table">
-                      <p class="guarantee__item-desc">Гарантирует водонепроницаемость всей системы, работы по ее ремонту в случае ошибок монтажа по окончанию гарантии подрядчика</p>
-                      <table class="guarantee__table js-change-content" data-dropdown="visually-hidden">
-                        <tr>
-                          <td class="guarantee__table-title">Стоимость</td>
-                          <td>5%</td>
-                        </tr>
-                        <tr>
-                          <td class="guarantee__table-title">Срок гарантии</td>
-                          <td>от 10 до 15 лет</td>
-                        </tr>
-                      </table>
-                      <button class="btn-reset btn-red guarantee__btn-more-details js-btn-dropdown" type="button"><span class="guarantee__btn-more-details-text">Полная информация о гарантии</span><span class="js-change-content" data-dropdown="guarantee__icon-up">
-                          <svg width="12" height="7" aria-hidden="true">
-                            <use xlink:href="#icon-arrow-dropdown"></use>
-                          </svg></span></button>
+                      <!---->
+                      <div class="row guarantee__desc">
+                        <div class="guarantee__desc-info">
+                          <p class="guarantee__item-title">Мастер</p>
+                          <p class="guarantee__item-subtitle">Гарантия на системы и работы</p>
+                        </div>
+                        <div class="guarantee__desc-data">
+                          <p class="guarantee__item-desc">Гарантирует водонепроницаемость всей системы, работы по ее ремонту в случае ошибок монтажа по окончанию гарантии подрядчика</p>
+                        </div>
+                      </div>
+                      <!---->
+                      <div class="row guarantee__desc-table">
+                        <div class="guarantee__desc-info guarantee__desc-info--btn"><a class="btn-reset btn btn-white guarantee__btn-get js-change-content" href="#" data-dropdown="guarantee__btn-get--right">Получить гарантию</a></div>
+                        <div class="guarantee__desc-data guarantee__desc-data--table">
+                          <table class="guarantee__table js-change-content" data-dropdown="visually-hidden">
+                            <tr>
+                              <td class="guarantee__table-title">Стоимость</td>
+                              <td>5%</td>
+                            </tr>
+                            <tr>
+                              <td class="guarantee__table-title">Срок гарантии</td>
+                              <td>от 10 до 15 лет</td>
+                            </tr>
+                          </table>
+                          <button class="btn-reset btn-red guarantee__dropdown-btn js-btn-dropdown js-change-content" type="button" data-dropdown="guarantee__dropdown-btn--bottom"><span class="guarantee__dropdown-btn-text">Полная информация о гарантии</span><span class="js-change-content" data-dropdown="guarantee__icon-up">
+                              <svg width="12" height="7" aria-hidden="true">
+                                <use xlink:href="#icon-arrow-dropdown"></use>
+                              </svg></span></button>
+                        </div>
+                      </div>
                     </div>
                     <div class="guarantee__item-col guarantee__item-col--icons js-change-content" data-dropdown="visually-hidden">
                       <div class="tooltip guarantee__tooltip">
@@ -861,95 +944,96 @@
                         </svg><span class="tooltiptext">Амортизация отсутствует</span>
                       </div>
                     </div>
-                    <div class="guarantee__item-col guarantee__item-col--indent"></div>
-                    <div class="guarantee__item-col guarantee__item-col--pdf js-change-content" data-dropdown="guarantee__item-col--pdf-bottom"><a class="guarantee__more-pdf-link" href="#"><span class="guarantee__more-pdf">Подробнее</span>
+                    <div class="guarantee__item-col guarantee__pdf js-change-content" data-dropdown="visually-hidden"><a class="btn-link guarantee__pdf-link"><span class="guarantee__pdf-text">Подробнее</span>
                         <picture>
-                          <!-- 1х: 183x246px; 2x: 364x490px-->
+                          <!-- 1х: 132x162px; 2x: 364x490px-->
                           <source type="image/webp" srcset="img/content/pdf-master.webp 1x, img/content/pdf-master@2x.webp 2x">
-                          <!-- 1х: 183x246px; 2x: 364x490px--><img src="img/content/pdf-master.jpg" alt="Гарантия" width="183" height="246" srcset="img/content/pdf-master@2x.jpg 2x">
+                          <!-- 1х: 132x162px; 2x: 364x490px--><img src="img/content/pdf-master.jpg" alt="Гарантия" width="132" height="162" srcset="img/content/pdf-master@2x.jpg 2x">
                         </picture></a></div>
                   </div>
-                  <!-- dropdown-->
-                  <div class="visually-hidden dropdown js-change-content" data-dropdown="visually-hidden">
-                    <div class="dropdown__icons">
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-material-supply"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Поставка материала при гарантийном случае</p>
+                </li>
+                <!-- dropdown-->
+                <div class="visually-hidden dropdown js-change-content" data-dropdown="visually-hidden">
+                  <div class="dropdown__icons">
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-material-supply"></use>
+                        </svg>
                       </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-box-tool"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Ремонтные работы при гарантийном случае</p>
-                      </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-materials"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Поставка всех слоёв системы</p>
-                      </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-graph"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Мониторинг состояния объекта при эксплуатации</p>
-                      </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-temperature"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Поставка материала при гарантийном случае</p>
-                      </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-tool"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Устранение ошибок монтажа после окончания гарантии подрядчика</p>
-                      </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-qr"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Оформление паспорта объекта с доступом через QR-код</p>
-                      </div>
-                      <div class="dropdown__icon-wrapper">
-                        <div class="tooltip dropdown__icon">
-                          <svg width="30" height="30" aria-hidden="true">
-                            <use xlink:href="#icon-square"></use>
-                          </svg>
-                        </div>
-                        <p class="dropdown__icon-text">Амортизация отсутствует</p>
-                      </div>
+                      <p class="dropdown__icon-text">Поставка материала при гарантийном случае</p>
                     </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-box-tool"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Ремонтные работы при гарантийном случае</p>
+                    </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-materials"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Поставка всех слоёв системы</p>
+                    </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-graph"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Мониторинг состояния объекта при эксплуатации</p>
+                    </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-temperature"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Поставка материала при гарантийном случае</p>
+                    </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-tool"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Устранение ошибок монтажа после окончания гарантии подрядчика</p>
+                    </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-qr"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Оформление паспорта объекта с доступом через QR-код</p>
+                    </div>
+                    <div class="dropdown__icon-wrapper">
+                      <div class="tooltip dropdown__icon">
+                        <svg width="30" height="30" aria-hidden="true">
+                          <use xlink:href="#icon-square"></use>
+                        </svg>
+                      </div>
+                      <p class="dropdown__icon-text">Амортизация отсутствует</p>
+                    </div>
+                  </div>
+                  <div class="dropdown__inner">
                     <table class="dropdown__table">
                       <tr class="dropdown__table-tr">
-                        <td class="dropdown__table-td-title">Стоимость</td>
+                        <td class="dropdown__table-td-title">Стоимость от стоимости материалов системы</td>
                         <td class="dropdown__table-td-data">5%</td>
                       </tr>
                       <tr class="dropdown__table-tr dropdown__table-tr--margin">
                         <th class="dropdown__table-td-title">Срок гарантии на систему <br> в зависимости от гидроизоляции</th>
                       </tr>
-                      <tr class="dropdown__table-tr dropdown__table-tr--no-border dropdown__table-tr--margin">
+                      <tr class="dropdown__table-tr dropdown__table-tr--no-border dropdown__table-tr--margin dropdown__table-tr--row">
                         <td class="dropdown__table-td-title dropdown__table-td-title--light">Ecoplast и Logicroof 1,2 мм, Унифлекс, Техноэласт Стандарт. Сочетания Унифлекс + Техноэласт, Унифлекс + Техноэласт Стандарт. Система ТН-КРОВЛЯ Классик</td>
                         <td class="dropdown__table-td-data">10 лет</td>
                       </tr>
-                      <tr class="dropdown__table-tr">
+                      <tr class="dropdown__table-tr dropdown__table-tr--row">
                         <td class="dropdown__table-td-title dropdown__table-td-title--light">Ecoplast, Logicroof и Logicbase 1,5 мм и более, Техноэласт</td>
                         <td class="dropdown__table-td-data">15 лет</td>
                       </tr>
@@ -963,7 +1047,7 @@
                       </tr>
                       <tr class="dropdown__table-tr">
                         <td class="dropdown__table-td-title">Максимальная ответственность</td>
-                        <td class="dropdown__table-td-data"><span>Ежегодно снижается на сумму амортизации</span>
+                        <td class="dropdown__table-td-data dropdown__table-td-data--svg"><span>Ежегодно снижается на сумму амортизации</span>
                           <svg width="15" height="15" aria-hidden="true">
                             <use xlink:href="#icon-info"></use>
                           </svg>
@@ -974,16 +1058,22 @@
                         <td class="dropdown__table-td-data">Нет специальных требований к подрядчику</td>
                       </tr>
                     </table>
+                    <div class="dropdown__pfd"><a class="btn-link dropdown__pfd-link"><span class="dropdown__pfd-text">Подробнее</span>
+                        <picture>
+                          <!-- 1х: 182x245px; 2x: 364x490px-->
+                          <source type="image/webp" srcset="img/content/pdf-master.webp 1x, img/content/pdf-master@2x.webp 2x">
+                          <!-- 1х: 182x245px; 2x: 364x490px--><img src="img/content/pdf-master.jpg" alt="Гарантия" width="182" height="245" srcset="img/content/pdf-master@2x.jpg 2x">
+                        </picture></a></div>
                   </div>
-                </li>
+                </div>
               </ul>
-            </div>
+            </h2>
           </div>
         </div>
         <div class="reviews">
-          <div class="container">
-            <div class="reviews__header">
-              <h2>Отзывы</h2>
+          <div class="reviews__wrapper container">
+            <h2>Отзывы</h2>
+            <div class="reviews__write-btn">
               <button class="btn btn-reset btn-white" type="button">Оставить отзыв</button>
             </div>
             <div class="reviews__slider">
@@ -991,9 +1081,9 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide reviews__slide">
                     <div class="reviews__inner-wrapper">
-                      <div class="reviews__logo"><img src="img/content/reviews-logo-1.png" srcset="img/content/reviews-logo-1@2x.png 2x" width="60" height="60" alt="Логотип компании-клиента"/>
-                      </div>
                       <blockquote>
+                        <div class="reviews__logo"><img src="img/content/reviews-logo-1.png" srcset="img/content/reviews-logo-1@2x.png 2x" width="60" height="60" alt="Логотип компании-клиента"/>
+                        </div>
                         <p>Для страховки приобрели гарантию, когда строили новый цех на предприятии. И не прогадал. Возникли некоторые проблемы, которые были моментально устранены по гарантии. Все произошло очень быстро, а главное, бесплатно. Рекомендую!</p>
                         <cite>Александр Смирнов<span>Директор ООО «КапСтройСервис»</span></cite>
                       </blockquote>
@@ -1008,9 +1098,9 @@
                   </div>
                   <div class="swiper-slide reviews__slide">
                     <div class="reviews__inner-wrapper">
-                      <div class="reviews__logo"><img src="img/content/reviews-logo-1.png" srcset="img/content/reviews-logo-1@2x.png 2x" width="60" height="60" alt="Логотип компании-клиента"/>
-                      </div>
                       <blockquote>
+                        <div class="reviews__logo"><img src="img/content/reviews-logo-1.png" srcset="img/content/reviews-logo-1@2x.png 2x" width="60" height="60" alt="Логотип компании-клиента"/>
+                        </div>
                         <p>Для страховки приобрели гарантию, когда строили новый цех на предприятии. И не прогадал. Возникли некоторые проблемы, которые были моментально устранены по гарантии. Все произошло очень быстро, а главное, бесплатно. Рекомендую!</p>
                         <cite>Сергей Иванов<span>Директор ООО «КапСтройСервис»</span></cite>
                       </blockquote>
@@ -1025,9 +1115,9 @@
                   </div>
                   <div class="swiper-slide reviews__slide">
                     <div class="reviews__inner-wrapper">
-                      <div class="reviews__logo"><img src="img/content/reviews-logo-1.png" srcset="img/content/reviews-logo-1@2x.png 2x" width="60" height="60" alt="Логотип компании-клиента"/>
-                      </div>
                       <blockquote>
+                        <div class="reviews__logo"><img src="img/content/reviews-logo-1.png" srcset="img/content/reviews-logo-1@2x.png 2x" width="60" height="60" alt="Логотип компании-клиента"/>
+                        </div>
                         <p>Для страховки приобрели гарантию, когда строили новый цех на предприятии. И не прогадал. Возникли некоторые проблемы, которые были моментально устранены по гарантии. Все произошло очень быстро, а главное, бесплатно. Рекомендую!</p>
                         <cite>Василий Стрижов<span>Директор ООО «КапСтройСервис»</span></cite>
                       </blockquote>
@@ -1042,9 +1132,9 @@
                   </div>
                   <div class="swiper-slide reviews__slide">
                     <div class="reviews__inner-wrapper">
-                      <div class="reviews__logo"><img src="img/content/reviews-logo-1.png" srcset="img/content/reviews-logo-1@2x.png 2x" width="60" height="60" alt="Логотип компании-клиента"/>
-                      </div>
                       <blockquote>
+                        <div class="reviews__logo"><img src="img/content/reviews-logo-1.png" srcset="img/content/reviews-logo-1@2x.png 2x" width="60" height="60" alt="Логотип компании-клиента"/>
+                        </div>
                         <p>Для страховки приобрели гарантию, когда строили новый цех на предприятии. И не прогадал. Возникли некоторые проблемы, которые были моментально устранены по гарантии. Все произошло очень быстро, а главное, бесплатно. Рекомендую!</p>
                         <cite>Александр Миронов<span>Директор ООО «КапСтройСервис»</span></cite>
                       </blockquote>
@@ -1059,9 +1149,9 @@
                   </div>
                   <div class="swiper-slide reviews__slide">
                     <div class="reviews__inner-wrapper">
-                      <div class="reviews__logo"><img src="img/content/reviews-logo-1.png" srcset="img/content/reviews-logo-1@2x.png 2x" width="60" height="60" alt="Логотип компании-клиента"/>
-                      </div>
                       <blockquote>
+                        <div class="reviews__logo"><img src="img/content/reviews-logo-1.png" srcset="img/content/reviews-logo-1@2x.png 2x" width="60" height="60" alt="Логотип компании-клиента"/>
+                        </div>
                         <p>Для страховки приобрели гарантию, когда строили новый цех на предприятии. И не прогадал. Возникли некоторые проблемы, которые были моментально устранены по гарантии. Все произошло очень быстро, а главное, бесплатно. Рекомендую!</p>
                         <cite>Елена Федосеева<span>Директор ООО «КапСтройСервис»</span></cite>
                       </blockquote>
@@ -1092,30 +1182,34 @@
         </div>
         <div class="feedback">
           <div class="feedback__wrapper container">
+            <div class="feedback__title">
+              <h2>У вас есть вопросы или предложения? Напишите нам!</h2>
+            </div>
             <div class="feedback__picture">
               <picture>
                 <!-- 1х: 152x151px; 2x: 302x301px-->
                 <source type="image/webp" srcset="img/content/quality-chief-avatar.webp 1x, img/content/quality-chief-avatar@2x.webp 2x">
                 <!-- 1х: 152x151px; 2x: 302x301px--><img src="img/content/quality-chief-avatar.jpg" alt="Фотография Дмитрия Майорова" width="152" height="151" srcset="img/content/quality-chief-avatar@2x.jpg 2x">
-              </picture><b>Дмитрий Майоров</b>
-              <p>Руководитель Службы Качества</p>
+              </picture>
+              <div class="feedback__author"><b>Дмитрий Майоров</b>
+                <p>Руководитель Службы Качества</p>
+              </div>
             </div>
             <div class="feedback__form">
-              <h2>У вас есть вопросы или предложения? Напишите нам!</h2>
               <form class="form" action="#" method="post">
                 <div class="feedback__input-group">
                   <div class="form__item">
                     <input type="text" name="name" id="customer-name" placeholder="Ваше имя" required>
-                    <label class="visually-hidden" for="customer-name">Ваше имя</label>
+                    <label for="customer-name">Ваше имя</label><span>Пожалуйста, заполните поле</span>
                   </div>
                   <div class="form__item">
                     <input type="email" name="email" id="customer-email" placeholder="Ваша эл. почта" required>
-                    <label class="visually-hidden" for="customer-email">Ваша электронная почта</label>
+                    <label for="customer-email">Ваша эл. почта</label><span>Введите корректный адрес почты</span>
                   </div>
                 </div>
                 <div class="form__item">
-                  <textarea name="message" id="customer-message" placeholder="Ваше сообщение" required></textarea>
-                  <label class="visually-hidden" for="customer-message">Ваше сообщение</label>
+                  <textarea class="invalid filled" name="message" id="customer-message" placeholder="Ваше сообщение" required></textarea>
+                  <label for="customer-message">Ваше сообщение</label><span>Пожалуйста, заполните поле</span>
                 </div>
                 <div class="form__btns">
                   <button class="btn btn-reset btn-accented" type="submit">Отправить</button><small>Нажимая на кнопку, вы соглашаетесь с&nbsp;<a href="#">политикой обработки персональных данных</a></small>
@@ -1128,26 +1222,32 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__contact-us">
-            <p>ТЕХНОНИКОЛЬ – ведущий международный производитель надежных и эффективных строительных материалов и систем</p>
-            <div class="footer__contact-phone"><span>Бесплатно по РФ</span><a href="tel:+78006000565" aria-label="Телефон +78006000565">8 800 600-05-65</a></div>
+            <div class="footer__contact-text">
+              <p>ТЕХНОНИКОЛЬ – ведущий международный производитель надежных и эффективных строительных материалов и систем</p>
+              <div class="footer__contact-phone"><span>Бесплатно по РФ</span><a href="tel:+78006000565" aria-label="Телефон +78006000565">8 800 600-05-65</a></div>
+            </div>
             <div class="footer__contact-btns"><a class="btn btn-accented" href="#">Заказать консультацию</a><a class="btn btn-white" href="#">Написать нам</a></div>
           </div>
           <div class="footer__nav footer-nav">
-            <div class="footer-nav__menu footer-nav__menu--submenu">
-              <ul>
-                <li class="footer-nav__link"><a href="#">Системы</a></li>
-                <li><a href="#">Плоская крыша</a></li>
-                <li><a href="#">Пол</a></li>
-                <li><a href="#">Фундамент</a></li>
-                <li class="footer-nav__more-link"><a href="#">Смотреть все</a></li>
-              </ul>
-              <ul>
-                <li class="footer-nav__link"><a href="#">Материалы</a></li>
-                <li><a href="#">Кровля</a></li>
-                <li><a href="#">Теплоизоляция</a></li>
-                <li><a href="#">Гидроизоляция</a></li>
-                <li class="footer-nav__more-link"><a href="#">Смотреть все</a></li>
-              </ul>
+            <div class="footer-nav__menu footer-nav__menu--unwrapped">
+              <div class="footer-nav__link"><a href="#">Системы</a>
+                <ul class="footer-nav__sub-menu">
+                  <li class="footer-nav__sub-link"><a href="#">Плоская крыша</a></li>
+                  <li class="footer-nav__sub-link"><a href="#">Пол</a></li>
+                  <li class="footer-nav__sub-link"><a href="#">Фундамент</a></li>
+                  <li class="footer-nav__more-link"><a href="#">Смотреть все</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-nav__menu footer-nav__menu--unwrapped">
+              <div class="footer-nav__link"><a href="#">Материалы</a>
+                <ul class="footer-nav__sub-menu">
+                  <li class="footer-nav__sub-link"><a href="#">Кровля</a></li>
+                  <li class="footer-nav__sub-link"><a href="#">Теплоизоляция</a></li>
+                  <li class="footer-nav__sub-link"><a href="#">Гидроизоляция</a></li>
+                  <li class="footer-nav__more-link"><a href="#">Смотреть все</a></li>
+                </ul>
+              </div>
             </div>
             <div class="footer-nav__menu footer-nav__menu--short">
               <ul>
@@ -1160,15 +1260,16 @@
                 <li class="footer-nav__link"><a href="#">Объекты</a></li>
               </ul>
             </div>
-            <div class="footer-nav__menu footer-nav__menu--submenu">
-              <ul>
-                <li class="footer-nav__link"><a href="#">Проекты ТЕХНОНИКОЛЬ</a></li>
-                <li><a href="#">Основной сайт компании</a></li>
-                <li><a href="#">Интеренет-магазин</a></li>
-                <li><a href="#">Строительная Академия</a></li>
-                <li><a href="#">Приложение TN Check</a></li>
-                <li class="footer-nav__more-link"><a href="#">Смотреть все</a></li>
-              </ul>
+            <div class="footer-nav__menu footer-nav__menu--unwrapped">
+              <div class="footer-nav__link"><a href="#">Проекты ТЕХНОНИКОЛЬ</a>
+                <ul class="footer-nav__sub-menu">
+                  <li class="footer-nav__sub-link"><a href="#">Основной сайт компании</a></li>
+                  <li class="footer-nav__sub-link"><a href="#">Интеренет-магазин</a></li>
+                  <li class="footer-nav__sub-link"><a href="#">Строительная Академия</a></li>
+                  <li class="footer-nav__sub-link"><a href="#">Приложение TN Check</a></li>
+                  <li class="footer-nav__more-link"><a href="#">Смотреть все</a></li>
+                </ul>
+              </div>
             </div>
             <div class="footer-nav__socials">
               <ul>
@@ -1188,7 +1289,9 @@
             </div>
           </div>
           <div class="footer__copyright">
-            <p>© 2020 Технониколь.Навигатор. Все права защищены.</p><a href="#">Политика обработки персональных данных</a>
+            <div class="footer__copyright-text">
+              <p>© 2020 Технониколь.Навигатор. Все права защищены.</p><a href="#">Политика обработки персональных данных</a>
+            </div>
             <div class="footer__designed-by"><span>Интерфейсы от</span><a href="#"><img src="img/svg/designed-by-logo.svg" alt="Логотип компании" width="64" height="13"/></a></div>
           </div>
         </div>
