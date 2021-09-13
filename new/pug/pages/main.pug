@@ -1,0 +1,79 @@
+extends ../base/layout
+
+block variables
+  - const title = "Главная страница - УК УЖСК" //- на страницах кроме главной прописываем О нас - УК УЖСК
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentPage = "main" //- для остальных страниц пишем индекс активного headerLinks без кавычек
+
+block main
+  //- Все данные выносяться в pug/data, привязываясь к бэм, а не к странице
+  //- т.е pug/data/features.pug || intro.pug, а не main.pug || catalog.pug
+  main.main
+    h1.visually-hidden Управляющая компания в городе Екатеринбург
+
+    section.intro-slider
+      h2.visually-hidden Слайдер-вступление
+      .container
+        .swiper-container(data-slider="intro-slider")
+          ul.intro-slider__wrapper.swiper-wrapper
+
+            li.intro-slider__slide.swiper-slide
+              +picture("slides", "intro-slider-slide1", "png", 732, 706, "Декоративное изображение").intro-slider__picture
+              h3.title.title--xl.intro-slider__heading Управляющая компания становится ближе и удобнее
+              ul.intro-slider__benefits
+                each item in introList
+                  li
+                    +icon(item.icon, 70, 70)
+                    p=item.text
+              button.btn.btn--yellow.intro-slider__btn(type="button") Зарегистрироваться
+
+            li.intro-slider__slide.swiper-slide
+              +picture("slides", "intro-slider-slide1", "png", 732, 706, "Декоративное изображение").intro-slider__picture
+              h3.title.title--xl.intro-slider__heading Второй слайд
+              ul.intro-slider__benefits
+                each item in introList
+                  li
+                    +icon(item.icon, 70, 70)
+                    p=item.text
+              button.btn.btn--yellow.intro-slider__btn(type="button") Зарегистрироваться
+
+            li.intro-slider__slide.swiper-slide
+              +picture("slides", "intro-slider-slide1", "png", 732, 706, "Декоративное изображение").intro-slider__picture
+              h3.title.title--xl.intro-slider__heading Третий слайд
+              ul.intro-slider__benefits
+                each item in introList
+                  li
+                    +icon(item.icon, 70, 70)
+                    p=item.text
+              button.btn.btn--yellow.intro-slider__btn(type="button") Зарегистрироваться
+
+          .intro-slider__pagination.swiper-pagination
+
+    +searchForm()
+
+    +statistics()
+
+    section.wwdoing-slider
+      .container
+        .wwdoing-slider__inner
+          h2.wwdoing-slider__title.title.title--md Чем мы занимаемся?
+          .swiper-container(data-slider="wwdoing-slider")
+            ul.wwdoing-slider__wrapper.swiper-wrapper
+              each item in wwdoingList
+                li.wwdoing-slider__slide.swiper-slide
+                  +cardWWDoing(item.image, item.title, item.text, item.isBigger)
+
+            .wwdoing-slider__button-next.swiper-button-next
+              +icon("icon-arrow", 52, 16)
+            .wwdoing-slider__button-prev.swiper-button-prev
+              +icon("icon-arrow", 52, 16)
+
+    +socialActivity()
+
+    +application()
+
+block modals

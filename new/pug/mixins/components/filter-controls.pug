@@ -1,0 +1,9 @@
+mixin filterControls()
+  .filter-controls
+    each item in homesFilter
+      if (item.checked)
+
+        button.btn.btn--grey.filter-controls__btn-active(type="button")=item.filter
+
+      else
+        button.btn.btn--grey(type="button")=item.filter

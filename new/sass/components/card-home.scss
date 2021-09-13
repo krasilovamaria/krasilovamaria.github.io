@@ -1,0 +1,120 @@
+.card-home {
+  position: relative;
+  width: size(439px);
+  min-height: size(372px);
+  border: size(1px) solid $color-link-water;
+
+  @include vp--1919 {
+    width: size(367px);
+    min-height: size(370px);
+  }
+
+  @include vp--1023 {
+    width: size(334px);
+    min-height: size(273px);
+  }
+
+  @include vp--767 {
+    width: size(319px);
+    min-height: size(271px);
+    margin: 0 auto;
+    margin-bottom: size(20px);
+  }
+
+  &:hover {
+    background-color: $color-alice-blue;
+    border-color: transparent;
+
+    .title {
+      color: $color-light-slate-grey;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: size(40px);
+    padding-bottom: size(41px);
+    min-height: size(372px);
+
+    @include vp--1919 {
+      min-height: size(370px);
+    }
+
+    @include vp--1023 {
+      min-height: size(273px);
+      padding: size(30px);
+      padding-bottom: size(28px);
+    }
+
+    @include vp--767 {
+      min-height: size(271px);
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: size(30px);
+    font-size: size(16px);
+    line-height: size(21px);
+    color: $color-light-slate-grey;
+    text-transform: uppercase;
+
+    @include vp--1023 {
+      margin-bottom: size(15px);
+      font-size: size(12px);
+      line-height: size(18px);
+    }
+  }
+
+  &__icon {
+    width: size(120px);
+    height: size(70px);
+    margin-bottom: size(22px);
+
+    svg {
+      width: size(120px);
+      height: size(70px);
+    }
+
+    @include vp--1023 {
+      width: size(100px);
+      height: size(58px);
+      margin-bottom: size(16px);
+
+      svg {
+        width: size(100px);
+        height: size(58px);
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: size(20px);
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  &__info {
+    display: block;
+    margin-top: auto;
+    font-size: size(16px);
+    line-height: size(21px);
+    color: $color-light-slate-grey;
+
+    @include vp--1023 {
+      font-size: size(12px);
+      line-height: size(18px);
+    }
+  }
+}

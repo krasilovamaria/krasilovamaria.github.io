@@ -1,0 +1,120 @@
+.application {
+  padding-top: size(147px);
+
+  @include vp--1919 {
+    padding-top: size(120px);
+  }
+
+  @include vp--1023 {
+    padding-top: size(91px);
+  }
+
+  .container {
+    @media (min-width: $vp--1920) {
+      padding: 0 size(100px);
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: size(98px) size(158px);
+    padding-bottom: size(100px);
+    background-color: $color-golden-yellow;
+
+    @include vp--1919 {
+      padding: size(60px) size(130px);
+      padding-bottom: size(55px);
+    }
+
+    @include vp--1023 {
+      padding: size(55px) size(90px);
+    }
+
+    @include vp--767 {
+      padding: size(40px) size(30px);
+    }
+  }
+
+  &__block {
+    width: size(740px);
+
+    @include vp--1919 {
+      width: size(500px);
+    }
+
+    @include vp--1023 {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    p {
+      width: size(600px);
+      margin: 0;
+      margin-bottom: size(25px);
+      font-size: size(18px);
+      line-height: size(25px);
+
+      /* stylelint-disable-next-line */
+      @include vp--1919 {
+        width: size(500px);
+      }
+
+      /* stylelint-disable-next-line */
+      @include vp--1023 {
+        width: 100%;
+        font-size: size(14px);
+        line-height: size(21px);
+        margin-bottom: size(20px);
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    position: absolute;
+    right: size(17px);
+    bottom: 0;
+    width: size(696px);
+    height: size(668px);
+
+    @include vp--1919 {
+      width: size(472px);
+      height: size(454px);
+      right: size(-40px);
+    }
+
+    @include vp--1023 {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: size(20px);
+
+    @include vp--1023 {
+      margin-bottom: 0;
+    }
+
+    @include vp--767 {
+      margin-bottom: size(11px);
+    }
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    width: size(245px);
+    font-size: size(18px);
+    line-height: size(32px);
+
+    @include vp--1919 {
+      width: size(230px);
+      padding: size(17px) size(13px) size(13px);
+    }
+
+    @include vp--1023 {
+      width: size(170px);
+      padding: size(12px);
+    }
+  }
+}

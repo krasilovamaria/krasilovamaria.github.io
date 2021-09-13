@@ -1,0 +1,93 @@
+extends ../base/layout
+
+block variables
+  - var title = "Список страниц"
+
+block main
+  style.
+    .container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    h1 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    a {
+      color: #323640;
+    }
+
+    li {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 7px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      ol {
+        padding-left: 20px;
+      }
+
+      ol li {
+        margin-bottom: 15px;
+      }
+    }
+
+  -
+    var pages = [
+      {
+        name: "UI-kit — ui-kit.html",
+        src: "ui-kit.html"
+      },
+      {
+        name: "Главная — main.html",
+        src: "main.html"
+      },
+      {
+        name: "Дома в управлении — homes.html",
+        src: "homes.html"
+      },
+      {
+        name: "Страница дома — home.html",
+        src: "home.html"
+      },
+      {
+        name: "Общественная деятельность — social.html",
+        src: "social.html"
+      },
+      {
+        name: "Страница статьи — article.html",
+        src: "article.html"
+      },
+      {
+        name: "Контакты — contacts.html",
+        src: "contacts.html"
+      },
+      {
+        name: "404 страница — 404.html",
+        src: "404.html"
+      },
+    ]
+
+  main.container.main-index
+    img(src="./img/content/cover-index.jpg" width="300" alt="Логотип проекта")
+    h1 Список страниц
+    ol
+      each page in pages
+        li
+          a(href= page.src)= page.name

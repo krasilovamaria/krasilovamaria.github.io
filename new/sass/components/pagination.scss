@@ -1,0 +1,53 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .btn {
+    margin-right: size(10px);
+    margin-bottom: size(10px);
+    width: size(41px);
+    height: size(40px);
+    padding: size(8px) size(12px) size(8px) size(15px);
+    color: $color-vulcan;
+
+    @include vp--1919 {
+      padding: size(8px) size(15px) size(8px) size(12px);
+    }
+  }
+
+  &__btn-active {
+    background-color: $color-golden-yellow;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .btn {
+      font-size: size(16px);
+      line-height: size(24px);
+    }
+  }
+
+  &__nav {
+    &--prev {
+      margin-right: size(10px);
+
+      svg {
+        width: size(10px);
+        height: size(16px);
+        transform: rotate(180deg);
+      }
+    }
+
+    svg {
+      color: $color-vulcan;
+    }
+  }
+
+  &__hide {
+    display: none;
+  }
+}

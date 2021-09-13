@@ -1,0 +1,46 @@
+.swiper-container[data-slider="wwdoing-slider"] {
+  overflow: visible;
+
+  .swiper-slide {
+    flex-shrink: 1;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-size: 0;
+    color: $color-vulcan;
+    transition: color $trans--300;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-golden-yellow;
+    }
+
+    &:disabled {
+      color: $color-link-water;
+      pointer-events: none;
+    }
+  }
+
+  .swiper-button-next {
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: size(80px);
+  }
+
+  .swiper-button-prev {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg);
+  }
+}

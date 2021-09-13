@@ -1,0 +1,152 @@
+.card-wwdoing {
+  position: relative;
+
+  width: size(436px);
+  min-height: size(638px);
+  padding: size(320px) size(40px) size(10px);
+
+  background-color: $color-alice-blue;
+
+  @include vp--1919 {
+    min-height: size(650px);
+    padding: size(320px) size(32px) size(10px);
+  }
+
+  @include vp--1023 {
+    width: size(335px);
+    min-height: size(489px);
+    padding: size(250px) size(20px);
+  }
+
+  @include vp--767 {
+    width: size(320px);
+    min-height: size(479px);
+    padding: size(200px) size(20px);
+  }
+
+  &__picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    z-index: 1;
+    pointer-events: none;
+
+    img {
+      width: 100%;
+      height: size(300px);
+      object-fit: cover;
+
+      /* stylelint-disable-next-line */
+      @include vp--1023 {
+        height: size(200px);
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: size(20px);
+
+    @include vp--1023 {
+      margin-bottom: size(10px);
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
+
+    p {
+      margin: size(14px) 0;
+
+      font-weight: 300;
+      font-size: size(18px);
+      line-height: size(25px);
+
+      /* stylelint-disable-next-line */
+      @include vp--1023 {
+        font-size: size(14px);
+        line-height: size(21px);
+      }
+    }
+  }
+
+  &--bigger {
+    width: size(920px);
+    padding: size(60px) size(60px) size(10px);
+    background-color: $color-solitude;
+
+    @include vp--1919 {
+      width: size(894px);
+      padding: size(65px) size(60px) size(10px);
+    }
+
+    @include vp--1279 {
+      width: size(600px);
+      padding: size(65px) size(60px) size(10px);
+    }
+
+    @include vp--1023 {
+      width: size(600px);
+      padding: size(30px) size(20px);
+    }
+
+    @include vp--767 {
+      width: size(320px);
+      padding: size(35px) size(20px);
+    }
+
+    .card-wwdoing__picture {
+      top: auto;
+      bottom: 0;
+
+      /* stylelint-disable-next-line */
+      img {
+        width: 100%;
+        height: size(413px);
+        object-fit: cover;
+
+        /* stylelint-disable-next-line */
+        @include vp--1919 {
+          height: size(413px);
+        }
+
+        /* stylelint-disable-next-line */
+        @include vp--1023 {
+          height: size(280px);
+        }
+
+        /* stylelint-disable-next-line */
+        @include vp--767 {
+          height: size(180px);
+        }
+      }
+    }
+
+    .card-wwdoing__text {
+      max-width: size(532px);
+
+      /* stylelint-disable-next-line */
+      @include vp--1919 {
+        max-width: size(522px);
+      }
+
+      /* stylelint-disable-next-line */
+      @include vp--1023 {
+        margin: size(25px) 0;
+        max-width: size(552px);
+      }
+
+      /* stylelint-disable-next-line */
+      @include vp--767 {
+        margin: size(14px) 0;
+        max-width: 100%;
+      }
+
+      /* stylelint-disable-next-line */
+      @include vp--767 {
+        margin-top: size(5px);
+      }
+    }
+  }
+}

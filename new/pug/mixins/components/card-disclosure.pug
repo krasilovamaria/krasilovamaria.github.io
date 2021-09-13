@@ -1,0 +1,7 @@
+mixin cardDisclosure(iconDoc, title, date, icon)
+  .card-article
+    +icon(iconDoc, 60, 60).report__icon-doc
+    .card-article__wrapper
+      h3.title.title--sm=title
+      p.card-article__date=date
+    +icon(icon, 36, 36).report__icon-download

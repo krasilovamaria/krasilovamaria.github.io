@@ -1,0 +1,32 @@
+extends ../base/layout
+
+block variables
+  - var title = "О нас - УК УЖСК"
+  - var wrapperMod = ""
+  - var hasHeader = true
+  - var headerMod = ""
+  - var hasFooter = true
+  - var footerMod = ""
+  - var currentPage = 0
+
+block main
+  main
+    h1.visually-hidden Дома в управлении
+
+    +searchForm(true)
+
+    section.catalog
+      h2.visually-hidden Каталог домов
+      .container
+
+        +filterControls()
+
+        ul.catalog__list
+          each item in homesList
+            li.catalog__item
+              +cardHome(item.icon, item.city, item.address, item.info, item.filter, item.href)
+
+        +pagination()
+
+    +application()
+block modals

@@ -1,0 +1,8 @@
+mixin cardWWDoing(image, title, text, isBigger)
+  .card-wwdoing(class=isBigger ? "card-wwdoing--bigger" : "")
+    .card-wwdoing__wrapper
+      +picture("slides", image, "png", 253, 188, title).card-wwdoing__picture
+      p.card-wwdoing__title.title.title--sm=title
+      .card-wwdoing__text
+        p=text
+

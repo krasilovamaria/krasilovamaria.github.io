@@ -1,0 +1,57 @@
+.swiper-container[data-slider="intro-slider"] {
+  .swiper-pagination-bullets {
+    bottom: size(38px);
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+
+    @include vp--1919 {
+      bottom: size(42px);
+    }
+
+    @include vp--1023 {
+      bottom: size(30px);
+    }
+
+    @include vp--767 {
+      bottom: size(10px);
+    }
+  }
+}
+
+.swiper-container[data-slider="intro-slider"].swiper-container-autoheight .swiper-slide {
+  height: 100%;
+}
+
+.swiper-container[data-slider="intro-slider"].swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 size(4px);
+  width: size(24px);
+  height: size(24px);
+
+  background: radial-gradient(circle, $color-transparent 40%, $color-silver 40%, $color-silver 100%);
+  opacity: 0.2;
+  outline: none;
+}
+
+.swiper-container[data-slider="intro-slider"].swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  position: relative;
+  opacity: 1;
+  background-color: $color-transparent;
+
+  width: size(24px);
+  height: size(24px);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: size(24px);
+    height: size(24px);
+
+    border-radius: 50%;
+    background: radial-gradient(circle, $color-transparent 40%, $color-golden-yellow 40%, $color-golden-yellow 100%);
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 100%, 0 0, 50% 0, 50% 50%, 50% 50%);
+    animation: rotation 2.8s linear;
+  }
+}

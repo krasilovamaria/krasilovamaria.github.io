@@ -1,0 +1,7 @@
+mixin cardContact(title, tel, telFull, city, address, hours, isTransparent)
+  .card-contact(class=isTransparent ? "card-contact--ts" : "")
+    p.card-contact__title!=title
+    a.link.card-contact__tel(href=telFull)=tel
+    p.card-contact__desc=city
+    p.card-contact__desc=address
+    p.card-contact__desc=hours

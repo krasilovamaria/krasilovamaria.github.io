@@ -1,0 +1,248 @@
+.intro-slider {
+  width: 100%;
+
+  color: $color-default-white;
+  background: $gable-green-to-right;
+
+  @include vp--1919 {
+    .container {
+      padding: 0;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    min-height: size(687px);
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @include vp--1919 {
+      min-height: size(690px);
+    }
+
+    @include vp--1023 {
+      min-height: size(587px);
+    }
+
+    @include vp--767 {
+      min-height: size(520px);
+    }
+  }
+
+  &__slide {
+    position: relative;
+    height: 100%;
+
+    padding-left: size(160px);
+
+    @include vp--1919 {
+      padding-left: size(60px);
+    }
+
+    @include vp--1023 {
+      padding-left: size(40px);
+    }
+
+    @include vp--767 {
+      padding: 0 size(20px);
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    bottom: size(-25px);
+    right: size(-47px);
+
+    pointer-events: none;
+    z-index: -1;
+
+    @include vp--1919 {
+      bottom: size(10px);
+      right: size(-180px);
+    }
+
+    @include vp--1023 {
+      bottom: size(27px);
+    }
+
+    @include vp--767 {
+      display: none;
+    }
+
+    img {
+      width: size(810px);
+      height: size(714px);
+      object-fit: cover;
+
+      /* stylelint-disable-next-line */
+      @include vp--1919 {
+        width: size(741px);
+        height: size(678px);
+      }
+
+      /* stylelint-disable-next-line */
+      @include vp--1023 {
+        width: size(563px);
+        height: size(514px);
+      }
+    }
+  }
+
+  &__heading {
+    max-width: size(754px);
+    margin-bottom: size(65px);
+    padding-top: size(80px);
+
+    letter-spacing: -0.01em;
+
+    @include vp--1023 {
+      max-width: size(383px);
+      margin-bottom: size(45px);
+      padding-top: size(72px);
+    }
+
+    @include vp--767 {
+      max-width: 100%;
+      margin-bottom: size(16px);
+      padding-top: 0;
+    }
+  }
+
+  &__btn {
+    margin-bottom: size(20px);
+    padding: size(15px) size(27px);
+
+    @include vp--1919 {
+      padding: size(14px) size(25px);
+
+      font-size: size(18px);
+      line-height: size(32px);
+    }
+
+    @include vp--1023 {
+      padding: size(12px) size(35px);
+
+      font-size: size(12px);
+      line-height: size(18px);
+    }
+
+    @include vp--767 {
+      margin-bottom: size(10px);
+      padding: size(12px) size(32px);
+    }
+  }
+
+  &__benefits {
+    max-width: size(754px);
+    margin: 0;
+    margin-top: size(-10px);
+    margin-left: size(-40px);
+    margin-bottom: size(55px);
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    @include vp--1919 {
+      margin-left: size(-25px);
+      margin-bottom: size(57px);
+    }
+
+    @include vp--1023 {
+      max-width: size(425px);
+      margin-left: size(-2px);
+      margin-bottom: size(40px);
+    }
+
+    @include vp--767 {
+      max-width: 100%;
+      margin: 0;
+      margin-bottom: size(40px);
+      flex-direction: column;
+    }
+
+    li {
+      max-width: size(130px);
+      margin-top: size(10px);
+      margin-left: size(40px);
+
+      /* stylelint-disable-next-line */
+      @include vp--1919 {
+        margin-left: size(25px);
+      }
+
+      /* stylelint-disable-next-line */
+      @include vp--1023 {
+        max-width: size(100px);
+        margin-left: size(2px);
+
+        font-size: size(14px);
+        line-height: size(21px);
+      }
+
+      /* stylelint-disable-next-line */
+      @include vp--767 {
+        max-width: size(194px);
+        margin: 0;
+        margin-bottom: size(12px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* stylelint-disable-next-line */
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+      margin-top: size(15px);
+      padding: 0;
+
+      font-size: size(18px);
+      line-height: size(27px);
+
+      /* stylelint-disable-next-line */
+      @include vp--1919 {
+        margin-top: size(12px);
+      }
+
+      /* stylelint-disable-next-line */
+      @include vp--1023 {
+        font-size: size(14px);
+        line-height: size(21px);
+      }
+
+      /* stylelint-disable-next-line */
+      @include vp--767 {
+        margin: 0;
+      }
+    }
+
+    svg {
+      width: size(70px);
+      height: size(70px);
+      object-fit: cover;
+
+      /* stylelint-disable-next-line */
+      @include vp--1023 {
+        width: size(50px);
+        height: size(50px);
+      }
+
+      /* stylelint-disable-next-line */
+      @include vp--767 {
+        max-width: size(40px);
+        min-width: size(40px);
+        max-height: size(40px);
+        min-height: size(40px);
+        margin-right: size(20px);
+      }
+    }
+  }
+}

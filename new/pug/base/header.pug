@@ -1,0 +1,30 @@
+mixin header(headerMods, currentPage)
+  header.header(class=headerMods)
+    .container
+      .header__wrapper
+
+        .header__logo-wrapper
+          if(currentPage === "main")
+            a.header__logo
+              include ../../img/svg/logo.svg
+          else
+            a.header__logo(href="main.html", aria-label="Переход на главную")
+              include ../../img/svg/logo.svg
+        nav.header__navigation
+          button.btn.btn-reset.header__burger-btn(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+            +icon("icon-burger", 24, 17)
+            +icon("icon-close", 24, 24)
+          .header__menu
+            ul.header__list
+              each link, index in navLinks
+                li.header__menu-item
+                  if(index === currentPage)
+                    a.link.link--white.header__menu-link.header__menu-link--active=link.text
+                  else
+                    a.link.link--white.header__menu-link(href=link.href)=link.text
+
+            .header__btns
+              a.link.link--white.header__btns-item.header__tel(href="tel:+73432971311") 8 (343) 297-13-11
+              button.btn.btn--yellow.header__btns-item.header__account(type="button") Войти в кабинет
+              a.btn.btn--icon.header__btns-item(href="#", aria-label="Версия для слабовидящих")
+                +icon("icon-version-visually", 60, 60)

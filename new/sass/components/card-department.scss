@@ -1,0 +1,214 @@
+.card-department {
+  width: 100%;
+
+  &__btn {
+    position: relative;
+    width: 100%;
+    padding: size(32px) 0;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: size(24px);
+    line-height: size(34px);
+
+    text-align: left;
+    border-bottom: size(1px) solid $color-link-water;
+
+    cursor: pointer;
+
+    @include vp--1023 {
+      padding: size(23px) 0;
+
+      font-size: size(18px);
+      line-height: size(25px);
+    }
+
+    span {
+      /* stylelint-disable-next-line */
+      @include vp--767 {
+        max-width: size(270px);
+      }
+    }
+
+    svg {
+      position: absolute;
+      right: size(50px);
+
+      width: size(35px);
+      height: size(16px);
+      object-fit: cover;
+
+      color: $color-link-water;
+      transform: rotate(-90deg);
+      transition: color $trans--300;
+
+      /* stylelint-disable-next-line */
+      @include vp--767 {
+        right: 0;
+      }
+    }
+
+    &:first-child {
+      border-top: size(1px) solid $color-link-water;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      /* stylelint-disable-next-line */
+      svg {
+        color: $color-vulcan;
+      }
+    }
+  }
+
+  table {
+    width: 100%;
+  }
+
+  tr {
+    padding: size(40px) 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: size(1px) solid $color-link-water;
+
+    @include vp--767 {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border: none;
+    }
+  }
+
+  td {
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      width: 54.2%;
+
+      /* stylelint-disable-next-line */
+      @include vp--1919 {
+        width: 65.08%;
+      }
+
+      /* stylelint-disable-next-line */
+      @include vp--1279 {
+        width: 61.37%;
+      }
+
+      /* stylelint-disable-next-line */
+      @include vp--767 {
+        width: 100%;
+        margin-bottom: size(20px);
+      }
+    }
+
+    &:nth-child(2) {
+      width: 31.5%;
+
+      /* stylelint-disable-next-line */
+      @include vp--1919 {
+        width: 31.2%;
+      }
+
+      /* stylelint-disable-next-line */
+      @include vp--1279 {
+        width: 35.86%;
+      }
+
+      /* stylelint-disable-next-line */
+      @include vp--767 {
+        width: 100%;
+      }
+    }
+  }
+
+  &__td-title {
+    margin: 0;
+    margin-bottom: size(10px);
+    padding: 0;
+
+    font-size: size(24px);
+    line-height: size(36px);
+
+    @include vp--1279 {
+      font-size: size(21px);
+      line-height: size(35px);
+    }
+
+    @include vp--767 {
+      font-size: size(16px);
+      line-height: size(24px);
+    }
+  }
+
+  &__td-list {
+    list-style-type: none;
+    margin: 0;
+    margin-top: size(12px);
+    padding: 0;
+  }
+
+  &__td-text {
+    position: relative;
+    margin-bottom: size(10px);
+    display: flex;
+    align-items: center;
+
+    p {
+      margin: 0;
+      padding: 0;
+
+      font-size: size(18px);
+      line-height: size(25px);
+
+      /* stylelint-disable-next-line */
+      @include vp--1279 {
+        font-size: size(14px);
+        line-height: size(21px);
+      }
+
+      /* stylelint-disable-next-line */
+      &:first-child {
+        margin-right: size(5px);
+      }
+    }
+
+    &--disc {
+      /* stylelint-disable-next-line */
+      &::before {
+        position: absolute;
+        top: size(10px);
+        left: size(10px);
+
+        content: "";
+        width: size(3px);
+        height: size(3px);
+
+        border-radius: 50%;
+        background-color: $color-vulcan;
+      }
+
+      /* stylelint-disable-next-line */
+      p {
+        padding-left: size(20px);
+      }
+    }
+  }
+
+  &__td-list .card-department__td-text {
+    margin-bottom: 0;
+  }
+}

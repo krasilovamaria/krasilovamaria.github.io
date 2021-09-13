@@ -1,0 +1,25 @@
+.card-adv {
+  &__wrapper {
+    position: relative;
+    background-color: $color-alice-blue;
+    padding: size(60px) size(170px);
+    padding-left: size(322px);
+  }
+
+  &__date {
+    position: absolute;
+    left: 0;
+    background-color: $color-golden-yellow;
+    padding: size(8px) size(40px);
+  }
+
+  &__info {
+    margin: 0;
+    margin-bottom: size(10px);
+    font-weight: 300;
+  }
+
+  &__title {
+    margin-bottom: size(10px);
+  }
+}

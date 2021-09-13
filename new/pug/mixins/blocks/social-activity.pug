@@ -1,0 +1,11 @@
+mixin socialActivity()
+  section.social-activity
+    .container
+      .social-activity__wrapper
+        .social-activity__heading
+          h2.title.title--md Общественная деятельность
+          +linkArrow("article.html", "Все статьи")
+        ul.social-activity__content
+          each card in articles
+            li.social-activity__item
+              +cardArticle(card.hashtags, card.title, card.date, card.href)

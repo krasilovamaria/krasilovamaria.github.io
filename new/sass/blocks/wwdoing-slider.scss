@@ -1,0 +1,64 @@
+.wwdoing-slider {
+  position: relative;
+
+  &__inner {
+    padding-left: size(162px);
+
+    @include vp--1919 {
+      padding-left: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: size(40px);
+
+    @include vp--1023 {
+      margin-bottom: size(20px);
+    }
+
+    @include vp--767 {
+      margin-bottom: size(18px);
+    }
+  }
+
+  &__wrapper {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    min-height: size(730px);
+    width: 100%;
+
+    @include vp--1919 {
+      min-height: size(760px);
+    }
+
+    @include vp--1023 {
+      min-height: size(570px);
+    }
+
+    @include vp--767 {
+      min-height: size(555px);
+    }
+  }
+
+  .wwdoing-slider__button-prev,
+  .wwdoing-slider__button-next {
+    width: auto;
+    height: auto;
+
+    svg {
+      width: size(52px);
+      height: size(52px);
+      object-fit: cover;
+    }
+  }
+
+  .card-wwdoing {
+    margin-right: size(40px);
+
+    @include vp--1023 {
+      margin-right: size(20px);
+    }
+  }
+}

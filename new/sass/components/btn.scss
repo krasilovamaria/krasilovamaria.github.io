@@ -1,0 +1,147 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: transparent;
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+
+  &--yellow {
+    padding: size(14px) size(40px);
+
+    font-size: size(18px);
+    line-height: size(32px);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    background-color: $color-golden-yellow;
+    transition: background-color $trans--300;
+
+    @include vp--1919 {
+      padding: size(16px) size(37px);
+
+      font-size: size(16px);
+      line-height: size(28px);
+    }
+
+    @include vp--1023 {
+      padding: size(11px) size(32px);
+
+      font-size: size(12px);
+      line-height: size(18px);
+    }
+
+    @include vp--767 {
+      padding: size(11px) size(12px);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $color-golden-yellow-hover;
+    }
+
+    &:disabled {
+      background-color: $color-alice-blue;
+      pointer-events: none;
+    }
+  }
+
+  &--grey {
+    padding: size(9px) size(14px);
+
+    font-size: size(16px);
+    line-height: size(24px);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    background-color: $color-alice-blue;
+    transition: background-color $trans--300;
+
+    @include vp--1023 {
+      padding: size(8px) size(4px) size(8px) size(15px);
+      font-size: size(12px);
+      line-height: size(18px);
+    }
+
+    @include vp--767 {
+      width: fit-content;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-golden-yellow;
+    }
+  }
+
+  &--black {
+    position: relative;
+    padding: size(12px) size(20px) size(13px);
+    color: $color-default-white;
+    font-size: size(16px);
+    line-height: size(24px);
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    background-color: $color-vulcan;
+    transition: background-color $trans--300;
+
+    @include vp--1023 {
+      font-size: size(12px);
+      line-height: size(18px);
+    }
+
+    svg {
+      position: absolute;
+      left: size(30px);
+
+      width: size(24px);
+      height: size(24px);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $color-vulcan-hover;
+    }
+
+    &:disabled {
+      background-color: $color-alice-blue;
+      pointer-events: none;
+    }
+  }
+
+  &--icon {
+    width: size(60px);
+    height: size(60px);
+
+    color: $color-default-white;
+    border: size(1px) solid $color-default-white;
+    background-color: transparent;
+
+    transition: color $trans--300,
+      border $trans--300,
+      background-color $trans--300;
+
+    @include vp--1023 {
+      width: size(40px);
+      height: size(40px);
+    }
+
+    svg {
+      width: size(24px);
+      height: size(24px);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-vulcan;
+      border: size(1px) solid $color-golden-yellow;
+      background-color: $color-golden-yellow;
+    }
+  }
+}

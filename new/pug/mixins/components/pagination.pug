@@ -1,0 +1,13 @@
+mixin pagination()
+  .pagination
+    .pagination__nav.pagination__nav--prev.pagination__hide
+      a.btn.btn--grey(href="" aria-label="Перейти на предыдущую страницу каталога")
+        +icon("icon-corner", 10, 16)
+    .pagination__item
+      a.btn.btn--grey.pagination__btn-active(href="" aria-label="Перейти на первую страницу каталога") 1
+      a.btn.btn--grey(href="#" aria-label="Перейти на вторую страницу каталога") 2
+      a.btn.btn--grey(href="#" aria-label="Перейти на третью страницу каталога") 3
+      a.btn.btn--grey(href="#" aria-label="Перейти на четвертую страницу каталога") 4
+    .pagination__nav.pagination__nav--next
+      a.btn.btn--grey(href="#" aria-label="Перейти на следующую страницу каталога")
+        +icon("icon-corner", 10, 16)

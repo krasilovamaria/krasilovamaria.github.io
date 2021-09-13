@@ -1,0 +1,9 @@
+mixin reportFilters()
+  .filter-controls
+    each item in reportsFilter
+      if (item.checked)
+
+        button.btn.btn--grey.filter-controls__btn(type="button")=item.filter
+
+      else
+        button.btn.btn--grey(type="button")=item.filter
