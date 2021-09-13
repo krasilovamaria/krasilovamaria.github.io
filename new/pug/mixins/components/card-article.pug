@@ -1,9 +1,0 @@
-mixin cardArticle(arr, title, date, href)
-  .card-article
-    a.card-article__link(href=href, aria-label=title)
-    .card-article__wrapper
-      .card-article__hashtags
-        each item in arr
-          p=item.hashtag
-      h3.title.title--sm=title
-      time(datetime=date).card-article__date=date
