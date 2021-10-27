@@ -884,6 +884,7 @@ p {
 
 .intro__text {
   max-width: 600px;
+  margin-right: 40px;
 }
 
 .intro__img img {
@@ -947,8 +948,8 @@ p {
 
 @media (max-width: 1023px) {
   body {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .container {
@@ -1046,6 +1047,7 @@ p {
 
   .intro__text {
     margin-bottom: 40px;
+    margin-right: 0;
   }
 
   .button {
