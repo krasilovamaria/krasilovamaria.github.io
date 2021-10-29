@@ -555,6 +555,11 @@ p {
   padding: 0;
 }
 
+section {
+  margin: 0 120px;
+  padding-top: 100px;
+}
+
 .wrapper {
   position: relative;
   display: -webkit-box;
@@ -866,11 +871,6 @@ p {
   pointer-events: auto;
 }
 
-.intro {
-  margin: 0 120px;
-  padding-top: 100px;
-}
-
 .intro__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -905,12 +905,27 @@ p {
   object-fit: contain;
 }
 
-.about {
-  margin: 0 120px;
-  padding-top: 100px;
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.about__wrapper {
+.exercises-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.workout__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -947,13 +962,13 @@ p {
   opacity: 0.6;
 }
 
-.button--circle-black {
+.button--circle {
   border-radius: 50px;
   background-color: #ffffff;
   color: #202124;
 }
 
-.button--border-circle-black {
+.button--border-circle {
   border-radius: 50px;
   border: 1px solid #e8eaed;
   background-color: rgba(255, 255, 255, 0);
@@ -996,6 +1011,53 @@ p {
   opacity: 0.4;
 }
 
+.card-workout {
+  height: 100%;
+  width: 30%;
+  margin-bottom: 60px;
+}
+
+.card-workout p {
+  margin-bottom: 10px;
+}
+
+.card-workout video {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sidebar {
+  min-width: 300px;
+}
+
+.sidebar__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar__item {
+  margin-bottom: 20px;
+}
+
+.sidebar__link {
+  text-transform: uppercase;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar__link:hover,
+.sidebar__link:focus {
+  opacity: 0.6;
+}
+
+.sidebar__link--active {
+  text-decoration: underline;
+  pointer-events: none;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1009,10 +1071,21 @@ p {
   }
 }
 
+@media (max-width: 1279px) {
+  .sidebar {
+    min-width: 200px;
+  }
+}
+
 @media (max-width: 1023px) {
   body {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  section {
+    margin: 0 60px;
+    padding-top: 40px;
   }
 
   .container {
@@ -1094,11 +1167,6 @@ p {
     color: #000000;
   }
 
-  .intro {
-    margin: 0 60px;
-    padding-top: 40px;
-  }
-
   .intro__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1117,16 +1185,28 @@ p {
     margin-right: 0;
   }
 
-  .about {
-    margin: 0 60px;
-    padding-top: 40px;
-  }
-
   .about__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .exercises-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .workout__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .button {
@@ -1137,6 +1217,31 @@ p {
     min-height: 200px;
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .card-workout {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .sidebar {
+    min-width: 100%;
+    padding: 0 24px;
+  }
+
+  .sidebar__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -20px;
+  }
+
+  .sidebar__item {
+    margin-left: 20px;
+  }
+
+  .sidebar__link {
+    text-transform: none;
   }
 }
 
@@ -1165,16 +1270,20 @@ p {
   .modal--fit-content .modal__content {
     width: 100%;
   }
+
+  .sidebar {
+    padding: 0 16px;
+  }
 }
 
 @media (max-width: 499px) {
-  .main-nav__list--buttons .main-nav__item--reg {
-    display: none;
-  }
-
-  .intro {
+  section {
     margin: 0;
     padding-top: 20px;
+  }
+
+  .main-nav__list--buttons .main-nav__item--reg {
+    display: none;
   }
 
   .intro__img img {
@@ -1182,14 +1291,14 @@ p {
     width: 100%;
   }
 
-  .about {
-    margin: 0;
-    padding-top: 20px;
-  }
-
   .card-about p {
     font-size: 18px;
     line-height: 35px;
+  }
+
+  .sidebar__link {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 
@@ -1197,5 +1306,13 @@ p {
   .card-about p {
     font-size: 16px;
     line-height: 32px;
+  }
+
+  .sidebar__list {
+    margin-left: -10px;
+  }
+
+  .sidebar__item {
+    margin-left: 10px;
   }
 }
