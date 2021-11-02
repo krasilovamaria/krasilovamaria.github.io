@@ -81,11 +81,59 @@
               </li>
             </ul>
           </sidebar>
-          <section class="create-workout">
+          <div class="workout">
             <div class="container">
-              <div class="create-workout__wrapper"></div>
+              <div class="workout__wrapper">
+                <form class="form" method="get" action="#">
+                  <div class="form__col">
+                    <p>Задайте количество "кругов":</p>
+                    <div class="form__row">
+                      <label class="visually-hidden" for="amount1"></label>
+                      <input name="amount" id="amount1" type="radio" value="1" checked>
+                      <label class="visually-hidden" for="amount2"></label>
+                      <input name="amount" id="amount2" type="radio" value="2">
+                      <label class="visually-hidden" for="amount3"></label>
+                      <input name="amount" id="amount3" type="radio" value="3">
+                      <label class="visually-hidden" for="amount4"></label>
+                      <input name="amount" id="amount4" type="radio" value="4">
+                      <label class="visually-hidden" for="amount5"></label>
+                      <input name="amount" id="amount5" type="radio" value="5">
+                    </div>
+                  </div>
+                  <div class="form__col">
+                    <p>Выберите количество упражнений в "круге":</p>
+                    <div class="form__row">
+                      <label class="visually-hidden" for="amount1"></label>
+                      <input name="amountEx" id="amount1" type="radio" value="1" checked>
+                      <label class="visually-hidden" for="amount2"></label>
+                      <input name="amountEx" id="amount2" type="radio" value="2">
+                      <label class="visually-hidden" for="amount3"></label>
+                      <input name="amountEx" id="amount3" type="radio" value="3">
+                      <label class="visually-hidden" for="amount4"></label>
+                      <input name="amountEx" id="amount4" type="radio" value="4">
+                      <label class="visually-hidden" for="amount5"></label>
+                      <input name="amountEx" id="amount5" type="radio" value="5">
+                    </div>
+                  </div>
+                  <div class="form__col">
+                    <p>Установите уровень сложности:</p>
+                    <div class="form__row">
+                      <label class="visually-hidden" for="amount1"></label>
+                      <input name="level" id="amount1" type="radio" value="1" checked>
+                      <label class="visually-hidden" for="amount2"></label>
+                      <input name="level" id="amount2" type="radio" value="2">
+                      <label class="visually-hidden" for="amount3"></label>
+                      <input name="level" id="amount3" type="radio" value="3">
+                      <label class="visually-hidden" for="amount4"></label>
+                      <input name="level" id="amount4" type="radio" value="4">
+                      <label class="visually-hidden" for="amount5"></label>
+                      <input name="level" id="amount5" type="radio" value="5">
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
-          </section>
+          </div>
         </section>
       </main>
       <footer class="footer"></footer>
