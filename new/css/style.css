@@ -741,6 +741,10 @@ section {
   margin-left: 40px;
 }
 
+.main-nav__list .main-nav__item--none {
+  display: none;
+}
+
 .main-nav__list--buttons .main-nav__item {
   margin-left: 20px;
 }
@@ -944,6 +948,35 @@ section {
   margin-bottom: 60px;
 }
 
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.form__row--buttons {
+  margin-top: 100px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.form__row--buttons .button {
+  margin-right: 10px;
+}
+
+.form__row--buttons .button:last-child {
+  margin-right: 0;
+}
+
+.form__row .input-radio {
+  margin-right: 20px;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1068,6 +1101,48 @@ section {
   pointer-events: none;
 }
 
+.input-radio {
+  position: relative;
+  width: 140px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.input-radio label {
+  text-align: center;
+  color: #000000;
+  z-index: 1;
+}
+
+.input-radio input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input-radio input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #324c46;
+  cursor: pointer;
+}
+
+.input-radio input[type="radio"]:checked::before {
+  background-color: #7cbaab;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1078,6 +1153,16 @@ section {
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
+  }
+
+  .input-radio {
+    width: 80px;
+    height: 40px;
+  }
+
+  .input-radio label {
+    font-size: 10px;
+    line-height: 10px;
   }
 }
 
@@ -1223,6 +1308,19 @@ section {
     margin-bottom: 20px;
   }
 
+  .form__row--buttons {
+    margin-top: 50px;
+    max-width: 500px;
+  }
+
+  .form__row--buttons .button {
+    padding: 10px;
+  }
+
+  .form__row .input-radio {
+    margin-right: 10px;
+  }
+
   .button {
     padding: 10px 20px;
   }
@@ -1256,6 +1354,11 @@ section {
 
   .sidebar__link {
     text-transform: none;
+  }
+
+  .input-radio {
+    width: 60px;
+    height: 40px;
   }
 }
 
@@ -1305,6 +1408,12 @@ section {
     width: 100%;
   }
 
+  .form__row--buttons .button {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
   .card-about p {
     font-size: 18px;
     line-height: 35px;
@@ -1313,6 +1422,16 @@ section {
   .sidebar__link {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .input-radio {
+    width: 50px;
+    height: 40px;
+  }
+
+  .input-radio label {
+    font-size: 8px;
+    line-height: 8px;
   }
 }
 
