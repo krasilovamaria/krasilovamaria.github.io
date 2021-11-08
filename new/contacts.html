@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Все тренировки - YogaApp</title>
+    <title>Конакты - YogaApp</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -52,11 +52,11 @@
                   </svg>
                 </button>
                 <ul class="main-nav__list">
-                  <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Тренировки</a>
+                  <li class="main-nav__item"><a class="main-nav__link" href="workout.html">Тренировки</a>
                   </li>
                   <li class="main-nav__item"><a class="main-nav__link" href="business.html">Возможности</a>
                   </li>
-                  <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a>
+                  <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Контакты</a>
                   </li>
                 </ul>
               </div>
@@ -70,60 +70,21 @@
         </div>
       </header>
       <main>
-        <h1 class="visually-hidden">Все тренировки</h1>
-        <section class="exercises-container">
-          <sidebar class="sidebar">
-            <ul class="sidebar__list">
-              <li class="sidebar__item"><a class="sidebar__link sidebar__link--active">Все видео</a>
-              </li>
-              <li class="sidebar__item"><a class="sidebar__link" href="create-workout.html">Создать тренировку</a>
-              </li>
-              <li class="sidebar__item"><a class="sidebar__link" href="favorites.html">Избранное</a>
-              </li>
-            </ul>
-          </sidebar>
-          <div class="workout">
-            <div class="container">
-              <div class="workout__wrapper">
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                </div>
-              </div>
-            </div>
-          </div>
+        <h1 class="visually-hidden">Контакты</h1>
+        <section class="contacts">
+          <p>Я нахожусь в России, в городе Красноярск!</p>
+          <p>Как со мной связаться по Вашему вопросу?</p>
+          <ul>
+            <li><a href="tel:89994403538" aria-label="Телефон">позвонить по номеру +7(999) 440-35-38</a></li>
+            <li><a href="mailto:aleksandr.dron91@yandex.by" aria-label="Электронная почта">написать на почту aleksandr.dron91@yandex.by</a></li>
+            <li>
+              <p>заполнить форму ниже :)</p>
+            </li>
+          </ul>
+          <h2>Написать в поддержку</h2>
+          <form class="form" method="get" action="#">
+            <textarea name="contacts" cols="100" rows="5"></textarea><a class="button button--border-circle" href="create-workout.html">Отправить</a>
+          </form>
         </section>
       </main>
       <footer class="footer"></footer>

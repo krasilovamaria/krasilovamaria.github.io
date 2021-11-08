@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Вход - YogaApp</title>
+    <title>Регистрация - YogaApp</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -40,18 +40,26 @@
         </div>
       </header>
       <main class="login">
-        <h1 class="visually-hidden">Вход на сайт</h1>
-        <h2>Добро пожаловать!</h2>
+        <h1 class="visually-hidden">Регистрация</h1>
+        <h2>Рад нашему знакомству!</h2>
         <form class="form" method="get" action="#">
           <div class="input">
-            <label class="visually-hidden" for="login"></label>
-            <input name="login" id="login" type="text" placeholder="Логин" autocomplete="off" required><span class="visually-hidden" id="error-message-login">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+            <label class="visually-hidden" for="username"></label>
+            <input name="username" id="username" type="text" placeholder="Имя" autocomplete="off" required><span class="visually-hidden" id="error-message-username">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+          </div>
+          <div class="input">
+            <label class="visually-hidden" for="email"></label>
+            <input name="email" id="email" type="email" placeholder="Email" autocomplete="off" required><span class="visually-hidden" id="error-message-email">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
           </div>
           <div class="input">
             <label class="visually-hidden" for="password"></label>
-            <input name="password" id="password" type="text" placeholder="Пароль" autocomplete="off" required><span class="visually-hidden" id="error-message-password">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
-          </div><a class="button button--border-circle" href="create-workout.html">Войти</a>
-          <div class="form__col form__col--start"><a class="button button--no-padding" href="password.html">Не помню пароль</a><a class="button button--no-padding" href="registration.html">Нужно зарегистрироваться</a></div>
+            <input name="password" id="password" type="text" placeholder="Придумайте пароль" autocomplete="off" required><span class="visually-hidden" id="error-message-password">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+          </div>
+          <div class="input">
+            <label class="visually-hidden" for="password-repeat"></label>
+            <input name="password-repeat" id="password-repeat" type="text" placeholder="Повторите Ваш пароль" autocomplete="off" required><span class="visually-hidden" id="error-message-password-repeat">Ошибка! Пароль не совпадает</span>
+          </div><a class="button button--border-circle" href="create-workout.html">Зарегистрироваться</a>
+          <div class="form__col form__col--start"><a class="button button--no-padding" href="login.html">Я уже зарегистрирован :)</a></div>
         </form>
       </main>
     </div>
