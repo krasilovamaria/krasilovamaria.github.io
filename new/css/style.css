@@ -1190,6 +1190,41 @@ section {
   list-style: decimal;
 }
 
+.business ul {
+  list-style: decimal;
+}
+
+.business ul li {
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.account h1 {
+  margin-bottom: 60px;
+}
+
+.account .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.account__button {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.account__conf {
+  max-width: 300px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1745,6 +1780,24 @@ section {
 
   .offer h2 {
     margin-bottom: 50px;
+  }
+
+  .business {
+    margin: 20px;
+    padding-top: 20px;
+  }
+
+  .account {
+    margin: 20px;
+    padding-top: 20px;
+  }
+
+  .account__button {
+    max-width: 100%;
+  }
+
+  .account__conf {
+    max-width: 100%;
   }
 
   .card-about p {

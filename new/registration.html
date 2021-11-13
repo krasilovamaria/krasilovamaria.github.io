@@ -54,19 +54,23 @@
         <form class="form" method="get" action="#">
           <div class="input">
             <label class="visually-hidden" for="username"></label>
-            <input name="username" id="username" type="text" placeholder="Имя" autocomplete="off" required><span class="visually-hidden" id="error-message-username">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+            <input name="username" id="username" type="text" placeholder="Имя" autocomplete="off" required value=""><span class="visually-hidden" id="error-message-username">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
           </div>
           <div class="input">
             <label class="visually-hidden" for="email"></label>
-            <input name="email" id="email" type="email" placeholder="Email" autocomplete="off" required><span class="visually-hidden" id="error-message-email">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+            <input name="email" id="email" type="email" placeholder="Email" autocomplete="off" required value=""><span class="visually-hidden" id="error-message-email">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
           </div>
           <div class="input">
             <label class="visually-hidden" for="password"></label>
-            <input name="password" id="password" type="text" placeholder="Придумайте пароль" autocomplete="off" required><span class="visually-hidden" id="error-message-password">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+            <input name="password" id="password" type="text" placeholder="Придумайте пароль" autocomplete="off" required value=""><span class="visually-hidden" id="error-message-password">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
           </div>
           <div class="input">
             <label class="visually-hidden" for="password-repeat"></label>
-            <input name="password-repeat" id="password-repeat" type="text" placeholder="Повторите Ваш пароль" autocomplete="off" required><span class="visually-hidden" id="error-message-password-repeat">Ошибка! Пароль не совпадает</span>
+            <input name="password-repeat" id="password-repeat" type="text" placeholder="Повторите Ваш пароль" autocomplete="off" required value=""><span class="visually-hidden" id="error-message-password-repeat">Ошибка! Пароль не совпадает</span>
+          </div>
+          <div class="input">
+            <label class="visually-hidden" for="code"></label>
+            <input name="code" id="code" type="text" placeholder="Код пользователя, если есть" autocomplete="off" required value=""><span class="visually-hidden" id="error-message-code">Ошибка! Такого кода не существует</span>
           </div><a class="button button--border-circle" href="create-workout.html">Зарегистрироваться</a>
           <div class="form__col form__col--start"><a class="button button--no-padding" href="login.html">Я уже зарегистрирован :)</a></div>
         </form>

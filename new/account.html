@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Возможности - YogaApp</title>
+    <title>Личный кабинет - YogaApp</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -63,7 +63,7 @@
                 <ul class="main-nav__list">
                   <li class="main-nav__item"><a class="main-nav__link" href="workout.html">Тренировки</a>
                   </li>
-                  <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Возможности</a>
+                  <li class="main-nav__item"><a class="main-nav__link" href="business.html">Возможности</a>
                   </li>
                   <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a>
                   </li>
@@ -79,16 +79,31 @@
         </div>
       </header>
       <main>
-        <h1 class="visually-hidden">Возможонсти</h1>
-        <section class="business">
-          <h2>Как получить вознаграждение:</h2>
-          <ul>
-            <li>Обратить внимание в своем личном кабинете на Ваш код пользователя</li>
-            <li>Передать данный код пользователя тому человеку, который пришел на этот сайт благодаря Вам</li>
-            <li>Убедиться, что Ваш код указали при регистрации нового пользователя сайта</li>
-            <li>Получать ежемесячно вознаграждение на Вашу карту в размере 5% от стоимости ежемесячной подписки на YogaApp или же скидку на подписку (на Ваш выбор)</li>
-            <li>Под Вашим кодом может регестрироваться неограниченное количество людей, поэтому Ваш доход также неограничен</li>
-          </ul>
+        <section class="account">
+          <h1>Личный кабинет</h1>
+          <form class="form account__form" method="get" action="#">
+            <div class="input">
+              <label>Имя</label>
+              <input name="name" id="name" type="name" placeholder="Имя" autocomplete="off" required value="Александр"><span class="visually-hidden" id="error-message-name">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+            </div>
+            <div class="input">
+              <label>Фамилия</label>
+              <input name="lastname" id="lastname" type="lastname" placeholder="Фамилия" autocomplete="off" required value="Дрон"><span class="visually-hidden" id="error-message-lastname">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+            </div>
+            <div class="input">
+              <label>Дата рождения</label>
+              <input name="birthdate" id="birthdate" type="birthdate" placeholder="Дата рождения" autocomplete="off" required value="00.00.00"><span class="visually-hidden" id="error-message-birthdate">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+            </div>
+            <div class="input">
+              <label>Страна</label>
+              <input name="country" id="country" type="country" placeholder="Страна" autocomplete="off" required value="Россия"><span class="visually-hidden" id="error-message-country">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+            </div>
+            <div class="input">
+              <label>Город</label>
+              <input name="city" id="city" type="city" placeholder="Город" autocomplete="off" required value="Красноярск"><span class="visually-hidden" id="error-message-city">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+            </div><a class="button button--border-circle account__button" href="create-workout.html">Сохранить</a>
+            <p class="account__conf">Нажимая кнопку «Сохранить», вы&nbsp;даёте своё согласие на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;<a href="confidentiality.html" target="_blank">Политикой конфиденциальности</a></p>
+          </form><a class="button button--border-circle account__button" href="main.html">Выйти из аккаунта</a>
         </section>
       </main>
       <footer class="footer">
