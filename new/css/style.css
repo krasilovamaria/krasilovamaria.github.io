@@ -811,8 +811,105 @@ section {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 100px;
-  padding: 0 60px;
+  margin-top: 100px;
+  padding: 20px 40px;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer__logo {
+  width: 100px;
+  height: 80px;
+}
+
+.footer__logo svg {
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 100px;
+  height: 80px;
+}
+
+.footer__box-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer__text {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer__text p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer__link a {
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration: underline;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.footer__link a:hover,
+.footer__link a:focus,
+.footer__link a:active {
+  opacity: 0.6;
+}
+
+.footer__socials a {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.footer__socials a:hover,
+.footer__socials a:focus,
+.footer__socials a:active {
+  opacity: 0.6;
+}
+
+.footer__socials svg {
+  width: 40px;
+  height: 40px;
 }
 
 .modal {
@@ -964,6 +1061,10 @@ section {
   justify-content: space-between;
 }
 
+.about svg {
+  fill: #2c2727;
+}
+
 .exercises-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1067,6 +1168,26 @@ section {
 
 .form textarea {
   margin-bottom: 50px;
+}
+
+.contacts__list {
+  margin-bottom: 80px;
+}
+
+.confidentiality h2 {
+  margin-bottom: 80px;
+}
+
+.confidentiality ul {
+  list-style: decimal;
+}
+
+.offer h2 {
+  margin-bottom: 80px;
+}
+
+.offer ul {
+  list-style: decimal;
 }
 
 .button {
@@ -1220,6 +1341,7 @@ section {
 }
 
 .input-radio label {
+  min-width: 100%;
   text-align: center;
   color: #000000;
   z-index: 1;
@@ -1229,6 +1351,7 @@ section {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border: none;
 }
 
 .input-radio input[type="radio"]::before {
@@ -1296,8 +1419,8 @@ section {
   }
 
   .input-radio label {
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 11px;
+    line-height: 16px;
   }
 }
 
@@ -1397,6 +1520,38 @@ section {
     color: #000000;
   }
 
+  .footer {
+    padding: 10px 24px;
+  }
+
+  .footer__wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer__logo svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer__box-text {
+    margin-top: 20px;
+  }
+
+  .footer__socials {
+    margin-top: 20px;
+  }
+
   .intro__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1460,6 +1615,14 @@ section {
     margin-right: 10px;
   }
 
+  .contacts__list {
+    margin-bottom: 40px;
+  }
+
+  .contacts__item-wd {
+    max-width: 200px;
+  }
+
   .button {
     padding: 10px 20px;
   }
@@ -1518,6 +1681,10 @@ section {
     padding: 10px 16px;
   }
 
+  .footer {
+    padding: 10px 16px;
+  }
+
   .modal__wrapper {
     padding: 60px 16px;
   }
@@ -1557,6 +1724,29 @@ section {
     line-height: 20px;
   }
 
+  .contacts {
+    margin: 20px;
+    padding-top: 20px;
+  }
+
+  .confidentiality {
+    margin: 20px;
+    padding-top: 20px;
+  }
+
+  .confidentiality h2 {
+    margin-bottom: 50px;
+  }
+
+  .offer {
+    margin: 20px;
+    padding-top: 20px;
+  }
+
+  .offer h2 {
+    margin-bottom: 50px;
+  }
+
   .card-about p {
     font-size: 18px;
     line-height: 35px;
@@ -1568,13 +1758,13 @@ section {
   }
 
   .input-radio {
-    width: 50px;
+    width: 20%;
     height: 40px;
   }
 
   .input-radio label {
-    font-size: 8px;
-    line-height: 8px;
+    font-size: 10px;
+    line-height: 14px;
   }
 }
 
