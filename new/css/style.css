@@ -1274,6 +1274,10 @@ section {
   transform: rotate(180deg);
 }
 
+.button--underline {
+  text-decoration: underline;
+}
+
 .card-about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1327,6 +1331,43 @@ section {
   -o-object-fit: cover;
   object-fit: cover;
   cursor: pointer;
+}
+
+.card-video-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 60px;
+  padding: 20px;
+  background-color: #e8eaed;
+}
+
+.card-video-set p {
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.card-video-set video {
+  height: 200px;
+  margin-right: 20px;
+  width: 400px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.card-video-set span {
+  margin-left: 10px;
+  font-weight: 400;
 }
 
 .sidebar {
@@ -1675,6 +1716,14 @@ section {
   .card-video {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .card-video-set {
+    margin-bottom: 20px;
+  }
+
+  .card-video-set video {
+    width: 100%;
   }
 
   .sidebar {
