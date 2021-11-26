@@ -1392,6 +1392,26 @@ section {
   font-weight: 400;
 }
 
+.card-video-my-workout {
+  margin-bottom: 80px;
+}
+
+.card-video-my-workout:last-child {
+  margin-bottom: 0;
+}
+
+.card-video-my-workout p {
+  margin-bottom: 10px;
+}
+
+.card-video-my-workout video {
+  margin-bottom: 10px;
+}
+
+.card-video-my-workout button {
+  margin-bottom: 10px;
+}
+
 .sidebar {
   min-width: 300px;
 }
@@ -1832,16 +1852,32 @@ section {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-left: -10px;
+    margin-bottom: 40px;
   }
 
   .sidebar__item {
     margin-left: 10px;
+    padding: 5px 0;
+    text-align: center;
+    border: 1px solid #e8eaed;
+    border-radius: 10px;
   }
 
   .sidebar__link {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .sidebar__link--active {
+    text-decoration: none;
+    opacity: 0.6;
   }
 }
 
