@@ -517,8 +517,12 @@ textarea:invalid {
 }
 
 select {
+  width: 100%;
+  padding: 5px 10px;
   border-radius: 0;
+  outline: none;
   -webkit-tap-highlight-color: transparent;
+  background-color: #e8eaed;
 }
 
 input::-ms-clear,
@@ -1147,6 +1151,11 @@ section {
   line-height: 20px;
 }
 
+.form__col--height .button {
+  margin-top: 40px;
+  width: 100%;
+}
+
 .form__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1245,6 +1254,19 @@ section {
   max-width: 300px;
   font-size: 12px;
   line-height: 20px;
+}
+
+.access__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.access__text p {
+  text-align: center;
 }
 
 .button {
@@ -1517,6 +1539,14 @@ section {
 
 .input input::placeholder {
   color: #e8eaed;
+}
+
+.input--name input {
+  margin-bottom: 20px;
+}
+
+.input--select select {
+  margin-bottom: 20px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1953,9 +1983,24 @@ section {
     height: 40px;
   }
 
-  .input-radio label {
-    font-size: 10px;
-    line-height: 14px;
+  .input input::-webkit-input-placeholder {
+    font-size: 85%;
+  }
+
+  .input input::-moz-placeholder {
+    font-size: 85%;
+  }
+
+  .input input:-ms-input-placeholder {
+    font-size: 85%;
+  }
+
+  .input input::-ms-input-placeholder {
+    font-size: 85%;
+  }
+
+  .input input::placeholder {
+    font-size: 85%;
   }
 }
 
