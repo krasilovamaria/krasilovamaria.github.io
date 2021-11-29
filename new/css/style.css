@@ -519,10 +519,13 @@ textarea:invalid {
 select {
   width: 100%;
   padding: 5px 10px;
-  border-radius: 0;
+  border-radius: 10px;
   outline: none;
   -webkit-tap-highlight-color: transparent;
-  background-color: #e8eaed;
+  background-color: transparent;
+  font-size: 100%;
+  line-height: 1.15;
+  color: #ffffff;
 }
 
 input::-ms-clear,
@@ -1501,7 +1504,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #324c46;
+  background-color: #40665d;
   cursor: pointer;
 }
 
@@ -1547,6 +1550,9 @@ section {
 
 .input--select select {
   margin-bottom: 20px;
+  height: 40px;
+  max-width: 300px;
+  width: 100%;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1590,8 +1596,8 @@ section {
   }
 
   .input-radio label {
-    font-size: 11px;
-    line-height: 16px;
+    font-size: 12px;
+    line-height: 20px;
   }
 }
 
@@ -1767,10 +1773,17 @@ section {
 
   .form__col {
     margin-bottom: 20px;
+    max-width: 300px;
+    width: 100%;
   }
 
   .form__col--start {
     margin-top: 20px;
+  }
+
+  .form__col p {
+    font-size: 12px;
+    line-height: 20px;
   }
 
   .form__row--buttons {
@@ -1912,6 +1925,10 @@ section {
 }
 
 @media (max-width: 499px) {
+  select {
+    font-size: 85%;
+  }
+
   section {
     margin: 0;
     padding-top: 20px;
