@@ -1460,6 +1460,14 @@ section {
   font-weight: 400;
 }
 
+.card-video-set .button--border-circle {
+  margin: 20px 0;
+  border: 1px solid #000000;
+  color: #000000;
+  font-size: 12px;
+  line-height: 20px;
+}
+
 .card-video-my-workout {
   margin-bottom: 80px;
 }
@@ -1610,6 +1618,35 @@ section {
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
+  }
+
+  .card-video-set {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    background-color: #2a2e43;
+  }
+
+  .card-video-set p {
+    color: #ffffff;
+  }
+
+  .card-video-set video {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .card-video-set .button--border-circle {
+    border: 1px solid #e8eaed;
+    color: #e8eaed;
   }
 
   .input-radio {
@@ -1860,33 +1897,6 @@ section {
     margin-bottom: 20px;
   }
 
-  .card-video-set {
-    padding: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    background-color: #2a2e43;
-  }
-
-  .card-video-set p {
-    color: #ffffff;
-  }
-
-  .card-video-set video {
-    margin-bottom: 20px;
-  }
-
-  .card-video-set video {
-    width: 100%;
-  }
-
   .sidebar {
     min-width: 100%;
     padding: 0 24px;
@@ -1897,6 +1907,7 @@ section {
     display: -ms-flexbox;
     display: flex;
     margin-left: -20px;
+    margin-bottom: 40px;
   }
 
   .sidebar__item {
@@ -1956,7 +1967,6 @@ section {
     -ms-flex-pack: center;
     justify-content: center;
     margin-left: -10px;
-    margin-bottom: 40px;
   }
 
   .sidebar__item {
