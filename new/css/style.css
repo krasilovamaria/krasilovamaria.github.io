@@ -425,7 +425,7 @@ body {
   line-height: 24px;
   font-family: "Montserrat", "Arial", sans-serif;
   color: #e8eaed;
-  background-color: #202124;
+  background-color: #2a2e43;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -793,6 +793,10 @@ section {
 
 .main-nav__list--buttons .main-nav__item {
   margin-left: 20px;
+}
+
+.main-nav__list--buttons .main-nav__item--acc {
+  display: none;
 }
 
 .main-nav__link {
@@ -1234,7 +1238,34 @@ section {
   border-bottom: 1px solid #ffffff;
 }
 
+.account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.account__container {
+  margin-bottom: 60px;
+  width: 50%;
+}
+
+.account__container:last-child {
+  margin-bottom: 0;
+}
+
+.account__container--cancel {
+  display: none;
+}
+
 .account h1 {
+  margin-bottom: 60px;
+}
+
+.account h2 {
   margin-bottom: 60px;
 }
 
@@ -1305,7 +1336,7 @@ section {
 .button--circle {
   border-radius: 50px;
   background-color: #ffffff;
-  color: #202124;
+  color: #2a2e43;
 }
 
 .button--border-circle {
@@ -1323,6 +1354,12 @@ section {
 
 .button--underline {
   text-decoration: underline;
+}
+
+.button--yellow {
+  border-radius: 50px;
+  background-color: #ffb900;
+  color: #2a2e43;
 }
 
 .card-about {
@@ -1380,6 +1417,12 @@ section {
   cursor: pointer;
 }
 
+.card-video button {
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
 .card-video-set {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1435,6 +1478,8 @@ section {
 
 .card-video-my-workout button {
   margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .sidebar {
@@ -1784,6 +1829,18 @@ section {
     max-width: 200px;
   }
 
+  .account {
+    margin: 20px;
+    padding-top: 20px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
   .button {
     padding: 10px 20px;
   }
@@ -1815,7 +1872,7 @@ section {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    background-color: #202124;
+    background-color: #2a2e43;
   }
 
   .card-video-set p {
@@ -1938,6 +1995,10 @@ section {
     display: none;
   }
 
+  .main-nav__list--buttons .main-nav__item--acc {
+    display: block;
+  }
+
   .intro__img img {
     min-width: 100%;
     width: 100%;
@@ -1977,9 +2038,8 @@ section {
     padding-top: 20px;
   }
 
-  .account {
-    margin: 20px;
-    padding-top: 20px;
+  .account__container {
+    width: 100%;
   }
 
   .account__button {

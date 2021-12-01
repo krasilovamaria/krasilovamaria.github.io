@@ -18,7 +18,14 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow-dark" viewBox="0 0 50 50">
+    <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-account" viewBox="0 0 50 50">
+  <circle cx="25" cy="25" r="25" fill="black"/>
+  <path d="M23.4023 17.7812V32H21.5273V19.3242H16.4297L16.1758 24.959C16.0781 26.847 15.8828 28.2663 15.5898 29.2168C15.3034 30.1673 14.8802 30.8672 14.3203 31.3164C13.7604 31.7591 13.0117 31.987 12.0742 32H11.459V30.4668L11.8496 30.4473C12.4551 30.4017 12.9206 30.2064 13.2461 29.8613C13.5716 29.5098 13.819 28.9531 13.9883 28.1914C14.1576 27.4297 14.278 26.2578 14.3496 24.6758L14.6426 17.7812H23.4023ZM30.502 25.6133H28.7734V32H26.8984V17.7812H28.7734V24.0508H30.2383L35.209 17.7812H37.543L32.1133 24.6758L37.9434 32H35.6484L30.502 25.6133Z" fill="white"/>
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"/>
+
+  <circle cx="25" cy="25" r="25" fill="black"/>
+  <path d="M23.4023 17.7812V32H21.5273V19.3242H16.4297L16.1758 24.959C16.0781 26.847 15.8828 28.2663 15.5898 29.2168C15.3034 30.1673 14.8802 30.8672 14.3203 31.3164C13.7604 31.7591 13.0117 31.987 12.0742 32H11.459V30.4668L11.8496 30.4473C12.4551 30.4017 12.9206 30.2064 13.2461 29.8613C13.5716 29.5098 13.819 28.9531 13.9883 28.1914C14.1576 27.4297 14.278 26.2578 14.3496 24.6758L14.6426 17.7812H23.4023ZM30.502 25.6133H28.7734V32H26.8984V17.7812H28.7734V24.0508H30.2383L35.209 17.7812H37.543L32.1133 24.6758L37.9434 32H35.6484L30.502 25.6133Z" fill="white"/>
+</symbol><symbol id="icon-arrow-dark" viewBox="0 0 50 50">
   <circle cx="25" cy="25" r="25" fill="#2C2727"/>
   <path d="M37.0607 26.0607C37.6464 25.4749 37.6464 24.5251 37.0607 23.9393L27.5147 14.3934C26.9289 13.8076 25.9792 13.8076 25.3934 14.3934C24.8076 14.9792 24.8076 15.9289 25.3934 16.5147L33.8787 25L25.3934 33.4853C24.8076 34.0711 24.8076 35.0208 25.3934 35.6066C25.9792 36.1924 26.9289 36.1924 27.5147 35.6066L37.0607 26.0607ZM14 26.5H36V23.5H14V26.5Z" fill="white"/>
 </symbol><symbol id="icon-arrow" viewBox="0 0 50 50">
@@ -70,6 +77,11 @@
                 </ul>
               </div>
               <ul class="main-nav__list main-nav__list--buttons">
+                <li class="main-nav__item main-nav__item--reg"><a class="button button--border-circle" href="account.html">Личный кабинет</a></li>
+                <li class="main-nav__item main-nav__item--acc"><a class="button button--no-padding" href="account.html">
+                    <svg width="50" height="50" aria-hidden="true">
+                      <use xlink:href="#icon-account"></use>
+                    </svg></a></li>
                 <li class="main-nav__item"><a class="button button--circle" href="main.html">Выйти</a></li>
               </ul>
             </div>
@@ -78,30 +90,67 @@
       </header>
       <main>
         <section class="account">
-          <h1>Личный кабинет</h1>
-          <form class="form account__form" method="get" action="#">
-            <div class="input">
-              <label>Имя</label>
-              <input name="name" id="name" type="name" placeholder="Имя" autocomplete="off" required value="Александр"><span class="visually-hidden" id="error-message-name">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
-            </div>
-            <div class="input">
-              <label>Фамилия</label>
-              <input name="lastname" id="lastname" type="lastname" placeholder="Фамилия" autocomplete="off" required value="Дрон"><span class="visually-hidden" id="error-message-lastname">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
-            </div>
-            <div class="input">
-              <label>Дата рождения</label>
-              <input name="birthdate" id="birthdate" type="birthdate" placeholder="Дата рождения" autocomplete="off" required value="00.00.00"><span class="visually-hidden" id="error-message-birthdate">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
-            </div>
-            <div class="input">
-              <label>Страна</label>
-              <input name="country" id="country" type="country" placeholder="Страна" autocomplete="off" required value="Россия"><span class="visually-hidden" id="error-message-country">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
-            </div>
-            <div class="input">
-              <label>Город</label>
-              <input name="city" id="city" type="city" placeholder="Город" autocomplete="off" required value="Красноярск"><span class="visually-hidden" id="error-message-city">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
-            </div><a class="button button--border-circle account__button" href="create-workout.html">Сохранить</a>
-            <p class="account__conf">Нажимая кнопку «Сохранить», вы&nbsp;даёте своё согласие на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;<a href="confidentiality.html" target="_blank">Политикой конфиденциальности</a></p>
-          </form><a class="button button--border-circle account__button" href="main.html">Выйти из аккаунта</a>
+          <div class="account__container">
+            <h1>Личный кабинет</h1>
+            <form class="form account__form" method="get" action="#">
+              <div class="input">
+                <label>Имя</label>
+                <input name="name" id="name" type="name" placeholder="Имя" autocomplete="off" required value="Александр"><span class="visually-hidden" id="error-message-name">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+              </div>
+              <div class="input">
+                <label>Фамилия</label>
+                <input name="lastname" id="lastname" type="lastname" placeholder="Фамилия" autocomplete="off" required value="Дрон"><span class="visually-hidden" id="error-message-lastname">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+              </div>
+              <div class="input">
+                <label>Дата рождения</label>
+                <input name="birthdate" id="birthdate" type="birthdate" placeholder="Дата рождения" autocomplete="off" required value="00.00.00"><span class="visually-hidden" id="error-message-birthdate">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+              </div>
+              <div class="input">
+                <label class="visually-hidden" for="email"></label>
+                <input name="email" id="email" type="email" placeholder="aleksandr.dron91@yandex.by" autocomplete="off" required value=""><span class="visually-hidden" id="error-message-email">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+              </div>
+              <div class="input">
+                <label class="visually-hidden" for="tel"></label>
+                <input name="tel" id="tel" type="tel" placeholder="+7 (999) 440 - 35 - 38 " autocomplete="off" required value=""><span class="visually-hidden" id="error-message-tel">Ошибка! Введите цифры</span>
+              </div>
+              <div class="input">
+                <label>Страна</label>
+                <input name="country" id="country" type="country" placeholder="Страна" autocomplete="off" required value="Россия"><span class="visually-hidden" id="error-message-country">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+              </div>
+              <div class="input">
+                <label>Город</label>
+                <input name="city" id="city" type="city" placeholder="Город" autocomplete="off" required value="Красноярск"><span class="visually-hidden" id="error-message-city">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+              </div><a class="button button--border-circle account__button" href="create-workout.html">Сохранить</a>
+              <p class="account__conf">Нажимая кнопку «Сохранить», вы&nbsp;даёте своё согласие на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;<a href="confidentiality.html" target="_blank">Политикой конфиденциальности</a></p>
+            </form><a class="button button--border-circle account__button" href="main.html">Выйти из аккаунта</a>
+          </div>
+          <div class="account__container">
+            <h2>Подписаться на YogaApp 1299₽ раз в месяц</h2>
+            <form class="form account__form" method="get" action="#">
+              <div class="input">
+                <label class="visually-hidden" for="card"></label>
+                <input name="card" id="card" type="text" placeholder="0000 0000 0000 0000" autocomplete="off" required value=""><span class="visually-hidden" id="error-message-card">Ошибка! Введите номер карты</span>
+              </div>
+              <div class="input">
+                <label class="visually-hidden" for="cardDate"></label>
+                <input name="cardDate" id="cardDate" type="text" placeholder="ММ/ГГ" autocomplete="off" required value=""><span class="visually-hidden" id="error-message-cardDate">Ошибка! Введите дату</span>
+              </div>
+              <div class="input">
+                <label class="visually-hidden" for="cardCode"></label>
+                <input name="cardCode" id="cardCode" type="text" placeholder="Код CVV/CVC" autocomplete="off" required value=""><span class="visually-hidden" id="error-message-cardCode">Ошибка! Введите код</span>
+              </div>
+              <div class="input">
+                <label class="visually-hidden" for="cardName"></label>
+                <input name="cardName" id="cardName" type="text" placeholder="Имя и фамилия" autocomplete="off" required value=""><span class="visually-hidden" id="error-message-cardName">Ошибка! Введите код</span>
+              </div>
+              <button class="button button--yellow account__button" type="button">Подписаться</button>
+              <p class="account__conf">Нажимая кнопку «Подписаться», вы тем самым разрешаете ежемесячно списывать с вашей карту сумму в 1299р. Вы всегда можете отметить подписку.</p>
+            </form>
+          </div>
+          <div class="account__container account__container--cancel">
+            <h2>Подписка на YogaApp 1299₽ раз в месяц</h2>
+            <button class="button button--yellow account__button" type="button">Отменить подписку</button>
+          </div>
         </section>
       </main>
       <footer class="footer">
