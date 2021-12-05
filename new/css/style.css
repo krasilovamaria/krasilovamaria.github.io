@@ -1056,15 +1056,8 @@ section {
   margin-top: 40px;
 }
 
-.form__col--start .button {
-  margin-top: 10px;
-  font-size: 12px;
-  line-height: 20px;
-}
-
 .form__col--height .button {
   margin-top: 40px;
-  width: 100%;
 }
 
 .form__row {
@@ -1442,6 +1435,23 @@ section {
   line-height: 20px;
 }
 
+.card-gif {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card-gif__remove {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  padding: 5px 10px;
+}
+
+.card-gif img {
+  width: 200px;
+  height: 100px;
+}
+
 .sidebar {
   min-width: 300px;
 }
@@ -1625,7 +1635,7 @@ section {
   position: relative;
   width: 600px;
   padding: 40px;
-  background-color: #ffffff;
+  background-color: #e8eaed;
 }
 
 .modal__close-btn {
@@ -1996,6 +2006,10 @@ section {
   .card-video-create-workout {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .card-gif__remove {
+    padding: 5px 10px;
   }
 
   .sidebar {
