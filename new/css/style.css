@@ -1281,6 +1281,12 @@ section {
   color: #2a2e43;
 }
 
+.button--green {
+  border-radius: 50px;
+  background-color: #14ca7b;
+  color: #2a2e43;
+}
+
 .card-about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1295,7 +1301,7 @@ section {
   min-height: 400px;
   width: 30%;
   padding: 40px 20px;
-  background-color: #708769;
+  background-color: #14ca7b;
 }
 
 .card-about p {
@@ -1690,7 +1696,6 @@ section {
 
 .modal-create-workout__bold {
   margin-right: 10px;
-  font-weight: bold;
 }
 
 .modal-create-workout p {

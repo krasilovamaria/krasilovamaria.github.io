@@ -111,7 +111,7 @@
                 <form class="form" method="get" action="#">
                   <div class="form__col">
                     <div class="input input--select">
-                      <select name="directed">
+                      <select name="directed" data-select="directed">
                         <option selected disabled>Выберите направление</option>
                         <option value="Спина">Спина</option>
                         <option value="Ягодицы">Ягодицы</option>
@@ -124,15 +124,15 @@
                     <div class="form__row">
                       <div class="input-radio">
                         <label for="level1">Легко</label>
-                        <input name="level" id="level1" type="radio" value="Легко" checked>
+                        <input name="level" id="level1" type="radio" value="Легко" checked data-name="level">
                       </div>
                       <div class="input-radio">
                         <label for="level2">Средне</label>
-                        <input name="level" id="level2" type="radio" value="Средне">
+                        <input name="level" id="level2" type="radio" value="Средне" data-name="level">
                       </div>
                       <div class="input-radio">
                         <label for="level3">Сложно</label>
-                        <input name="level" id="level3" type="radio" value="Сложно">
+                        <input name="level" id="level3" type="radio" value="Сложно" data-name="level">
                       </div>
                     </div>
                   </div>
@@ -141,15 +141,15 @@
                     <div class="form__row">
                       <div class="input-radio">
                         <label for="amountEx5">5</label>
-                        <input name="amountEx" id="amountEx5" type="radio" value="5" checked>
+                        <input name="amountEx" id="amountEx5" type="radio" value="5" checked data-name="amountEx">
                       </div>
                       <div class="input-radio">
                         <label for="amountEx10">10</label>
-                        <input name="amountEx" id="amountEx10" type="radio" value="10">
+                        <input name="amountEx" id="amountEx10" type="radio" value="10" data-name="amountEx">
                       </div>
                       <div class="input-radio">
                         <label for="amountEx15">15</label>
-                        <input name="amountEx" id="amountEx15" type="radio" value="15">
+                        <input name="amountEx" id="amountEx15" type="radio" value="15" data-name="amountEx">
                       </div>
                     </div>
                   </div>
@@ -158,15 +158,15 @@
                     <div class="form__row">
                       <div class="input-radio">
                         <label for="amount1">1</label>
-                        <input name="amount" id="amount1" type="radio" value="1" checked>
+                        <input name="amount" id="amount1" type="radio" value="1" checked data-name="amount">
                       </div>
                       <div class="input-radio">
                         <label for="amount2">2</label>
-                        <input name="amount" id="amount2" type="radio" value="2">
+                        <input name="amount" id="amount2" type="radio" value="2" data-name="amount">
                       </div>
                       <div class="input-radio">
                         <label for="amount3">3</label>
-                        <input name="amount" id="amount3" type="radio" value="3">
+                        <input name="amount" id="amount3" type="radio" value="3" data-name="amount">
                       </div>
                     </div>
                   </div>
@@ -174,14 +174,16 @@
                     <button class="button button--border-circle" type="button" data-modal="create-workout">Добавить упражнения</button>
                   </div>
                   <div class="form__col form__wrapper-video">
-                    <div class="card-gif"><img src="gif/w_1.gif" width="200" height="100" alt="Спина">
+                    <div class="card-gif">
+                      <video src="video/w_1.mp4" width="200" height="100" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
                       <button class="button button--yellow card-gif__remove" type="button">
                         <svg width="20" height="20" aria-hidden="true">
                           <use xlink:href="#icon-close"></use>
                         </svg>
                       </button>
                     </div>
-                    <div class="card-gif"><img src="gif/w_1.gif" width="200" height="100" alt="Ягодицы">
+                    <div class="card-gif">
+                      <video src="video/w_1.mp4" width="200" height="100" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
                       <button class="button button--yellow card-gif__remove" type="button">
                         <svg width="20" height="20" aria-hidden="true">
                           <use xlink:href="#icon-close"></use>
@@ -229,20 +231,15 @@
         <div class="modal__content">
           <div class="modal-create-workout">
             <div class="modal-create-workout__wrapper-desc">
-              <p>Вы выбрали</p>
               <div class="modal-create-workout__row">
                 <p class="modal-create-workout__bold">Направление:</p>
-                <p>Ягодицы</p>
+                <p data-print="directed">Пожалуйста закройте данное модальное окно и выберите направление тренировки</p>
               </div>
               <div class="modal-create-workout__row">
                 <p class="modal-create-workout__bold">Уровень сложности:</p>
-                <p>Легко</p>
+                <p data-print="level">Легко</p>
               </div>
-              <div class="modal-create-workout__row">
-                <p class="modal-create-workout__bold">Количество упражнений:</p>
-                <p>5</p>
-              </div>
-              <p>Теперь, пожалуйста, отметьте <span> 5 </span> видео, которые хотели бы для своей тренировки</p>
+              <p>Отметьте <span data-print="amount-video"> 5 </span> видео, которые хотели бы для своей тренировки</p>
             </div>
             <div class="modal-create-workout__wrapper">
               <div class="card-video-create-workout">
@@ -253,7 +250,7 @@
               <div class="card-video-create-workout">
                 <p>Наклоны вперед</p>
                 <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                <button class="button button--yellow" type="button">Добавить</button>
+                <button class="button button--green" type="button">Добавлено</button>
               </div>
               <div class="card-video-create-workout">
                 <p>Наклоны вперед</p>
@@ -263,7 +260,7 @@
               <div class="card-video-create-workout">
                 <p>Наклоны вперед</p>
                 <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                <button class="button button--yellow" type="button">Добавить</button>
+                <button class="button button--green" type="button">Добавлено</button>
               </div>
               <div class="card-video-create-workout">
                 <p>Наклоны вперед</p>
