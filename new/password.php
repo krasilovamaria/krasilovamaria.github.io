@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE php>
+<php lang="ru">
   <head>
     <title>Восстановление пароля - YogaApp</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="YogaApp — тренировки">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-    <link rel="manifest" href="./favicon/site.webmanifest" crossorigin="use-credentials">
-    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#000000">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content="YogaApp — тренировки"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png"/>
+    <link rel="manifest" href="./favicon/site.webmanifest" crossorigin="use-credentials"/>
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#000000"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
   </head>
   <body>
     <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-account" viewBox="0 0 50 50">
@@ -48,7 +48,7 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__wrapper">
-          <nav class="main-nav"><a class="button button--icon-left" href="main.html">
+          <nav class="main-nav"><a class="button button--icon-left" href="main.php">
               <svg width="50" height="50" aria-hidden="true">
                 <use xlink:href="#icon-arrow"></use>
               </svg></a>
@@ -61,13 +61,13 @@
         <form class="form" method="get" action="#">
           <div class="input">
             <label class="visually-hidden" for="email"></label>
-            <input name="email" id="email" type="email" placeholder="Email" autocomplete="off" required value=""><span class="visually-hidden" id="error-message-email">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
-          </div><a class="button button--border-circle" href="create-workout.html">Восстановить</a>
-          <div class="form__col form__col--start"><a class="button button--no-padding" href="password.html"></a></div>
+            <input name="email" id="email" type="email" placeholder="Email" autocomplete="off" required="required" value=""/><span class="visually-hidden" id="error-message-email">Ошибка! Введите цифры и латинские буквы, от 4 до 20 символов</span>
+          </div><a class="button button--border-circle" href="create-workout.php">Восстановить</a>
+          <div class="form__col form__col--start"><a class="button button--no-padding" href="password.php"></a></div>
         </form>
       </main>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
-</html>
+</php>

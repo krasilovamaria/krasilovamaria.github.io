@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE php>
+<php lang="ru">
   <head>
     <title>Список страниц</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="YogaApp — тренировки">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-    <link rel="manifest" href="./favicon/site.webmanifest" crossorigin="use-credentials">
-    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#000000">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content="YogaApp — тренировки"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png"/>
+    <link rel="manifest" href="./favicon/site.webmanifest" crossorigin="use-credentials"/>
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#000000"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
   </head>
   <body>
     <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-account" viewBox="0 0 50 50">
@@ -91,32 +91,32 @@
         }
         
       </style>
-      <main class="container main-index"><img src="./img/svg/logo.svg" width="100" height="100" alt="Логотип проекта">
+      <main class="container main-index"><img src="./img/svg/logo.svg" width="100" height="100" alt="Логотип проекта"/>
         <h1>Список страниц</h1>
         <ol>
-          <li><a href="ui-kit.html">UI-kit — ui-kit.html</a></li>
-          <li><a href="main.html">Главная — main.html</a></li>
-          <li><a href="access-closed.html">Доступ закрыт — access-closed.html</a></li>
-          <li><a href="registration.html">Регистрация — registration.html</a></li>
-          <li><a href="password.html">Восстановление пароля — password.html</a></li>
-          <li><a href="password-success.html">Восстановление пароля(успешно) — password-success.html</a></li>
-          <li><a href="login.html">Вход — login.html</a></li>
-          <li><a href="account.html">Личный кабинет — account.html</a></li>
-          <li><a href="workout.html">Тренировки — workout.html</a></li>
-          <li><a href="workout-login.html">Тренировки доступ закрыт — workout-login.html</a></li>
-          <li><a href="set-workout.html">Комплекс упражнений — set-workout.html</a></li>
-          <li><a href="create-workout.html">Создать тренировку — create-workout.html</a></li>
-          <li><a href="my-workout.html">Мои тренировки(нет тренировок) — my-workout.html</a></li>
-          <li><a href="my-workout-set.html">Мои тренировки(с добавленными видео) — my-workout-set.html</a></li>
-          <li><a href="favorites.html">Избранное — favorites.html</a></li>
-          <li><a href="business.html">Возможности — business.html</a></li>
-          <li><a href="contacts.html">Контакты — contacts.html</a></li>
-          <li><a href="confidentiality.html">Политика конфиденциальности — confidentiality.html</a></li>
-          <li><a href="offer.html">Договор оферты — offer.html</a></li>
+          <li><a href="ui-kit.php">UI-kit — ui-kit.php</a></li>
+          <li><a href="main.php">Главная — main.php</a></li>
+          <li><a href="access-closed.php">Доступ закрыт — access-closed.php</a></li>
+          <li><a href="registration.php">Регистрация — registration.php</a></li>
+          <li><a href="password.php">Восстановление пароля — password.php</a></li>
+          <li><a href="password-success.php">Восстановление пароля(успешно) — password-success.php</a></li>
+          <li><a href="login.php">Вход — login.php</a></li>
+          <li><a href="account.php">Личный кабинет — account.php</a></li>
+          <li><a href="workout.php">Тренировки — workout.php</a></li>
+          <li><a href="workout-login.php">Тренировки доступ закрыт — workout-login.php</a></li>
+          <li><a href="set-workout.php">Комплекс упражнений — set-workout.php</a></li>
+          <li><a href="create-workout.php">Создать тренировку — create-workout.php</a></li>
+          <li><a href="my-workout.php">Мои тренировки(нет тренировок) — my-workout.php</a></li>
+          <li><a href="my-workout-set.php">Мои тренировки(с добавленными видео) — my-workout-set.php</a></li>
+          <li><a href="favorites.php">Избранное — favorites.php</a></li>
+          <li><a href="business.php">Возможности — business.php</a></li>
+          <li><a href="contacts.php">Контакты — contacts.php</a></li>
+          <li><a href="confidentiality.php">Политика конфиденциальности — confidentiality.php</a></li>
+          <li><a href="offer.php">Договор оферты — offer.php</a></li>
         </ol>
       </main>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
-</html>
+</php>

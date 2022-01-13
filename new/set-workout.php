@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE php>
+<php lang="ru">
   <head>
-    <title>Все тренировки - YogaApp</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="YogaApp — тренировки">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-    <link rel="manifest" href="./favicon/site.webmanifest" crossorigin="use-credentials">
-    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#000000">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.min.css">
+    <title>Комплекс упражнений - YogaApp</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content="YogaApp — тренировки"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png"/>
+    <link rel="manifest" href="./favicon/site.webmanifest" crossorigin="use-credentials"/>
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#000000"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
   </head>
   <body>
     <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-account" viewBox="0 0 50 50">
@@ -47,7 +47,7 @@
     </div>
     <div class="wrapper">
       <header class="header">
-        <div class="header__wrapper"><a class="header__logo" href="main.html" aria-label="Переход на главную"><svg width="282" height="140" viewBox="0 0 282 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="header__wrapper"><a class="header__logo" href="main.php" aria-label="Переход на главную"><svg width="282" height="140" viewBox="0 0 282 140" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M218.731 70.4087C236.533 70.4087 250.865 54.4532 250.865 34.8631C250.865 19.5759 242.136 6.5009 229.839 1.49603C259.163 7.29877 281.5 35.6519 281.5 69.9087C281.5 108.393 253.351 139.5 218.731 139.5C218.018 139.5 217.34 139.449 216.638 139.395C216.278 139.368 215.912 139.341 215.533 139.319C199.874 137.55 187.596 122.88 187.596 104.954C187.596 85.8178 201.575 70.4087 218.731 70.4087ZM207.686 104.954C207.686 111.63 212.586 117.136 218.731 117.136C224.876 117.136 229.776 111.63 229.776 104.954C229.776 98.2783 224.876 92.7725 218.731 92.7725C212.586 92.7725 207.686 98.2783 207.686 104.954Z" fill="white" stroke="black"/>
   <path d="M63.2692 69.5913C45.4675 69.5913 31.1346 85.5468 31.1346 105.137C31.1346 120.424 39.8639 133.499 52.1614 138.504C22.8375 132.701 0.5 104.348 0.5 70.0913C0.5 31.6066 28.6487 0.5 63.2692 0.5C63.9817 0.5 64.6605 0.551398 65.3622 0.604533C65.722 0.631781 66.0879 0.659485 66.4675 0.680949C82.1258 2.45028 94.4038 17.1201 94.4038 35.0456C94.4038 54.1822 80.4248 69.5913 63.2692 69.5913ZM74.3141 35.0456C74.3141 28.3695 69.414 22.8638 63.2692 22.8638C57.1245 22.8638 52.2244 28.3695 52.2244 35.0456C52.2244 41.7217 57.1245 47.2275 63.2692 47.2275C69.414 47.2275 74.3141 41.7217 74.3141 35.0456Z" fill="black" stroke="black"/>
   <path d="M134.221 138.5L131.962 138V137.5L134.221 136.5L134.673 135L135.577 117.5L132.413 111L131.962 94.5L130.154 88L117.048 71L115.24 63.5L112.077 57L108.913 46.5L106.202 42.5L104.846 36.5L103.038 35L100.779 33.5L100.327 30.5L100.779 27H102.135L108.462 39.5L110.269 41.5L112.529 46.5L115.24 51.5L118.856 56.5L120.663 60L122.019 63.5L124.279 65.5V63.5L122.471 58L119.76 53L115.24 45.5L112.981 42.5L110.269 36.5L102.135 26H108.462L108.913 30.5L112.077 32.5L112.981 35L114.337 38L120.663 44.5L124.279 49.5L131.51 57.5L134.221 61.5L136.029 66L139.192 70L140.548 79L143.712 82L151.846 90.5L155.913 88.5L164.952 88L168.567 86L176.25 85.5L178.51 85L179.865 83L183.933 82L186.644 83V85.5H184.837L178.058 88L170.375 91.5L161.788 94L153.654 98.5H147.327V100L150.038 102L149.587 106L145.971 110L142.356 109L140.548 106L140.096 104.5L139.192 108L140.096 109.5L139.192 119.5L138.288 135L140.548 136L141.452 138L139.644 139L138.288 140H136.481L134.221 138.5Z" fill="black"/>
@@ -68,100 +68,100 @@
                   </svg>
                 </button>
                 <ul class="main-nav__list">
-                  <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Тренировки</a>
+                  <li class="main-nav__item"><a class="main-nav__link" href="workout-login.php">Тренировки</a>
                   </li>
-                  <li class="main-nav__item"><a class="main-nav__link" href="business.html">Возможности</a>
+                  <li class="main-nav__item"><a class="main-nav__link" href="business.php">Возможности</a>
                   </li>
-                  <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a>
+                  <li class="main-nav__item"><a class="main-nav__link" href="contacts.php">Контакты</a>
                   </li>
                 </ul>
               </div>
               <ul class="main-nav__list main-nav__list--buttons">
-                <li class="main-nav__item main-nav__item--reg"><a class="button button--border-circle" href="account.html">Личный кабинет</a></li>
-                <li class="main-nav__item main-nav__item--acc"><a class="button button--no-padding" href="account.html">
+                <li class="main-nav__item main-nav__item--reg"><a class="button button--border-circle" href="account.php">Личный кабинет</a></li>
+                <li class="main-nav__item main-nav__item--acc"><a class="button button--no-padding" href="account.php">
                     <svg width="50" height="50" aria-hidden="true">
                       <use xlink:href="#icon-account"></use>
                     </svg></a></li>
-                <li class="main-nav__item"><a class="button button--circle" href="main.html">Выйти</a></li>
+                <li class="main-nav__item"><a class="button button--circle" href="main.php">Выйти</a></li>
               </ul>
             </div>
           </nav>
         </div>
       </header>
       <main>
-        <h1 class="visually-hidden">Все тренировки</h1>
+        <h1 class="visually-hidden">Комплекс упражнений</h1>
         <section class="exercises-container">
           <sidebar class="sidebar">
             <ul class="sidebar__list">
-              <li class="sidebar__item"><a class="sidebar__link sidebar__link--active">Все видео</a>
+              <li class="sidebar__item"><a class="sidebar__link" href="workout.php">Все видео</a>
               </li>
-              <li class="sidebar__item"><a class="sidebar__link" href="set-workout.html">Комплекс упражнений</a>
+              <li class="sidebar__item"><a class="sidebar__link sidebar__link--active">Комплекс упражнений</a>
               </li>
-              <li class="sidebar__item"><a class="sidebar__link" href="create-workout.html">Создать тренировку</a>
+              <li class="sidebar__item"><a class="sidebar__link" href="create-workout.php">Создать тренировку</a>
               </li>
-              <li class="sidebar__item"><a class="sidebar__link" href="my-workout-set.html">Мои тренировки</a>
+              <li class="sidebar__item"><a class="sidebar__link" href="my-workout-set.php">Мои тренировки</a>
               </li>
-              <li class="sidebar__item"><a class="sidebar__link" href="favorites.html">Избранное</a>
+              <li class="sidebar__item"><a class="sidebar__link" href="favorites.php">Избранное</a>
               </li>
             </ul>
           </sidebar>
           <div class="workout">
             <div class="container">
-              <div class="workout__container">
-                <div class="input input--select">
-                  <select name="directed">
-                    <option selected disabled>Выбрать фильтр</option>
-                    <option value="Спина">Спина</option>
-                    <option value="Ягодицы">Ягодицы</option>
-                    <option value="Руки">Руки</option>
-                  </select>
-                </div>
-              </div>
               <div class="workout__wrapper">
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                  <button class="button button--border-circle" type="button">Добавить в избранное</button>
+                <div class="card-video-set">
+                  <div class="card-video-set__text">
+                    <p>Наименование комлекса:<span>'Прокачай спину'</span></p>
+                    <p>Кому подойдет:<span>Если бы Вы хотели укрепить осанку</span></p>
+                    <p>Уровень сложности:<span>Легко</span></p>
+                    <p>Продолжительность тренировки:<span>60 минут</span></p>
+                    <p>Как часто необходимо повторять тренировку:<span>Раз в неделю</span></p>
+                    <button class="button button--border-circle" type="button">Добавить в избранное</button>
+                  </div>
+                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline="playsinline" controls="controls" preload="preload"></video>
                 </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                  <button class="button button--border-circle" type="button">Добавить в избранное</button>
+                <div class="card-video-set">
+                  <div class="card-video-set__text">
+                    <p>Наименование комлекса:<span>'Прокачай спину'</span></p>
+                    <p>Кому подойдет:<span>Если бы Вы хотели укрепить осанку</span></p>
+                    <p>Уровень сложности:<span>Легко</span></p>
+                    <p>Продолжительность тренировки:<span>60 минут</span></p>
+                    <p>Как часто необходимо повторять тренировку:<span>Раз в неделю</span></p>
+                    <button class="button button--border-circle" type="button">Добавить в избранное</button>
+                  </div>
+                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline="playsinline" controls="controls" preload="preload"></video>
                 </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                  <button class="button button--border-circle" type="button">Добавить в избранное</button>
+                <div class="card-video-set">
+                  <div class="card-video-set__text">
+                    <p>Наименование комлекса:<span>'Прокачай спину'</span></p>
+                    <p>Кому подойдет:<span>Если бы Вы хотели укрепить осанку</span></p>
+                    <p>Уровень сложности:<span>Легко</span></p>
+                    <p>Продолжительность тренировки:<span>60 минут</span></p>
+                    <p>Как часто необходимо повторять тренировку:<span>Раз в неделю</span></p>
+                    <button class="button button--border-circle" type="button">Добавить в избранное</button>
+                  </div>
+                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline="playsinline" controls="controls" preload="preload"></video>
                 </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                  <button class="button button--border-circle" type="button">Добавить в избранное</button>
+                <div class="card-video-set">
+                  <div class="card-video-set__text">
+                    <p>Наименование комлекса:<span>'Прокачай спину'</span></p>
+                    <p>Кому подойдет:<span>Если бы Вы хотели укрепить осанку</span></p>
+                    <p>Уровень сложности:<span>Легко</span></p>
+                    <p>Продолжительность тренировки:<span>60 минут</span></p>
+                    <p>Как часто необходимо повторять тренировку:<span>Раз в неделю</span></p>
+                    <button class="button button--border-circle" type="button">Добавить в избранное</button>
+                  </div>
+                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline="playsinline" controls="controls" preload="preload"></video>
                 </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                  <button class="button button--border-circle" type="button">Добавить в избранное</button>
-                </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                  <button class="button button--border-circle" type="button">Добавить в избранное</button>
-                </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                  <button class="button button--border-circle" type="button">Добавить в избранное</button>
-                </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                  <button class="button button--border-circle" type="button">Добавить в избранное</button>
-                </div>
-                <div class="card-video">
-                  <p>Наклоны вперед</p>
-                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline controls preload></video>
-                  <button class="button button--border-circle" type="button">Добавить в избранное</button>
+                <div class="card-video-set">
+                  <div class="card-video-set__text">
+                    <p>Наименование комлекса:<span>'Прокачай спину'</span></p>
+                    <p>Кому подойдет:<span>Если бы Вы хотели укрепить осанку</span></p>
+                    <p>Уровень сложности:<span>Легко</span></p>
+                    <p>Продолжительность тренировки:<span>60 минут</span></p>
+                    <p>Как часто необходимо повторять тренировку:<span>Раз в неделю</span></p>
+                    <button class="button button--border-circle" type="button">Добавить в избранное</button>
+                  </div>
+                  <video src="video/w_1.mp4" width="400" height="200" type="video/mp4" poster="img/content/poster/w_1.jpg" playsinline="playsinline" controls="controls" preload="preload"></video>
                 </div>
               </div>
             </div>
@@ -170,7 +170,7 @@
       </main>
       <footer class="footer">
         <div class="container">
-          <div class="footer__wrapper"><a class="footer__logo" href="main.html" aria-label="Переход на главную"><svg width="282" height="140" viewBox="0 0 282 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="footer__wrapper"><a class="footer__logo" href="main.php" aria-label="Переход на главную"><svg width="282" height="140" viewBox="0 0 282 140" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M218.731 70.4087C236.533 70.4087 250.865 54.4532 250.865 34.8631C250.865 19.5759 242.136 6.5009 229.839 1.49603C259.163 7.29877 281.5 35.6519 281.5 69.9087C281.5 108.393 253.351 139.5 218.731 139.5C218.018 139.5 217.34 139.449 216.638 139.395C216.278 139.368 215.912 139.341 215.533 139.319C199.874 137.55 187.596 122.88 187.596 104.954C187.596 85.8178 201.575 70.4087 218.731 70.4087ZM207.686 104.954C207.686 111.63 212.586 117.136 218.731 117.136C224.876 117.136 229.776 111.63 229.776 104.954C229.776 98.2783 224.876 92.7725 218.731 92.7725C212.586 92.7725 207.686 98.2783 207.686 104.954Z" fill="white" stroke="black"/>
   <path d="M63.2692 69.5913C45.4675 69.5913 31.1346 85.5468 31.1346 105.137C31.1346 120.424 39.8639 133.499 52.1614 138.504C22.8375 132.701 0.5 104.348 0.5 70.0913C0.5 31.6066 28.6487 0.5 63.2692 0.5C63.9817 0.5 64.6605 0.551398 65.3622 0.604533C65.722 0.631781 66.0879 0.659485 66.4675 0.680949C82.1258 2.45028 94.4038 17.1201 94.4038 35.0456C94.4038 54.1822 80.4248 69.5913 63.2692 69.5913ZM74.3141 35.0456C74.3141 28.3695 69.414 22.8638 63.2692 22.8638C57.1245 22.8638 52.2244 28.3695 52.2244 35.0456C52.2244 41.7217 57.1245 47.2275 63.2692 47.2275C69.414 47.2275 74.3141 41.7217 74.3141 35.0456Z" fill="black" stroke="black"/>
   <path d="M134.221 138.5L131.962 138V137.5L134.221 136.5L134.673 135L135.577 117.5L132.413 111L131.962 94.5L130.154 88L117.048 71L115.24 63.5L112.077 57L108.913 46.5L106.202 42.5L104.846 36.5L103.038 35L100.779 33.5L100.327 30.5L100.779 27H102.135L108.462 39.5L110.269 41.5L112.529 46.5L115.24 51.5L118.856 56.5L120.663 60L122.019 63.5L124.279 65.5V63.5L122.471 58L119.76 53L115.24 45.5L112.981 42.5L110.269 36.5L102.135 26H108.462L108.913 30.5L112.077 32.5L112.981 35L114.337 38L120.663 44.5L124.279 49.5L131.51 57.5L134.221 61.5L136.029 66L139.192 70L140.548 79L143.712 82L151.846 90.5L155.913 88.5L164.952 88L168.567 86L176.25 85.5L178.51 85L179.865 83L183.933 82L186.644 83V85.5H184.837L178.058 88L170.375 91.5L161.788 94L153.654 98.5H147.327V100L150.038 102L149.587 106L145.971 110L142.356 109L140.548 106L140.096 104.5L139.192 108L140.096 109.5L139.192 119.5L138.288 135L140.548 136L141.452 138L139.644 139L138.288 140H136.481L134.221 138.5Z" fill="black"/>
@@ -183,7 +183,7 @@
                 <p>ОГРНИП 000000000000000</p>
                 <p>г.Красноярск</p>
               </div>
-              <div class="footer__link"><a href="contacts.html">Контакты</a><a href="confidentiality.html">Политика конфиденциальности</a><a href="offer.html">Договор оферты</a></div>
+              <div class="footer__link"><a href="contacts.php">Контакты</a><a href="confidentiality.php">Политика конфиденциальности</a><a href="offer.php">Договор оферты</a></div>
             </div>
             <div class="footer__socials"><a href="https://www.instagram.com/aleks_dron/" aria-label="Ссылка на истаграм" target="_blank" rel="nofollow noopener noreferrer">
                 <svg width="80" height="80" aria-hidden="true">
@@ -196,4 +196,4 @@
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
-</html>
+</php>
